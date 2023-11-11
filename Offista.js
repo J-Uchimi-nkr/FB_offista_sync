@@ -1,31 +1,33 @@
 // Offista.js
 const axios = require("axios");
-const API_INFO_JSON_PASS = "./config.json";
-const API_INFO = require(API_INFO_JSON_PASS);
-
+const CONFIG_PATH = "./config.json";
+const MONDETORY_EMPLOYEE_PATH = "./template/mondetory_employee.json";
+const CONFIG = require(CONFIG_PATH);
+const MONDETORY_EMPLOYEE = require(MONDETORY_EMPLOYEE_PATH);
 module.exports = class Offista {
-  #endpoint = API_INFO.demo_endpoint;
-  #rn_list = API_INFO.rn_list;
-  #station_id = API_INFO.users[0].station_id;
-  #login_id = API_INFO.users[0].login_id;
-  #login_pass = API_INFO.users[0].login_pass;
-  #product_id = API_INFO.product_id;
-  #email = API_INFO.email;
+  #endpoint = CONFIG.demo_endpoint;
+  #rn_list = CONFIG.rn_list;
+  #station_id = CONFIG.users[0].station_id;
+  #login_id = CONFIG.users[0].login_id;
+  #login_pass = CONFIG.users[0].login_pass;
+  #product_id = CONFIG.product_id;
+  #email = CONFIG.email;
   #dump_log = false;
 
   constructor(init_object) {
     if ("is_dumpLog" in init_object && init_object.is_dumpLog == true)
       this.#dump_log = true;
     if ("is_demo" in init_object && init_object.is_demo == false)
-      this.#endpoint = API_INFO.service_endpoint;
+      this.#endpoint = CONFIG.service_endpoint;
     if ("user_num" in init_object && init_object.user_num != 0) {
       const user_num = init_object.user_num;
-      this.#station_id = API_INFO.users[user_num].station_id;
-      this.#login_id = API_INFO.users[user_num].login_id;
-      this.#login_pass = API_INFO.users[user_num].login_pass;
+      this.#station_id = CONFIG.users[user_num].station_id;
+      this.#login_id = CONFIG.users[user_num].login_id;
+      this.#login_pass = CONFIG.users[user_num].login_pass;
     }
     if ("product_id" in init_object) this.#product_id = init_object.product_id;
   }
+
   async create_api_key() {
     let return_obj = { api_key: "", product_key: "" };
     const api_name = "CREATE_API_KEY";
@@ -35,34 +37,38 @@ module.exports = class Offista {
       pid: this.#product_id,
       eml: this.#email,
     };
-    const response = await this.post(api_name, body_obj);
-    if (response.status != 200) return {};
+    const response = await this.#post(api_name, body_obj);
+    if (response.data.result != 200) return {};
     const { product_key, api_key } = response.data;
     return_obj.api_key = api_key;
     return_obj.product_key = product_key;
     return return_obj;
   }
   async get_api_key() {
+    let return_obj = "";
     const api_name = "GET_API_KEY";
     let body_obj = {
       uid: this.#login_id,
       upw: this.#login_pass,
       eml: this.#email,
     };
-    const response = await this.post(api_name, body_obj);
-    if (response.status != 200) return "";
-    return response.data.api_key;
+    const response = await this.#post(api_name, body_obj);
+    if (response.data.result != 200) return "";
+    return_obj = response.data.api_key;
+    return return_obj;
   }
   async get_pid_key() {
+    let return_obj = "";
     const api_name = "GET_PID_KEY";
     let body_obj = {
       uid: this.#login_id,
       upw: this.#login_pass,
       eml: this.#email,
     };
-    const response = await this.post(api_name, body_obj);
-    if (response.status != 200) return "";
-    return response.data.product_key;
+    const response = await this.#post(api_name, body_obj);
+    if (response.data.result != 200) return "";
+    return_obj = response.data.product_key;
+    return return_obj;
   }
   async get_ac_method() {
     let return_obj = { ac_method: "", ac_id: "", one_time_type: "" };
@@ -71,8 +77,8 @@ module.exports = class Offista {
       uid: this.#login_id,
       upw: this.#login_pass,
     };
-    const response = await this.post(api_name, body_obj);
-    if (response.status != 200) return "";
+    const response = await this.#post(api_name, body_obj);
+    if (response.data.result != 200) return "";
     if (response.data.ac_method == -1) {
       console.error("ac_method is not defined. ");
       return {};
@@ -105,28 +111,124 @@ module.exports = class Offista {
     }
     return response.data.product_key;
   }
-  async get_employee(api_key, option) {
+  async get_employee(api_key, mut_stid, options) {
+    let return_obj = [{}];
     const api_name = "GET_EMPLOYEE";
     let body_obj = {
       api_key: api_key,
-      mut_stid: this.#station_id,
+      mut_stid: mut_stid,
       uid: this.#login_id,
     };
-    if ("family_ret" in option) body_obj.family_ret = option.family_ret;
-    if ("retiree_ret" in option) body_obj.retiree_ret = option.retiree_ret;
-    if ("employees_kbn_ret" in option)
-      body_obj.employees_kbn_ret = option.employees_kbn_ret;
-    if ("response_blank" in option)
-      body_obj.response_blank = option.response_blank;
-    if ("employees" in option) body_obj.employees = option.employees;
-    if ("mut_emp" in option) body_obj.mut_emp = option.mut_emp;
-
-    const response = await this.post(api_name, body_obj);
-    if (response.status != 200) return [];
-    return response.data;
+    const keys = [
+      "family_ret",
+      "retiree_ret",
+      "employees_kbn_ret",
+      "response_blank",
+      "employees",
+      "mut_emp",
+    ];
+    keys.forEach((key) => {
+      if (key in options) body_obj[key] = option[key];
+    });
+    const response = await this.#post(api_name, body_obj);
+    if (response.data.result != 200) return [];
+    return_obj = response.data.employees;
+    return return_obj;
+  }
+  async get_consignment_customer(api_key) {
+    let return_obj = [
+      {
+        identifire: "",
+        customer_name: "",
+      },
+    ];
+    const api_name = "GET_CONSIGNMENT_CUSTOMER";
+    let body_obj = {
+      api_key: api_key,
+      uid: this.#login_id,
+    };
+    const response = await this.#post(api_name, body_obj);
+    if (response.data.result != 200) return [];
+    return_obj = response.data.customers;
+    return return_obj;
+  }
+  async get_office(api_key, mut_stid) {
+    let return_obj = [{}];
+    const api_name = "GET_OFFICE";
+    let body_obj = {
+      api_key: api_key,
+      mut_stid: mut_stid,
+      uid: this.#login_id,
+    };
+    const response = await this.#post(api_name, body_obj);
+    if (response.data.result != 200) return [];
+    return_obj = response.data.offices;
+    return return_obj;
+  }
+  async entry_employee(api_key, mut_stid, employees) {
+    let return_obj = false;
+    const api_name = "ENTRY_EMPLOYEE";
+    if (employees.length > 100) {
+      console.error("maximum resist employee num is 100 per request.");
+      return false;
+    }
+    const mondetory_keys = Object.keys(MONDETORY_EMPLOYEE);
+    for (let i = 0; i < employees.length; i++) {
+      for (let j = 0; j < mondetory_keys.length; j++) {
+        const key = mondetory_keys[j];
+        if (!(key in employees[i])) {
+          console.error(
+            `index number ${i} employee object has not a key {${key}}.`
+          );
+          return false;
+        }
+      }
+    }
+    let body_obj = {
+      api_key: api_key,
+      mut_stid: mut_stid,
+      uid: this.#login_id,
+      upw: this.#login_pass,
+      employees: employees,
+    };
+    const response = await this.#post(api_name, body_obj);
+    if (response.data.result != 200) return false;
+    return_obj = true;
+    return return_obj;
+  }
+  async modify_employee(api_key, mut_stid, employees) {
+    let return_obj = false;
+    const api_name = "MODIFY_EMPLOYEE";
+    if (employees.length > 100) {
+      console.error("maximum modefy employee num is 100 per request.");
+      return false;
+    }
+    const mondetory_keys = Object.keys(MONDETORY_EMPLOYEE);
+    for (let i = 0; i < employees.length; i++) {
+      for (let j = 0; j < mondetory_keys.length; j++) {
+        const key = mondetory_keys[j];
+        if (!(key in employees[i])) {
+          console.error(
+            `index number ${i} employee object has not a key {${key}}.`
+          );
+          return false;
+        }
+      }
+    }
+    let body_obj = {
+      api_key: api_key,
+      mut_stid: mut_stid,
+      uid: this.#login_id,
+      upw: this.#login_pass,
+      employees: employees,
+    };
+    const response = await this.#post(api_name, body_obj);
+    if (response.data.result != 200) return false;
+    return_obj = true;
+    return return_obj;
   }
 
-  make_params(api_name, body_obj) {
+  #make_params(api_name, body_obj) {
     const params = {
       url: `${this.#endpoint}/${this.#station_id}/${api_name}`,
       method: "POST",
@@ -139,19 +241,24 @@ module.exports = class Offista {
     if (this.#dump_log) console.log("\nmake_params: ", params);
     return params;
   }
-
-  async post(api_name, body_obj) {
-    const params = this.make_params(api_name, body_obj);
+  async #post(api_name, body_obj) {
+    let return_obj = {
+      status: "response.status",
+      statusText: "response.statusText",
+      data: {},
+    };
+    const params = this.#make_params(api_name, body_obj);
     const response = await axios.post(params.url, body_obj, {
       headers: params.headers,
     });
-    const return_obj = {
+    return_obj = {
       status: response.status,
       statusText: response.statusText,
       data: response.data,
     };
     if (response.status != 200)
-      console.error("post error: ", response.statusText);
+      console.error("post error: ", response.data.resultText);
+
     if (this.#dump_log) console.log(`\n${api_name}: `, return_obj);
     return return_obj;
   }
