@@ -1,7 +1,7 @@
 // Offista.js
 const axios = require("axios");
 const CONFIG_PATH = "../configs/offista_config.json";
-const MONDETORY_EMPLOYEE_PATH = "../templates/mandetory_employee.json";
+const MONDETORY_EMPLOYEE_PATH = "../templates/json/mandetory_employee.json";
 const CONFIG = require(CONFIG_PATH);
 const MONDETORY_EMPLOYEE = require(MONDETORY_EMPLOYEE_PATH);
 module.exports = class Offista {

@@ -1,0 +1,13 @@
+{
+  "host_url": "https://nkr-group.cybozu.com",
+  "ids": {
+    "1247": {
+      "name": "URL管理アプリ",
+      "api_token": "cXUtD6p8nMRlg5RbVDxUYyvsP6Equ6wo7guV6bcT"
+    },
+    "1240": {
+      "name": "連絡キャッチャー2.5",
+      "api_token": "SrqWYsMhTxXcMvf7DWyZlDw8VPYYqphV9QMlDPtu"
+    }
+  }
+}
