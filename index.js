@@ -1,4 +1,4 @@
-const Offista = require("./Offista");
+const Offista = require("./classes/Offista");
 
 async function main() {
   const instance = new Offista({ is_dumpLog: true });
@@ -17,8 +17,8 @@ async function debug(instance) {
   // result = await instance.get_office(api_key, target_station_id);
   // console.log(result);
 
-  // get_demo(instance, api_key, target_station_id);
-  controll_demo(instance, api_key, target_station_id);
+  get_demo(instance, api_key, target_station_id);
+  // controll_demo(instance, api_key, target_station_id);
   return;
 }
 
@@ -29,7 +29,7 @@ async function get_demo(instance, api_key, target_station_id) {
 }
 
 async function controll_demo(instance, api_key, target_station_id) {
-  let employee = require("./template/mondetory_employee.json");
+  let employee = require("./templates/mondetory_employee.json");
   employee.mei_name = "test";
   employee.shi_name = "sample";
   employee.customer_employee_id = "testid";
