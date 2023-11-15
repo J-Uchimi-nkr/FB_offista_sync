@@ -30,12 +30,12 @@ async function get_demo(instance, api_key, target_station_id) {
 
 async function controll_demo(instance, api_key, target_station_id) {
   let employee = require("./template/mondetory_employee.json");
-  employee.mei_name = "健斗";
-  employee.shi_name = "田中";
-  employee.customer_employee_id = "0010";
+  employee.mei_name = "test";
+  employee.shi_name = "sample";
+  employee.customer_employee_id = "testid";
   employee.birthday = new Date().toISOString().split("T")[0];
   employee.sex = 2;
-  result = await instance.modify_employee(api_key, target_station_id, [
+  result = await instance.entry_employee(api_key, target_station_id, [
     employee,
   ]);
   console.log(result);
