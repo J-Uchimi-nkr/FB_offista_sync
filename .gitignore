@@ -1,2 +1,3 @@
 *.pdf
 config.json
+node_modules/*
