@@ -1,6 +1,6 @@
 const axios = require("axios");
-const CONFIG = require("../configs/kintone_config.json");
-
+const CONFIG_PATH = "../config/kintone_config.json";
+const CONFIG = require(CONFIG_PATH);
 module.exports = class Kintone {
   #host;
   #id;

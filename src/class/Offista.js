@@ -1,7 +1,8 @@
 // Offista.js
 const axios = require("axios");
-const CONFIG_PATH = "../configs/offista_config.json";
+const CONFIG_PATH = "../config/offista_config.json";
 const MONDETORY_EMPLOYEE_PATH = "../templates/json/mandetory_employee.json";
+
 const CONFIG = require(CONFIG_PATH);
 const MONDETORY_EMPLOYEE = require(MONDETORY_EMPLOYEE_PATH);
 module.exports = class Offista {
@@ -28,7 +29,7 @@ module.exports = class Offista {
     if ("product_id" in init_object) this.#product_id = init_object.product_id;
   }
 
-  async create_api_key() {
+  async #create_api_key() {
     let return_obj = { api_key: "", product_key: "" };
     const api_name = "CREATE_API_KEY";
     let body_obj = {
@@ -53,8 +54,14 @@ module.exports = class Offista {
       eml: this.#email,
     };
     const response = await this.#post(api_name, body_obj);
-    if (response.data.result != 200) return "";
-    return_obj = response.data.api_key;
+    if (response.data.api_key == null) {
+      const created = this.#create_api_key();
+      if (created == {}) return "";
+      return created.api_key;
+    } else {
+      if (response.data.result != 200) return "";
+      return_obj = response.data.api_key;
+    }
     return return_obj;
   }
   async get_pid_key() {
@@ -166,11 +173,14 @@ module.exports = class Offista {
     return return_obj;
   }
   async entry_employee(api_key, mut_stid, employees) {
-    let return_obj = false;
+    let return_obj = { is_successed: true, error_message: "" };
     const api_name = "ENTRY_EMPLOYEE";
     if (employees.length > 100) {
       console.error("maximum resist employee num is 100 per request.");
-      return false;
+      return {
+        is_successed: false,
+        error_message: "maximum resist employee num is 100 per request.",
+      };
     }
     const mondetory_keys = Object.keys(MONDETORY_EMPLOYEE);
     for (let i = 0; i < employees.length; i++) {
@@ -180,7 +190,10 @@ module.exports = class Offista {
           console.error(
             `index number ${i} employee object has not a key {${key}}.`
           );
-          return false;
+          return {
+            is_successed: false,
+            error_message: `index number ${i} employee object has not a key {${key}}.`,
+          };
         }
       }
     }
@@ -192,8 +205,12 @@ module.exports = class Offista {
       employees: employees,
     };
     const response = await this.#post(api_name, body_obj);
-    if (response.data.result != 200) return false;
-    return_obj = true;
+    if (response.data.result != 200)
+      return {
+        is_successed: false,
+        error_message: `office station error: failed to entry data.\n"${response.data.error_detail}"`,
+      };
+    return_obj = { is_successed: true, error_message: "" };
     return return_obj;
   }
   async modify_employee(api_key, mut_stid, employees) {
