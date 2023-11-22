@@ -1,10 +1,13 @@
+const API_APP_NAME = "offista_api";
+const IP_ADDR_KINTONE_APITOKEN = "YkCdFk00GMKGMhOPXzikCNJG8433cixmPwh73LY8";
 let server_info = {
   ipAddr: "127.0.0.1",
   port: 3000,
   endpoint: "/sync",
 };
 
-function addSyncButton() {
+async function addSyncButton() {
+  set_offista_server_info();
   console.log("\n\n\n\nadded button\n");
   // 新しいボタン要素を作成
   let newButton = document.createElement("button");
@@ -81,6 +84,26 @@ async function get_offista_server_url() {
   let port = server_info.port;
   let endpoint = server_info.endpoint;
   return `http://${ipAddr}:${port}${endpoint}`;
+}
+async function set_offista_server_info() {
+  const body = {
+    app: 2988,
+    query: `app_name="${API_APP_NAME}" order by レコード番号 desc`,
+  };
+  const result = await kintone.api(
+    kintone.api.url("/k/v1/records.json", true),
+    "GET",
+    body
+  );
+  if (result.records.length == 0) {
+    alert(
+      "IP address is not defined on the kintone database.\nhttps://nkr-group.cybozu.com/k/2988/"
+    );
+    return;
+  }
+  const latest_record = result.records[0];
+  server_info.ipAddr = latest_record.ip_addr.value;
+  server_info.port = latest_record.port.value;
 }
 
 kintone.events.on(

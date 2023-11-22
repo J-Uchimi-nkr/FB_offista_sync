@@ -1,4 +1,4 @@
-module.exports = function getAppInfo(record_url) {
+module.exports = (record_url) => {
   const matchResult = record_url.match(/\/k\/(\d+)\/show#record=(\d+)/);
 
   if (matchResult) {

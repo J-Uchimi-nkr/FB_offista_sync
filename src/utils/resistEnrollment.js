@@ -2,7 +2,7 @@ const OFFISTA_CLASS_PATH = "../class/Offista";
 const MONDETORY_EMPLOYEE_PATH = "../templates/json/mandetory_employee.json";
 const Offista = require(OFFISTA_CLASS_PATH);
 
-module.exports = async function resistEnrollment(record) {
+module.exports = async (record) => {
   let return_obj = { is_successed: true, error_message: "" };
   try {
     const company_name = record["会社名"].value;
