@@ -8,11 +8,19 @@ const GETKINTONERECORD_PATH = UTILS_PATH + "/getKintoneRecord";
 const GETAPPINFO_PATH = UTILS_PATH + "/getInfoFromURL.js";
 const RESISTENROLLMENT_PATH = UTILS_PATH + "/resistEnrollment";
 const RESISTIPADDRKINTONE_PATH = UTILS_PATH + "/resistIPaddrKintone";
+const HTTPS_KEY_PATH = "./cert/cert_server.key";
+const HTTPS_CERT_PATH = "./cert/cert_server.crt";
 
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require("path");
+var fs = require("fs");
+var https = require("https");
+const HTTPS_OPTIONS = {
+  key: fs.readFileSync(HTTPS_KEY_PATH),
+  cert: fs.readFileSync(HTTPS_CERT_PATH),
+};
 const getIPAddr = require(GETIPADDR_PATH);
 const getKintoneRecord = require(GETKINTONERECORD_PATH);
 const getAppInfo = require(GETAPPINFO_PATH);
@@ -97,10 +105,19 @@ APP.use((err, req, res, next) => {
 });
 
 // サーバーを指定のポートで起動;
-APP.listen(SERVER_PORT, BINDING_PORT, async () => {
+// APP.listen(SERVER_PORT, BINDING_PORT, async () => {
+//   this_server_ip_addr = getIPAddr();
+//   await resistIP(2988, APP_NAME, this_server_ip_addr, SERVER_PORT, true);
+//   console.log(
+//     `Server is running on http://${this_server_ip_addr}:${SERVER_PORT}`
+//   );
+// });
+
+const webServer = https.createServer(HTTPS_OPTIONS, APP);
+webServer.listen(SERVER_PORT, BINDING_PORT, async () => {
   this_server_ip_addr = getIPAddr();
   await resistIP(2988, APP_NAME, this_server_ip_addr, SERVER_PORT, true);
   console.log(
-    `Server is running on http://${this_server_ip_addr}:${SERVER_PORT}`
+    `Server is running on https://${this_server_ip_addr}:${SERVER_PORT}`
   );
 });

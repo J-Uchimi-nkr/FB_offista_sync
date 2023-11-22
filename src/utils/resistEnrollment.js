@@ -26,7 +26,7 @@ module.exports = async (record) => {
     }
 
     const mondetory_employee_obj = require(MONDETORY_EMPLOYEE_PATH);
-    mondetory_employee_obj.customer_employee_id = record["レコード番号"].value;
+    mondetory_employee_obj.customer_employee_id = record["社員No"].value;
     mondetory_employee_obj.shi_name = record["姓"].value;
     mondetory_employee_obj.mei_name = record["名"].value;
     mondetory_employee_obj.birthday = record["生年月日"].value;

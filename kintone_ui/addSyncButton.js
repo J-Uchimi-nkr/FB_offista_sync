@@ -1,6 +1,7 @@
 const API_APP_NAME = "offista_api";
 const IP_ADDR_KINTONE_APITOKEN = "YkCdFk00GMKGMhOPXzikCNJG8433cixmPwh73LY8";
 let server_info = {
+  method: "https",
   ipAddr: "127.0.0.1",
   port: 3000,
   endpoint: "/sync",
@@ -80,10 +81,11 @@ async function syncOfficeStation() {
 
 async function get_offista_server_url() {
   //将来的にサーバー同期を取る可能性があるため、ミドルウェアを設置
+  let method = server_info.method;
   let ipAddr = server_info.ipAddr;
   let port = server_info.port;
   let endpoint = server_info.endpoint;
-  return `http://${ipAddr}:${port}${endpoint}`;
+  return `${method}://${ipAddr}:${port}${endpoint}`;
 }
 async function set_offista_server_info() {
   const body = {
