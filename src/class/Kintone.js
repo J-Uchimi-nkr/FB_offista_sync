@@ -1,4 +1,5 @@
 const axios = require("axios");
+const { resourceLimits } = require("worker_threads");
 const CONFIG_PATH = "../config/kintone_config.json";
 const CONFIG = require(CONFIG_PATH);
 module.exports = class Kintone {
@@ -28,22 +29,22 @@ module.exports = class Kintone {
   }
 
   #makeParams(httpMethod, query, jsonType) {
-    let url = `${this.#host}/k/v1/${jsonType}.json`;
-
-    if (jsonType === "app") {
-      url += `?id=${this.#id}`;
-    } else if (jsonType === "records") {
-      url += `?app=${this.#id}&query=${encodeURI(query)}`;
-    }
-
-    const params = {
-      url,
+    let params = {
+      url: `${this.#host}/k/v1/${jsonType}.json`,
       method: httpMethod,
       json: true,
       headers: {
         "X-Cybozu-API-Token": this.#token,
       },
     };
+
+    if (jsonType === "app") {
+      params.url += `?id=${this.#id}`;
+    } else if (jsonType === "records") {
+      params.url += `?app=${this.#id}&query=${encodeURI(query)}`;
+    } else if (jsonType == "app/form/fields") {
+      params.url += `?app=${this.#id}`;
+    }
 
     if (httpMethod === "POST") {
       params.headers["Content-Type"] = "application/json";
@@ -63,11 +64,13 @@ module.exports = class Kintone {
   }
 
   async build() {
-    const row_data = await this.get("");
-    const firstRecord = row_data.records[0];
+    const param = this.#makeParams("GET", "", "app/form/fields");
+    const result = await this.#request(param);
+    console.log(result);
+    const field_data = result.properties;
 
-    Object.keys(firstRecord).forEach((key) => {
-      this.#fieldStructure[key] = firstRecord[key].type;
+    Object.keys(field_data).forEach((key) => {
+      this.#fieldStructure[key] = field_data[key].type;
     });
 
     const params = this.#makeParams("GET", "", "app");
@@ -80,6 +83,7 @@ module.exports = class Kintone {
   }
 
   async post(recordObj) {
+    //({key:value})=>
     const postObj = {};
     Object.keys(recordObj).forEach((key) => {
       postObj[key] = { value: recordObj[key] };

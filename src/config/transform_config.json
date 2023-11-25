@@ -1,0 +1,162 @@
+{
+  "essential": {
+    "from": "kintone",
+    "dest": "offista",
+    "fields": [
+      { "from": "社員No", "dest": "customer_employee_id" },
+      { "from": "本人", "dest": "relationship" },
+      { "from": "生年月日（労働者）", "dest": "birthday" },
+      { "from": "姓（労働者）", "dest": "shi_name" },
+      { "from": "名（労働者）", "dest": "mei_name" },
+      { "from": "ｾｲ(半角ｶﾅ）（労働者）", "dest": "shi_kana", "size": "full" },
+      { "from": "ﾒｲ(半角ｶﾅ)（労働者）", "dest": "mei_kana", "size": "full" },
+      { "from": "性別（労働者）", "dest": "sex" },
+      { "from": "郵便番号（例: 111-2222）", "dest": "zip" },
+      {
+        "from": "住所（都道府県から）",
+        "dest": "prefectures",
+        "size": "full"
+      },
+      {
+        "from": "住所（都道府県から）",
+        "dest": "address1",
+        "size": "full"
+      },
+      {
+        "from": "住所（都道府県から）",
+        "dest": "address2",
+        "size": "full"
+      },
+      {
+        "from": "住所（都道府県から）",
+        "dest": "address3",
+        "size": "full"
+      },
+      {
+        "from": "住所ﾌﾘｶﾞﾅ(半角ｶﾅ)",
+        "dest": "address1_kana",
+        "size": "half"
+      },
+      {
+        "from": "住所ﾌﾘｶﾞﾅ(半角ｶﾅ)",
+        "dest": "address2_kana",
+        "size": "half"
+      },
+      {
+        "from": "住所ﾌﾘｶﾞﾅ(半角ｶﾅ)",
+        "dest": "address3_kana",
+        "size": "half"
+      },
+      { "from": "電話番号（労働者）", "dest": "tel" },
+      { "from": "メールアドレス（労働者）", "dest": "mail_address" }
+    ]
+  },
+  "enroll_residency": {
+    "from": "kintone",
+    "dest": "offista",
+    "fields": [
+      { "from": "外国人区分", "dest": "is_foreigner", "dest_type": "boolean" },
+      { "from": "国籍", "dest": "nationality" },
+      { "from": "ローマ字", "dest": "roman_character_name" },
+      { "from": "在留カードナンバー", "dest": "residence_card_number" },
+      { "from": "在留資格", "dest": "status_residence" },
+      {
+        "from": "在留期間",
+        "dest": "period_stay_to",
+        "dest_type": "YYYY-MM-DD"
+      },
+      {
+        "from": "資格外活動の許可",
+        "dest": "activity_out_qualification",
+        "type": "int"
+      },
+      {
+        "from": "派遣・請負の区分",
+        "dest": "dispatch_contract_working_classification",
+        "type": "int"
+      }
+    ]
+  },
+  "enroll_social_insurance": {
+    "from": "kintone",
+    "dest": "offista",
+    "fields": [
+      { "from": "基礎年金番号（数字4桁-数字6桁）", "dest": "basic_pension_no" },
+      { "from": "入社年月日（労働者）", "dest": "entering_company_date" },
+      {
+        "from": "入社時:社会保険",
+        "dest": "health_division",
+        "type": "boolean"
+      },
+      { "from": "社会保険取得年月日", "dest": "get_date_health" },
+      { "from": "社保喪失年月日", "dest": "loss_date_health" },
+      {
+        "from": "入社時:社会保険",
+        "dest": "welfare_annuity_division",
+        "type": "boolean"
+      },
+      { "from": "社会保険取得年月日", "dest": "get_date_welfare_annuity" },
+      { "from": "社保喪失年月日", "dest": "loss_date_welfare_annuity" },
+      {
+        "from": "１ヶ月の賃金見込額（※月額賃金には残業、非課税分、変動分含めた大体の月額の総額を入力してください。）",
+        "dest": "monthly_remuneration_currency"
+      },
+      {
+        "from": "１ヶ月の賃金見込額（※月額賃金には残業、非課税分、変動分含めた大体の月額の総額を入力してください。）",
+        "dest": "monthly_wage",
+        "type": "divide by 1000"
+      }
+    ]
+  },
+  "enroll_employment_insurance": {
+    "from": "kintone",
+    "dest": "offista",
+    "fields": [
+      { "from": "基礎年金番号がない・わからない場合チェック", "dest": "memo" },
+      { "from": "雇用保険被保険者番号が不明な場合は前職名", "dest": "memo" },
+      { "from": "前職退職日", "dest": "memo" },
+      { "from": "雇用形態", "dest": "memo" },
+      { "from": "給与形態", "dest": "memo" },
+      { "from": "週所定　労働時間（例40：00）", "dest": "memo" },
+      {
+        "from": "入社時:雇用保険",
+        "dest": "employment_insurance_division",
+        "type": "boolean"
+      },
+      { "from": "雇用保険取得年月日", "dest": "grant_date" },
+      { "from": "雇保喪失年月日", "dest": "turnover_date" },
+      {
+        "from": "雇用保険被保険者番号（数字4桁-数字6桁-数字1桁）",
+        "dest": "insured_number_employ"
+      },
+      {
+        "from": "契約期間",
+        "dest": "contract_period_determined",
+        "type": "boolean"
+      },
+      { "from": "契約開始日", "dest": "contract_period_from" },
+      { "from": "契約終了日", "dest": "contract_period_to" }
+    ]
+  },
+  "retire": {
+    "from": "kintone",
+    "dest": "offista",
+    "fields": [
+      { "from": "離職票交付", "dest": "memo" },
+      { "from": "離職票送り先", "dest": "memo" },
+      {
+        "from": "離職後の住所が登録住所と異なる場合、〒および住所",
+        "dest": "memo"
+      },
+      { "from": "具体的な離職理由", "dest": "memo" },
+      { "from": "健康保険任意継続", "dest": "memo" },
+      { "from": "一回の契約期間", "dest": "memo" },
+      { "from": "契約の更新回数", "dest": "memo" },
+      { "from": "通算の契約期間", "dest": "memo" },
+      { "from": "前回の契約更新時に次回の更新について", "dest": "memo" },
+      { "from": "労働者の意思表示", "dest": "memo" },
+      { "from": "退職年月日", "dest": "leave_company_date" },
+      { "from": "離職理由", "dest": "loss_qualification_reason_employ" }
+    ]
+  }
+}

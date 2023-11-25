@@ -1,7 +1,7 @@
 const KINTONE_CLASS_PATH = "../class/Kintone";
 const Kintone = require(KINTONE_CLASS_PATH);
 
-module.exports = async function getKintoneRecord(app_id, record_id) {
+module.exports = async (app_id, record_id) => {
   const c = new Kintone(app_id);
   await c.build();
   const query_str = `レコード番号=${record_id}`;
