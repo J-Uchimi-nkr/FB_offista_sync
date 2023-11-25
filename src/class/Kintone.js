@@ -66,7 +66,6 @@ module.exports = class Kintone {
   async build() {
     const param = this.#makeParams("GET", "", "app/form/fields");
     const result = await this.#request(param);
-    console.log(result);
     const field_data = result.properties;
 
     Object.keys(field_data).forEach((key) => {
