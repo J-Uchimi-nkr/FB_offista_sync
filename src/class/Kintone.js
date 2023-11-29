@@ -19,7 +19,7 @@ module.exports = class Kintone {
     if (CONFIG.ids && CONFIG.ids[id] && CONFIG.ids[id].api_token) {
       return CONFIG.ids[id].api_token;
     } else {
-      return new Error(`Token not found for ID: ${id}`);
+      return "";
     }
   }
 
