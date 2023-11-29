@@ -1,8 +1,10 @@
 const KANACONVERTER_PATH = "../class/KanaConverter";
 const TRANSFER_LIST_PATH = "../templates/json/transfer_field_list.json";
+const OFFISTA_CLASS_PATH = "../class/Offista";
 const KanaConverter_class = require(KANACONVERTER_PATH);
 const TRANSFER_LIST = require(TRANSFER_LIST_PATH);
 const KanaConverter = new KanaConverter_class();
+const Offista = require(OFFISTA_CLASS_PATH);
 
 const GETKINTONERECORD_PATH = "./getKintoneRecord";
 const getKintoneRecord = require(GETKINTONERECORD_PATH);
@@ -75,12 +77,14 @@ function get_enroll_offista_data(record) {
           case "activity_out_qualification":
             if (value === "有") value = 1;
             else if (value === "無") value = 2;
-            else value = 0;
             break;
           case "dispatch_contract_working_classification":
             if (value === "該当する") value = 1;
             else if (value === "該当しない") value = 2;
-            else value = 0;
+            break;
+          case "sex":
+            if (value === "男") value = 1;
+            else if (value === "女") value = 2;
             break;
           default:
             console.error(`"${type}/${dest}" is not defined in this program.`);
@@ -95,15 +99,59 @@ function get_enroll_offista_data(record) {
         console.error(`the type "${type}/${dest}" is not defined in program`);
         return;
     }
-    return_obj[dest] = value;
+    if (dest === "memo") return_obj[dest] = `${from}=${value}\n`;
+    else return_obj[dest] = value;
   });
   return return_obj;
 }
 
+async function upload(company_name, data_obj) {
+  const offista_instance = new Offista({ is_dumpLog: true });
+  const api_key = await offista_instance.get_api_key();
+  let result = await offista_instance.get_consignment_customer(api_key);
+
+  let station_id = "";
+  result.forEach((element) => {
+    if (element.customer_name === company_name) station_id = element.identifier;
+  });
+  if (station_id === "") {
+    console.error(
+      `"${company_name}" is not defined on the office station server.`
+    );
+    return {
+      is_successed: false,
+      error_message: `"${company_name}" is not defined on the office station server.`,
+    };
+  }
+  try {
+    const resist_result = await offista_instance.entry_employee(
+      api_key,
+      station_id,
+      [data_obj]
+    );
+    if (resist_result.is_successed == false) {
+      console.error("failed to entry employee data.");
+      return {
+        is_successed: false,
+        error_message: resist_result.error_message,
+      };
+    }
+    return { is_successed: true, error_message: "" };
+  } catch (e) {
+    console.error(e);
+    return { is_successed: false, error_message: e };
+  }
+}
+
 async function demo() {
-  const record = await getKintoneRecord(1240, 8779);
+  //URLから情報を抜き出す
+  const app_id = 1240;
+  const record_num = 8779;
+  const record = await getKintoneRecord(app_id, record_num);
+  const company_name = record["会社名"].value;
   const enroll_offista_data = get_enroll_offista_data(record);
   console.log(enroll_offista_data);
+  upload(company_name, enroll_offista_data);
 }
 
 demo();

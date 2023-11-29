@@ -9,7 +9,7 @@
       { "from": "名", "dest": "mei_name" },
       { "from": "ｾｲ", "dest": "shi_kana", "type": "full" },
       { "from": "ﾒｲ", "dest": "mei_kana", "type": "full" },
-      { "from": "性別", "dest": "sex" },
+      { "from": "性別", "dest": "sex", "type": "int" },
       { "from": "郵便番号", "dest": "zip" },
       {
         "from": "住所",

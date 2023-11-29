@@ -70,8 +70,10 @@ async function syncOfficeStation() {
       alert(`failed to sync.\n\ndetail: \n${error_message}`);
     }
   } catch (error) {
-    console.error("Error:", error);
-    alert(`failed to sync\n\ndetail: \n${error}`);
+    console.error("syncOfficeStation Error:", error);
+    const permit_message = `please move to under URL and permit access.\n(click "back to unsecure page")\nhttps://${server_info.ipAddr}:${server_info.port}`;
+    window.open(`https://${server_info.ipAddr}:${server_info.port}`);
+    alert(`failed to sync\n\ndetail: \n${error}\n\n${permit_message}`);
     // エラー処理を行う
   } finally {
     newButton.style.backgroundColor = "green"; // ボタンを元に戻す
