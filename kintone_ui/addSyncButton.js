@@ -71,7 +71,7 @@ async function syncOfficeStation() {
     }
   } catch (error) {
     console.error("syncOfficeStation Error:", error);
-    const message = `このダイアログを閉じると認証ページが開きます。\n->画面左下の「詳細設定」\n->${server_info.ipAddr}にアクセスする（安全ではありません）\nの順にクリックしてください。\n（Google Chromeの場合の操作例です）`;
+    const message = `このダイアログを閉じると認証ページが開きます。\n->画面左下の「詳細設定」\n->${server_info.ipAddr}にアクセスする（安全ではありません）\nの順にクリックしてください。\n（Google Chromeの場合の操作例です）\n\nポップアップブロックが作動した場合は解除してください`;
     alert(`failed to sync\n\ndetail: \n${error}\n\n${message}`);
     window.open(`https://${server_info.ipAddr}:${server_info.port}`);
     // エラー処理を行う
@@ -99,11 +99,15 @@ async function set_offista_server_info() {
     "GET",
     body
   );
-  if (result.records.length == 0) {
-    alert(
-      "IP address is not defined on the kintone database.\nhttps://nkr-group.cybozu.com/k/2988/"
-    );
-    return;
+  try {
+    if (result.records.length == 0) {
+      alert(
+        "IP address is not defined on the kintone database.\nhttps://nkr-group.cybozu.com/k/2988/"
+      );
+      return;
+    }
+  } catch (e) {
+    console.log(e);
   }
   const latest_record = result.records[0];
   server_info.ipAddr = latest_record.ip_addr.value;

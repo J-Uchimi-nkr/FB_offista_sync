@@ -5,12 +5,13 @@ const MONDETORY_EMPLOYEE_PATH = "../templates/json/mandetory_employee.json";
 
 const CONFIG = require(CONFIG_PATH);
 const MONDETORY_EMPLOYEE = require(MONDETORY_EMPLOYEE_PATH);
+const USER_NAME = "pro1";
 module.exports = class Offista {
-  #endpoint = CONFIG.demo_endpoint;
+  #endpoint = CONFIG.service_endpoint;
   #rn_list = CONFIG.rn_list;
-  #station_id = CONFIG.users[0].station_id;
-  #login_id = CONFIG.users[0].login_id;
-  #login_pass = CONFIG.users[0].login_pass;
+  #station_id = CONFIG.users[USER_NAME].station_id;
+  #login_id = CONFIG.users[USER_NAME].login_id;
+  #login_pass = CONFIG.users[USER_NAME].login_pass;
   #product_id = CONFIG.product_id;
   #email = CONFIG.email;
   #dump_log = false;
