@@ -7,9 +7,10 @@ const GETIPADDR_PATH = UTILS_PATH + "/getIPAddr";
 const GETKINTONERECORD_PATH = UTILS_PATH + "/getKintoneRecord";
 const GETAPPINFO_PATH = UTILS_PATH + "/getInfoFromURL.js";
 const RESISTENROLLMENT_PATH = UTILS_PATH + "/resistEnrollment";
+const DATAUPLOADER_PATH = "./class/DataUploader.js";
 const RESISTIPADDRKINTONE_PATH = UTILS_PATH + "/resistIPaddrKintone";
-const HTTPS_KEY_PATH = "./cert/cert_server.key";
-const HTTPS_CERT_PATH = "./cert/cert_server.crt";
+const HTTPS_KEY_PATH = "./src/cert/cert_server.key";
+const HTTPS_CERT_PATH = "./src/cert/cert_server.crt";
 
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -31,7 +32,8 @@ const BINDING_PORT = SERVER_CONFIG.binding_port;
 const GENERAL_CONFIG = require(GENERAL_CONFIG_PATH);
 const APP_NAME = GENERAL_CONFIG.app_name;
 const resistIP = require(RESISTIPADDRKINTONE_PATH);
-
+const DataUploader = require(DATAUPLOADER_PATH);
+const data_uploader = new DataUploader();
 let this_server_ip_addr = "";
 
 const APP = express();
@@ -57,6 +59,7 @@ APP.post("/sync", async (req, res) => {
     });
     return;
   }
+
   const record = await getKintoneRecord(app_info.app_id, app_info.record_id);
   if (record == []) {
     res.status(500).json({
@@ -66,7 +69,7 @@ APP.post("/sync", async (req, res) => {
     return;
   }
 
-  const resist_enrollment_result = await resistEnrollment(record);
+  const resist_enrollment_result = await data_uploader.resistEnroll(record);
   if (resist_enrollment_result.is_successed == false) {
     res.status(500).json({
       message: resist_enrollment_result.error_message,
@@ -77,6 +80,18 @@ APP.post("/sync", async (req, res) => {
     message: JSON.stringify(record),
   });
   return;
+
+  // const resist_enrollment_result = await resistEnrollment(record);
+  // if (resist_enrollment_result.is_successed == false) {
+  //   res.status(500).json({
+  //     message: resist_enrollment_result.error_message,
+  //   });
+  //   return;
+  // }
+  // res.status(200).json({
+  //   message: JSON.stringify(record),
+  // });
+  // return;
 });
 
 // 404エラーが発生した際に呼び出されるハンドラ

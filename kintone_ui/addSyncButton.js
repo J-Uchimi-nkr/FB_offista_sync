@@ -71,9 +71,9 @@ async function syncOfficeStation() {
     }
   } catch (error) {
     console.error("syncOfficeStation Error:", error);
-    const permit_message = `please move to under URL and permit access.\n(click "back to unsecure page")\nhttps://${server_info.ipAddr}:${server_info.port}`;
+    const message = `このダイアログを閉じると認証ページが開きます。\n->画面左下の「詳細設定」\n->${server_info.ipAddr}にアクセスする（安全ではありません）\nの順にクリックしてください。\n（Google Chromeの場合の操作例です。Edge等も同様です。）`;
+    alert(`failed to sync\n\ndetail: \n${error}\n\n${message}`);
     window.open(`https://${server_info.ipAddr}:${server_info.port}`);
-    alert(`failed to sync\n\ndetail: \n${error}\n\n${permit_message}`);
     // エラー処理を行う
   } finally {
     newButton.style.backgroundColor = "green"; // ボタンを元に戻す
