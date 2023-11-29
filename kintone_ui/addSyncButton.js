@@ -70,8 +70,10 @@ async function syncOfficeStation() {
       alert(`failed to sync.\n\ndetail: \n${error_message}`);
     }
   } catch (error) {
-    console.error("Error:", error);
-    alert(`failed to sync\n\ndetail: \n${error}`);
+    console.error("syncOfficeStation Error:", error);
+    const message = `このダイアログを閉じると認証ページが開きます。\n->画面左下の「詳細設定」\n->${server_info.ipAddr}にアクセスする（安全ではありません）\nの順にクリックしてください。\n（Google Chromeの場合の操作例です）`;
+    alert(`failed to sync\n\ndetail: \n${error}\n\n${message}`);
+    window.open(`https://${server_info.ipAddr}:${server_info.port}`);
     // エラー処理を行う
   } finally {
     newButton.style.backgroundColor = "green"; // ボタンを元に戻す

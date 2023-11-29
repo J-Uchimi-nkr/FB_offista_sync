@@ -16,15 +16,10 @@ module.exports = class Kintone {
   }
 
   #getToken(id) {
-    try {
-      if (CONFIG.ids && CONFIG.ids[id] && CONFIG.ids[id].api_token) {
-        return CONFIG.ids[id].api_token;
-      } else {
-        throw new Error(`Token not found for ID: ${id}`);
-      }
-    } catch (error) {
-      console.error(error);
-      throw new Error("Error reading configuration or token not found");
+    if (CONFIG.ids && CONFIG.ids[id] && CONFIG.ids[id].api_token) {
+      return CONFIG.ids[id].api_token;
+    } else {
+      return new Error(`Token not found for ID: ${id}`);
     }
   }
 
@@ -59,26 +54,33 @@ module.exports = class Kintone {
       return response.data;
     } catch (error) {
       console.error(error);
-      throw new Error("Fetch error");
+      return new Error("Fetch error");
     }
   }
 
   async build() {
-    const param = this.#makeParams("GET", "", "app/form/fields");
-    const result = await this.#request(param);
-    const field_data = result.properties;
-
-    Object.keys(field_data).forEach((key) => {
-      this.#fieldStructure[key] = field_data[key].type;
-    });
-
-    const params = this.#makeParams("GET", "", "app");
-    this.#appInfo = await this.#request(params);
+    try {
+      const param = this.#makeParams("GET", "", "app/form/fields");
+      const result = await this.#request(param);
+      const field_data = result.properties;
+      Object.keys(field_data).forEach((key) => {
+        this.#fieldStructure[key] = field_data[key].type;
+      });
+      const params = this.#makeParams("GET", "", "app");
+      this.#appInfo = await this.#request(params);
+    } catch (e) {
+      return new Error("failed to build Kintone class");
+    }
   }
 
   async get(queryStr) {
     const params = this.#makeParams("GET", queryStr, "records");
-    return this.#request(params);
+    try {
+      const result = await this.#request(params);
+      return result;
+    } catch (e) {
+      return new Error("failed to get Kintone record");
+    }
   }
 
   async post(recordObj) {
@@ -96,9 +98,12 @@ module.exports = class Kintone {
     const params = this.#makeParams("POST", "", "record");
     params.data = postData;
 
-    console.log(params);
-
-    return this.#request(params);
+    try {
+      const result = await this.#request(params);
+      return result;
+    } catch (e) {
+      return new Error("failed to post to Kintone database");
+    }
   }
 
   getParams() {
