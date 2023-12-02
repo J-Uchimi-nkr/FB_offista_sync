@@ -1,4 +1,5 @@
 {
+  "user_name": "dev1",
   "demo_endpoint": "https://api-demo.mnsta.com",
   "service_endpoint": "https://service.officestation.jp",
   "rn_list": [
@@ -21,26 +22,30 @@
   ],
   "users": {
     "dev1": {
+      "endpoint_name": "demo_endpoint",
       "station_id": "e8e8w7",
       "login_id": "nkr-test",
       "login_pass": "gycd7z92"
     },
     "dev2": {
+      "endpoint_name": "demo_endpoint",
       "station_id": "83p358",
       "login_id": "nkr-test",
       "login_pass": "4Wu3uECo"
     },
     "pro1": {
+      "endpoint_name": "service_endpoint",
       "station_id": "5w7a87",
       "login_id": "5wcsewsdg4",
       "login_pass": "fqn33Pzz"
     },
     "pro2": {
+      "endpoint_name": "service_endpoint",
       "station_id": "5w7a87",
       "login_id": "nkr002",
       "login_pass": "pcf12345"
     }
   },
-  "product_id": "sample",
+  "product_id": "nkr-offista-kintone-apiServer",
   "email": "k-tokura@nkr-group.com"
 }

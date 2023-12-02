@@ -10,7 +10,7 @@
       { "from": "ｾｲ", "dest": "shi_kana", "type": "full" },
       { "from": "ﾒｲ", "dest": "mei_kana", "type": "full" },
       { "from": "性別", "dest": "sex", "type": "int" },
-      { "from": "郵便番号", "dest": "zip" },
+      { "from": "郵便番号", "dest": "zip", "type": "insert tel hyphen" },
       {
         "from": "住所",
         "dest": "address1"
@@ -53,7 +53,11 @@
     "from": "kintone",
     "dest": "offista",
     "fields": [
-      { "from": "基礎年金番号", "dest": "basic_pension_no" },
+      {
+        "from": "基礎年金番号",
+        "dest": "basic_pension_no",
+        "type": "remove hyphen"
+      },
       { "from": "入社年月日", "dest": "entering_company_date" },
       {
         "from": "入社時社会保険",
