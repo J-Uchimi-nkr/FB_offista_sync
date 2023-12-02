@@ -91,6 +91,19 @@ module.exports = class DataUploader {
         case "divide by 1000":
           value = String(Number(value) / 1000);
           break;
+        case "remove hyphen":
+          value = value.replaceAll("-", "");
+          break;
+        case "insert tel hyphen":
+          if (!value.includes("-")) {
+            let formattedNumber =
+              value.substring(0, 3) +
+              "-" +
+              value.substring(3, 7) +
+              "-" +
+              value.substring(7);
+          }
+          break;
         default:
           console.error(`the type "${type}/${dest}" is not defined in program`);
           return;
@@ -157,13 +170,51 @@ module.exports = class DataUploader {
         console.error(
           `Failed to entry employee data.\n${resistResult.error_message}`
         );
+        if (
+          resistResult.error_message.includes(
+            "既に登録されている従業員が存在します"
+          )
+        ) {
+          return this.update(companyName, dataObj);
+        } else
+          return {
+            is_successed: false,
+            error_message: resistResult.error_message,
+          };
+      }
+
+      return { is_successed: true, error_message: "" };
+    } catch (e) {
+      console.error(e);
+      return { is_successed: false, error_message: e.message || e };
+    }
+  }
+
+  async update(companyName, dataObj) {
+    if (this.apiKey == undefined)
+      this.apiKey = await this.offistaInstance.get_api_key();
+    this.stationId = await this.checkCompanyResist(companyName);
+    if (this.stationId === "")
+      return {
+        is_successed: false,
+        error_message: `"${companyName}" is not defined on the office station server.`,
+      };
+    try {
+      const resistResult = await this.offistaInstance.modify_employee(
+        this.apiKey,
+        this.stationId,
+        [dataObj]
+      );
+
+      if (!resistResult.is_successed) {
+        console.error(
+          `Failed to modefy employee data.\n${resistResult.error_message}`
+        );
         return {
           is_successed: false,
           error_message: resistResult.error_message,
         };
-      }
-
-      return { is_successed: true, error_message: "" };
+      } else return { is_successed: true, error_message: "" };
     } catch (e) {
       console.error(e);
       return { is_successed: false, error_message: e.message || e };
