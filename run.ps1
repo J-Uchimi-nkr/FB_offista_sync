@@ -2,6 +2,7 @@
 
 # パスを指定
 $path = pwd
+
 # パスに移動
 cd $path\src\cert
 
