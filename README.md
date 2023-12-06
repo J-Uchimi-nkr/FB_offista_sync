@@ -1,2 +1,3 @@
 > [!NOTE] dependance file
-> please clone [this](https://github.com/kento-nkr/open_port) file and run before this script
+
+> Clone [this](https://github.com/kento-nkr/open_port) file into windows and use Powershell to run it before your server script.
