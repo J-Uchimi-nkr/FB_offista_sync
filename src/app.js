@@ -96,6 +96,8 @@ APP.post("/sync", async (req, res) => {
 
 // 404エラーが発生した際に呼び出されるハンドラ
 APP.use((req, res, next) => {
+  let request_info = `method:${req.method}, endpoint:${req.url}, ip:${req.ip}`;
+  console.log(`Undefined access comming.\n${request_info}`);
   res.status(404);
   if (req.method === "GET") {
     try {
