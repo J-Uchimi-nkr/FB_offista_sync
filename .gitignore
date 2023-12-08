@@ -3,3 +3,4 @@ debug.*
 src/cert/*.crt
 src/cert/*.csr
 src/cert/*.key
+src/log/*

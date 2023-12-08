@@ -8,7 +8,7 @@ const Offista = require(OFFISTA_CLASS_PATH);
 
 module.exports = class DataUploader {
   constructor() {
-    this.offistaInstance = new Offista({ is_dumpLog: true });
+    this.offistaInstance = new Offista({ is_dumpLog: false });
   }
 
   convertKintoneToOffista(kintoneRecord, transferFields) {
@@ -102,6 +102,7 @@ module.exports = class DataUploader {
               value.substring(3, 7) +
               "-" +
               value.substring(7);
+            value = formattedNumber;
           }
           break;
         default:

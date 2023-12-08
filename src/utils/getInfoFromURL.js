@@ -4,11 +4,9 @@ module.exports = (record_url) => {
   if (matchResult) {
     const app_id = matchResult[1];
     const record_id = matchResult[2];
-    console.log("app_id:", app_id);
-    console.log("record_id:", record_id);
     return { app_id: app_id, record_id: record_id };
   } else {
-    console.log("URLからapp_idとrecord_idを取得できませんでした。");
+    console.log("failed to get app_id and record_num from record_url");
     return {};
   }
 };
