@@ -62,22 +62,22 @@ APP.post("/sync", async (req, res) => {
   };
   try {
     if (jsonData["record_url"] == undefined)
-      new Error("record_url is necessary in the post data");
+      throw new Error("record_url is necessary in the post data");
     const app_info = getAppInfo(jsonData["record_url"]);
     if (
       !app_info ||
       app_info.app_id == undefined ||
       app_info.record_id == undefined
     )
-      new Error("internal server error: incorrect app_info.");
+      throw new Error("internal server error: incorrect app_info.");
     const record = await getKintoneRecord(app_info.app_id, app_info.record_id);
     if (record == [])
-      new Error(
+      throw new Error(
         "internal server error: failed to get record from kintone server."
       );
     const resist_enrollment_result = await data_uploader.resistEnroll(record);
     if (resist_enrollment_result.is_successed == false)
-      new Error(resist_enrollment_result.error_message);
+      throw new Error(resist_enrollment_result.error_message);
     newData.res = record;
     newData.statusCode = 200;
     res.status(200).json({
@@ -87,7 +87,7 @@ APP.post("/sync", async (req, res) => {
     newData.res = e;
     newData.statusCode = 500;
     res.status(500).json({
-      message: JSON.stringify({ message: e }),
+      message: JSON.stringify({ message:e.message }),
     });
   }
   update_log_file(newData);
@@ -170,7 +170,7 @@ function make_log_file() {
   // ファイルにJSONデータを書き込む
   fs.writeFile(LOG_FILE_PATH, JSON.stringify(jsonData, null, 2), (err) => {
     if (err) {
-      new Error("faild to make server log file");
+      throw new Error("faild to make server log file");
     }
   });
 }
