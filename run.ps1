@@ -7,7 +7,7 @@ $path = pwd
 cd $path\src\cert
 
 # 証明書生成スクリプトを実行
-.\generate_cert.ps1
+.\generate.ps1
 
 # パスに移動
 cd $path
