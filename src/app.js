@@ -138,10 +138,9 @@ if (SERVER_PROTOCOL === "https") {
   // サーバーをHTTPの指定のポートで起動;
   APP.listen(SERVER_PORT, BINDING_PORT, async () => {
     this_server_ip_addr = getIPAddr();
-    await resistIP(2988, APP_NAME, this_server_ip_addr, SERVER_PORT, true);
-    console.log(
-      `Server is running on http://${this_server_ip_addr}:${SERVER_PORT}`
-    );
+    make_log_file();
+    update_alive();
+    setInterval(update_alive, REPORT_ALIVE_INTERVAL);
   });
 }
 
