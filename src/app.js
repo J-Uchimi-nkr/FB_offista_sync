@@ -84,7 +84,7 @@ APP.post("/sync", async (req, res) => {
       message: JSON.stringify(record),
     });
   } catch (e) {
-    newData.res = e;
+    newData.res = e.message;
     newData.statusCode = 500;
     res.status(500).json({
       message: JSON.stringify({ message:e.message }),
