@@ -20,7 +20,7 @@
         "dest": "address1_kana",
         "type": "full"
       },
-      { "from": "電話番号", "dest": "tel" },
+      { "from": "電話番号", "dest": "tel", "type": "insert tel hyphen" },
       { "from": "メールアドレス", "dest": "mail_address" }
     ]
   },
