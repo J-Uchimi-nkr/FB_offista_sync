@@ -1,4 +1,6 @@
 {
-  "port": 3000,
-  "binding_port": "0.0.0.0"
+  "port": 80,
+  "binding_port": "0.0.0.0",
+  "protocol": "https",
+  "report_alive_interval": 60000
 }

@@ -16,8 +16,10 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require("path");
-var fs = require("fs");
-var https = require("https");
+const fs = require("fs");
+const https = require("https");
+const { v4: uuidv4 } = require("uuid");
+const SERVER_UUID = uuidv4();
 const HTTPS_OPTIONS = {
   key: fs.readFileSync(HTTPS_KEY_PATH),
   cert: fs.readFileSync(HTTPS_CERT_PATH),
@@ -29,11 +31,17 @@ const resistEnrollment = require(RESISTENROLLMENT_PATH);
 const SERVER_CONFIG = require(SERVER_CONFIG_PATH);
 const SERVER_PORT = SERVER_CONFIG.port;
 const BINDING_PORT = SERVER_CONFIG.binding_port;
+const SERVER_PROTOCOL = SERVER_CONFIG.protocol;
+const REPORT_ALIVE_INTERVAL = SERVER_CONFIG.report_alive_interval;
 const GENERAL_CONFIG = require(GENERAL_CONFIG_PATH);
 const APP_NAME = GENERAL_CONFIG.app_name;
 const resistIP = require(RESISTIPADDRKINTONE_PATH);
 const DataUploader = require(DATAUPLOADER_PATH);
 const data_uploader = new DataUploader();
+const LOG_FILE_PATH = `./src/log/${new Date()
+  .toISOString()
+  .slice(0, 10)
+  .replace(/-/g, "")}_${SERVER_UUID}.json`;
 let this_server_ip_addr = "";
 
 const APP = express();
@@ -42,101 +50,149 @@ APP.use(bodyParser.json()); // JSONを解析するためのミドルウェアを
 
 APP.post("/sync", async (req, res) => {
   const jsonData = req.body;
-  if (jsonData["record_url"] == undefined) {
-    res.status(500).json({
-      message: "record_url is necessary in the post data",
+  const newData = {
+    time: new Date().toISOString(),
+    from: req.ip,
+    originalUrl: req.originalUrl,
+    method: req.method,
+    body: req.body,
+    referrer: req.get("Referer"),
+    statusCode: 200,
+    res: "",
+  };
+  try {
+    if (jsonData["record_url"] == undefined)
+      new Error("record_url is necessary in the post data");
+    const app_info = getAppInfo(jsonData["record_url"]);
+    if (
+      !app_info ||
+      app_info.app_id == undefined ||
+      app_info.record_id == undefined
+    )
+      new Error("internal server error: incorrect app_info.");
+    const record = await getKintoneRecord(app_info.app_id, app_info.record_id);
+    if (record == [])
+      new Error(
+        "internal server error: failed to get record from kintone server."
+      );
+    const resist_enrollment_result = await data_uploader.resistEnroll(record);
+    if (resist_enrollment_result.is_successed == false)
+      new Error(resist_enrollment_result.error_message);
+    newData.res = record;
+    newData.statusCode = 200;
+    res.status(200).json({
+      message: JSON.stringify(record),
     });
-    return;
-  }
-  const app_info = getAppInfo(jsonData["record_url"]);
-  if (
-    !app_info ||
-    app_info.app_id == undefined ||
-    app_info.record_id == undefined
-  ) {
+  } catch (e) {
+    newData.res = e;
+    newData.statusCode = 500;
     res.status(500).json({
-      message: "internal server error: incorrect app_info.",
+      message: JSON.stringify({ message: e }),
     });
-    return;
   }
-
-  const record = await getKintoneRecord(app_info.app_id, app_info.record_id);
-  if (record == []) {
-    res.status(500).json({
-      message:
-        "internal server error: failed to get record from kintone server.",
-    });
-    return;
-  }
-
-  const resist_enrollment_result = await data_uploader.resistEnroll(record);
-  if (resist_enrollment_result.is_successed == false) {
-    res.status(500).json({
-      message: resist_enrollment_result.error_message,
-    });
-    return;
-  }
-  res.status(200).json({
-    message: JSON.stringify(record),
-  });
+  update_log_file(newData);
   return;
-
-  // const resist_enrollment_result = await resistEnrollment(record);
-  // if (resist_enrollment_result.is_successed == false) {
-  //   res.status(500).json({
-  //     message: resist_enrollment_result.error_message,
-  //   });
-  //   return;
-  // }
-  // res.status(200).json({
-  //   message: JSON.stringify(record),
-  // });
-  // return;
 });
 
 // 404エラーが発生した際に呼び出されるハンドラ
-APP.use((req, res, next) => {
-  let request_info = `method:${req.method}, endpoint:${
-    req.url
-  }, ${JSON.stringify(req.headers)}`;
-  console.log(`Undefined access comming.\n${request_info}`);
-  res.status(404);
+APP.use((req, res) => {
+  const newData = {
+    time: new Date().toISOString(),
+    from: req.ip,
+    originalUrl: req.originalUrl,
+    method: req.method,
+    body: req.body,
+    referrer: req.get("Referer"),
+    res: "",
+  };
   if (req.method === "GET") {
+    const absolutePath = path.join(__dirname, ERROR_HTML_PATH);
     try {
-      const absolutePath = path.join(__dirname, ERROR_HTML_PATH);
-      res.sendFile(absolutePath);
-      return;
+      res.status(404).sendFile(absolutePath);
+      newData.res = `endpoint=${req.originalUrl} is not defined in server`;
+      newData.statusCode = 404;
     } catch (e) {
-      next(e);
+      console.error(e.stack);
+      newData.res = `failed to load file: ${absolutePath}`;
+      res.sendStatus(500);
+      newData.statusCode = 500;
     }
   } else {
-    res.json({ error: "404 Not Found" });
-    return;
+    newData.res = `endpoint=${req.originalUrl} is not defined in server`;
+    newData.statusCode = 404;
+    res.status(404).json({ error: "404 Not Found" });
   }
-});
-
-// Internal Server Error ハンドリング
-APP.use((err, req, res, next) => {
-  console.error(err.stack);
-  const absolutePath = path.join(__dirname, INTERNAL_SERVER_ERROR_PATH);
-  res.status(500).sendFile(absolutePath);
+  update_log_file(newData);
   return;
 });
 
-// サーバーを指定のポートで起動;
-// APP.listen(SERVER_PORT, BINDING_PORT, async () => {
-//   this_server_ip_addr = getIPAddr();
-//   await resistIP(2988, APP_NAME, this_server_ip_addr, SERVER_PORT, true);
-//   console.log(
-//     `Server is running on http://${this_server_ip_addr}:${SERVER_PORT}`
-//   );
-// });
+if (SERVER_PROTOCOL === "https") {
+  // HTTPSで起動
+  const webServer = https.createServer(HTTPS_OPTIONS, APP);
+  webServer.listen(SERVER_PORT, BINDING_PORT, async () => {
+    make_log_file();
+    update_alive();
+    setInterval(update_alive, REPORT_ALIVE_INTERVAL);
+  });
+} else if (SERVER_PROTOCOL === "http") {
+  // サーバーをHTTPの指定のポートで起動;
+  APP.listen(SERVER_PORT, BINDING_PORT, async () => {
+    this_server_ip_addr = getIPAddr();
+    await resistIP(2988, APP_NAME, this_server_ip_addr, SERVER_PORT, true);
+    console.log(
+      `Server is running on http://${this_server_ip_addr}:${SERVER_PORT}`
+    );
+  });
+}
 
-const webServer = https.createServer(HTTPS_OPTIONS, APP);
-webServer.listen(SERVER_PORT, BINDING_PORT, async () => {
+async function update_alive() {
   this_server_ip_addr = getIPAddr();
-  await resistIP(2988, APP_NAME, this_server_ip_addr, SERVER_PORT, true);
   console.log(
     `Server is running on https://${this_server_ip_addr}:${SERVER_PORT}`
   );
-});
+  const arg_obj = {
+    app_id: 2988,
+    uuid: SERVER_UUID,
+    app_name: APP_NAME,
+    ip_addr: this_server_ip_addr,
+    port: SERVER_PORT,
+    is_active: true,
+    dump_info: false,
+  };
+  const report_response = await resistIP(arg_obj);
+  if (report_response) console.log(`report alive: ${new Date()}`);
+  else {
+    console.log("report alive error");
+  }
+}
+
+function make_log_file() {
+  const jsonData = [];
+  // ファイルにJSONデータを書き込む
+  fs.writeFile(LOG_FILE_PATH, JSON.stringify(jsonData, null, 2), (err) => {
+    if (err) {
+      new Error("faild to make server log file");
+    }
+  });
+}
+
+function update_log_file(newData) {
+  try {
+    // 既存のJSONファイルを読み込む
+    let existingData = [];
+    if (fs.existsSync(LOG_FILE_PATH)) {
+      const fileContent = fs.readFileSync(LOG_FILE_PATH, "utf8");
+      existingData = JSON.parse(fileContent);
+    }
+
+    // 新しいデータを追加
+    existingData.push(newData);
+
+    // 更新されたJSONデータをファイルに書き込む
+    fs.writeFileSync(LOG_FILE_PATH, JSON.stringify(existingData, null, 2));
+
+    console.log("log file update successfully:", LOG_FILE_PATH);
+  } catch (err) {
+    console.error("failed to update log file:", err);
+  }
+}
