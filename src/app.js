@@ -159,9 +159,9 @@ async function update_alive() {
     dump_info: false,
   };
   const report_response = await resistIP(arg_obj);
-  if (report_response) console.log(`report alive: ${new Date()}`);
+  if (report_response) console.log(`alive report: ${new Date()}`);
   else {
-    console.log("report alive error");
+    console.log("alive report error");
   }
 }
 
