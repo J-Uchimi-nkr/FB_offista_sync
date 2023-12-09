@@ -1,4 +1,6 @@
 # run.ps1
+# モジュールの依存関係を解決した後に、HTTPS証明書の発行とサーバーの起動を行う
+
 
 npm install uuid
 npm install cors
