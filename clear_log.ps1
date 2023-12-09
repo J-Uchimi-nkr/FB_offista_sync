@@ -1,3 +1,5 @@
+#logファイルをすべて削除するスクリプト
+
 # カレントディレクトリを取得
 $currentDir = Get-Location
 
