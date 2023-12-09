@@ -1,5 +1,11 @@
 # run.zsh
 
+npm install uuid
+npm install cors
+npm install express
+npm install request
+npm install axios
+
 # パスを指定
 path=$(pwd)
 
