@@ -1,20 +1,11 @@
 # run.ps1
 # モジュールの依存関係を解決した後に、HTTPS証明書の発行とサーバーの起動を行う
 
-
-# 必要なモジュールのリスト
-$requiredModules = @("uuid", "cors", "express", "request", "axios")
-
-# インストールされているモジュールを取得
-$installedModules = (npm list --depth=0 --json | ConvertFrom-Json).dependencies | ForEach-Object { $_.PSObject.Properties.Name }
-
-# 不足しているモジュールを見つけてインストール
-foreach ($module in $requiredModules) {
-    if (-not $installedModules.Contains($module)) {
-        Write-Host "Installing $module..."
-        npm install $module
-    }
-}
+npm install uuid
+npm install cors
+npm install express
+npm install request
+npm install axios
 
 # パスを指定
 $path = pwd
