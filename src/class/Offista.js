@@ -22,7 +22,11 @@ module.exports = class Offista {
   #product_key = "";
 
   constructor(init_object) {
-    if ("is_dumpLog" in init_object && init_object.is_dumpLog == true)
+    if (
+      init_object !== undefined &&
+      "is_dumpLog" in init_object &&
+      init_object.is_dumpLog == true
+    )
       this.#dump_log = true;
   }
 
