@@ -7,10 +7,11 @@ const GETIPADDR_PATH = UTILS_PATH + "/getIPAddr";
 const GETKINTONERECORD_PATH = UTILS_PATH + "/getKintoneRecord";
 const GETAPPINFO_PATH = UTILS_PATH + "/getInfoFromURL.js";
 const RESISTENROLLMENT_PATH = UTILS_PATH + "/resistEnrollment";
-const DATAUPLOADER_PATH = "./class/DataUploader.js";
+const GETLOCALTIMEISO_PATH = UTILS_PATH + "/getLocalTimeISO";
 const RESISTIPADDRKINTONE_PATH = UTILS_PATH + "/resistIPaddrKintone";
 const HTTPS_KEY_PATH = "./src/cert/cert_server.key";
 const HTTPS_CERT_PATH = "./src/cert/cert_server.crt";
+const DATAUPLOADER_PATH = "./class/DataUploader.js";
 
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -27,6 +28,7 @@ const HTTPS_OPTIONS = {
 const getIPAddr = require(GETIPADDR_PATH);
 const getKintoneRecord = require(GETKINTONERECORD_PATH);
 const getAppInfo = require(GETAPPINFO_PATH);
+const getTimeISO = require(GETLOCALTIMEISO_PATH);
 const resistEnrollment = require(RESISTENROLLMENT_PATH);
 const SERVER_CONFIG = require(SERVER_CONFIG_PATH);
 const SERVER_PORT = SERVER_CONFIG.port;
@@ -38,10 +40,12 @@ const APP_NAME = GENERAL_CONFIG.app_name;
 const resistIP = require(RESISTIPADDRKINTONE_PATH);
 const DataUploader = require(DATAUPLOADER_PATH);
 const data_uploader = new DataUploader();
-const LOG_FILE_PATH = `./src/log/${new Date()
-  .toLocaleString()
-  .slice(0, 10)
-  .replace(/-/g, "")}_${SERVER_UUID}.json`;
+
+const INIT_TIME = getTimeISO();
+const LOG_FILE_PATH = `./src/log/${INIT_TIME.slice(0, 10).replace(
+  /-/g,
+  ""
+)}_${SERVER_UUID}.json`;
 let this_server_ip_addr = "";
 
 const APP = express();
@@ -51,7 +55,7 @@ APP.use(bodyParser.json()); // JSONを解析するためのミドルウェアを
 APP.post("/sync", async (req, res) => {
   const jsonData = req.body;
   const newData = {
-    time: new Date().toLocaleString(),
+    time: getTimeISO(),
     from: req.ip,
     originalUrl: req.originalUrl,
     method: req.method,
@@ -97,7 +101,7 @@ APP.post("/sync", async (req, res) => {
 // 404エラーが発生した際に呼び出されるハンドラ
 APP.use((req, res) => {
   const newData = {
-    time: new Date().toLocaleString(),
+    time: getTimeISO(),
     from: req.ip,
     originalUrl: req.originalUrl,
     method: req.method,
@@ -168,9 +172,9 @@ async function update_alive() {
 function make_log_file() {
   const jsonData = [];
   // ファイルにJSONデータを書き込む
-  fs.writeFile(LOG_FILE_PATH, JSON.stringify(jsonData, null, 2), (err) => {
+  fs.writeFileSync(LOG_FILE_PATH, JSON.stringify(jsonData, null, 2), (err) => {
     if (err) {
-      throw new Error("faild to make server log file");
+      throw new Error(`faild to make server log file.\n${err}`);
     }
   });
 }

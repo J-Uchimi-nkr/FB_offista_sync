@@ -2,11 +2,19 @@
 # モジュールの依存関係を解決した後に、HTTPS証明書の発行とサーバーの起動を行う
 
 
-npm install uuid
-npm install cors
-npm install express
-npm install request
-npm install axios
+# 必要なモジュールのリスト
+REQUIRED_MODULES=("uuid" "cors" "express" "request" "axios")
+
+# インストールされているモジュールを取得
+INSTALLED_MODULES=$(npm list --depth=0 --json | jq -r '.dependencies | keys[]')
+
+# 不足しているモジュールを見つけてインストール
+for module in "${REQUIRED_MODULES[@]}"; do
+    if [[ ! "$INSTALLED_MODULES" =~ "$module" ]]; then
+        echo "Installing $module..."
+        npm install "$module"
+    fi
+done
 
 # パスを指定
 path=$(pwd)
