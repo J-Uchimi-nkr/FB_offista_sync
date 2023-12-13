@@ -39,7 +39,7 @@ const resistIP = require(RESISTIPADDRKINTONE_PATH);
 const DataUploader = require(DATAUPLOADER_PATH);
 const data_uploader = new DataUploader();
 const LOG_FILE_PATH = `./src/log/${new Date()
-  .toISOString()
+  .toLocaleString()
   .slice(0, 10)
   .replace(/-/g, "")}_${SERVER_UUID}.json`;
 let this_server_ip_addr = "";
@@ -51,7 +51,7 @@ APP.use(bodyParser.json()); // JSONを解析するためのミドルウェアを
 APP.post("/sync", async (req, res) => {
   const jsonData = req.body;
   const newData = {
-    time: new Date().toISOString(),
+    time: new Date().toLocaleString(),
     from: req.ip,
     originalUrl: req.originalUrl,
     method: req.method,
@@ -87,7 +87,7 @@ APP.post("/sync", async (req, res) => {
     newData.res = e.message;
     newData.statusCode = 500;
     res.status(500).json({
-      message: JSON.stringify({ message:e.message }),
+      message: JSON.stringify({ message: e.message }),
     });
   }
   update_log_file(newData);
@@ -97,7 +97,7 @@ APP.post("/sync", async (req, res) => {
 // 404エラーが発生した際に呼び出されるハンドラ
 APP.use((req, res) => {
   const newData = {
-    time: new Date().toISOString(),
+    time: new Date().toLocaleString(),
     from: req.ip,
     originalUrl: req.originalUrl,
     method: req.method,
