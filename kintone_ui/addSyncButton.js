@@ -8,7 +8,7 @@ let server_info = {
 };
 
 async function addSyncButton() {
-  set_offista_server_info();
+  set_offista_server_info(API_APP_NAME);
   console.log("\n\n\n\nadded button\n");
   // 新しいボタン要素を作成
   let newButton = document.createElement("button");
@@ -89,10 +89,10 @@ async function get_offista_server_url() {
   let endpoint = server_info.endpoint;
   return `${method}://${ipAddr}:${port}${endpoint}`;
 }
-async function set_offista_server_info() {
+async function set_offista_server_info(api_app_name) {
   const body = {
     app: 2988,
-    query: `app_name="${API_APP_NAME}" order by レコード番号 desc`,
+    query: `app_name="${api_app_name}" order by レコード番号 desc`,
   };
   const result = await kintone.api(
     kintone.api.url("/k/v1/records.json", true),
