@@ -3,4 +3,6 @@ src/cert/*.crt
 src/cert/*.csr
 src/cert/*.key
 src/log/*
-node_modules/*
+
+# npm installでinstallできる
+node_modules/* 
