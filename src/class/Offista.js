@@ -20,6 +20,7 @@ module.exports = class Offista {
 
   #api_key = "";
   #product_key = "";
+  #session_id = "";
 
   constructor(init_object) {
     if (
@@ -80,6 +81,53 @@ module.exports = class Offista {
     if (response.data.result != 200) this.#create_api_key();
     else this.product_key = response.data.product_key;
     return_obj = this.#product_key;
+    return return_obj;
+  }
+
+  async api_login_rn() {
+    let return_obj = {
+      is_successed: false,
+      error_message: "",
+      session_id: "",
+    };
+    if (this.#session_id !== "") {
+      return_obj.session_id = this.#session_id;
+      return_obj.is_successed = true;
+      return return_obj;
+    }
+    const api_name = "API_LOGIN_RN";
+
+    const ac_method = await this.get_ac_method();
+    let ac_id = ac_method.ac_id;
+    let rn = this.#rn_list[ac_id];
+    let A1 = rn[0][0];
+    let E5 = rn[4][4];
+
+    let body_obj = {
+      uid: this.#login_id,
+      upw: this.#login_pass,
+      inputs: [
+        {
+          x: "A",
+          y: 1,
+          number: A1,
+        },
+
+        {
+          x: "E",
+          y: 5,
+          number: E5,
+        },
+      ],
+    };
+    const response = await this.#post(api_name, body_obj);
+    if (response.data.result != 200) {
+      return_obj.error_message = response.data.message;
+    } else {
+      this.#session_id = response.data["session-id"];
+      return_obj.is_successed = true;
+      return_obj.session_id = this.#session_id;
+    }
     return return_obj;
   }
 
