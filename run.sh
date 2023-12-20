@@ -1,11 +1,7 @@
 # run.zsh
 # モジュールの依存関係を解決した後に、HTTPS証明書の発行とサーバーの起動を行う
 
-npm install uuid
-npm install cors
-npm install express
-npm install request
-npm install axios
+npm install package.json
 
 # パスを指定
 path=$(pwd)
