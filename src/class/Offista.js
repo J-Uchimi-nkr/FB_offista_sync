@@ -126,7 +126,7 @@ module.exports = class Offista {
     let return_obj = [{}];
     const api_name = "GET_EMPLOYEE";
     let body_obj = {
-      api_key: await get_api_key(),
+      api_key: await this.get_api_key(),
       mut_stid: mut_stid,
       uid: this.#login_id,
     };
@@ -152,7 +152,7 @@ module.exports = class Offista {
     let return_obj = []; //[{identifire: "", customer_name: ""}]
     const api_name = "GET_CONSIGNMENT_CUSTOMER";
     let body_obj = {
-      api_key: await await get_api_key(),
+      api_key: await this.get_api_key(),
       uid: this.#login_id,
     };
     const response = await this.#post(api_name, body_obj);
@@ -177,7 +177,7 @@ module.exports = class Offista {
     let return_obj = [];
     const api_name = "GET_OFFICE";
     let body_obj = {
-      api_key: await get_api_key(),
+      api_key: await this.get_api_key(),
       mut_stid: mut_stid,
       uid: this.#login_id,
     };
@@ -208,7 +208,7 @@ module.exports = class Offista {
       }
     }
     let body_obj = {
-      api_key: await get_api_key(),
+      api_key: await this.get_api_key(),
       mut_stid: mut_stid,
       uid: this.#login_id,
       upw: this.#login_pass,
@@ -246,7 +246,7 @@ module.exports = class Offista {
       }
     }
     let body_obj = {
-      api_key: await get_api_key(),
+      api_key: await this.get_api_key(),
       mut_stid: mut_stid,
       uid: this.#login_id,
       upw: this.#login_pass,
