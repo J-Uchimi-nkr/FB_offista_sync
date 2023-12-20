@@ -133,11 +133,7 @@ module.exports = class DataUploader {
   }
 
   async checkCompanyResist(companyName) {
-    if (this.apiKey == undefined)
-      this.apiKey = await this.offistaInstance.get_api_key();
-    let result = await this.offistaInstance.get_consignment_customer(
-      this.apiKey
-    );
+    let result = await this.offistaInstance.get_consignment_customer();
 
     let stationId = "";
     result.forEach((element) => {
@@ -152,8 +148,6 @@ module.exports = class DataUploader {
   }
 
   async upload(companyName, dataObj) {
-    if (this.apiKey == undefined)
-      this.apiKey = await this.offistaInstance.get_api_key();
     this.stationId = await this.checkCompanyResist(companyName);
     if (this.stationId === "")
       return {
@@ -162,7 +156,6 @@ module.exports = class DataUploader {
       };
     try {
       const resistResult = await this.offistaInstance.entry_employee(
-        this.apiKey,
         this.stationId,
         [dataObj]
       );
@@ -192,8 +185,6 @@ module.exports = class DataUploader {
   }
 
   async update(companyName, dataObj) {
-    if (this.apiKey == undefined)
-      this.apiKey = await this.offistaInstance.get_api_key();
     this.stationId = await this.checkCompanyResist(companyName);
     if (this.stationId === "")
       return {
@@ -202,7 +193,6 @@ module.exports = class DataUploader {
       };
     try {
       const resistResult = await this.offistaInstance.modify_employee(
-        this.apiKey,
         this.stationId,
         [dataObj]
       );

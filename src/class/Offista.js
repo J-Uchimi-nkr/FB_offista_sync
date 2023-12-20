@@ -122,11 +122,11 @@ module.exports = class Offista {
     return return_obj;
   }
 
-  async get_employee(api_key, mut_stid, options) {
+  async get_employee(mut_stid, options) {
     let return_obj = [{}];
     const api_name = "GET_EMPLOYEE";
     let body_obj = {
-      api_key: api_key,
+      api_key: await get_api_key(),
       mut_stid: mut_stid,
       uid: this.#login_id,
     };
@@ -138,19 +138,21 @@ module.exports = class Offista {
       "employees",
       "mut_emp",
     ];
-    keys.forEach((key) => {
-      if (key in options) body_obj[key] = option[key];
-    });
+    if (typeof options == Object) {
+      keys.forEach((key) => {
+        if (key in options) body_obj[key] = option[key];
+      });
+    }
     const response = await this.#post(api_name, body_obj);
     if (response.data.result == 200) return_obj = response.data.employees;
     return return_obj;
   }
 
-  async get_consignment_customer(api_key) {
+  async get_consignment_customer() {
     let return_obj = []; //[{identifire: "", customer_name: ""}]
     const api_name = "GET_CONSIGNMENT_CUSTOMER";
     let body_obj = {
-      api_key: api_key,
+      api_key: await await get_api_key(),
       uid: this.#login_id,
     };
     const response = await this.#post(api_name, body_obj);
@@ -158,11 +160,24 @@ module.exports = class Offista {
     return return_obj;
   }
 
-  async get_office(api_key, mut_stid) {
+  async get_mut_stid(company_name) {
+    let return_obj = "";
+    let data = await this.get_consignment_customer();
+    // 株式会社レンシュウの要素をフィルタリング
+    const filteredElements = data.filter(
+      (item) => item.customer_name === company_name
+    );
+    // 対応するidentifierを取り出す
+    const identifiers = filteredElements.map((item) => item.identifier);
+    if (identifiers.length == 1) return_obj = identifiers[0];
+    return return_obj;
+  }
+
+  async get_office(mut_stid) {
     let return_obj = [];
     const api_name = "GET_OFFICE";
     let body_obj = {
-      api_key: api_key,
+      api_key: await get_api_key(),
       mut_stid: mut_stid,
       uid: this.#login_id,
     };
@@ -171,7 +186,7 @@ module.exports = class Offista {
     return return_obj;
   }
 
-  async entry_employee(api_key, mut_stid, employees) {
+  async entry_employee(mut_stid, employees) {
     let return_obj = { is_successed: true, error_message: "" };
     const api_name = "ENTRY_EMPLOYEE";
     if (employees.length > 100) {
@@ -193,7 +208,7 @@ module.exports = class Offista {
       }
     }
     let body_obj = {
-      api_key: api_key,
+      api_key: await get_api_key(),
       mut_stid: mut_stid,
       uid: this.#login_id,
       upw: this.#login_pass,
@@ -209,7 +224,7 @@ module.exports = class Offista {
       };
   }
 
-  async modify_employee(api_key, mut_stid, employees) {
+  async modify_employee(mut_stid, employees) {
     let return_obj = { is_successed: true, error_message: "" };
     const api_name = "MODIFY_EMPLOYEE";
     if (employees.length > 100) {
@@ -231,7 +246,7 @@ module.exports = class Offista {
       }
     }
     let body_obj = {
-      api_key: api_key,
+      api_key: await get_api_key(),
       mut_stid: mut_stid,
       uid: this.#login_id,
       upw: this.#login_pass,
