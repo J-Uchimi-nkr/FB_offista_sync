@@ -1,6 +1,5 @@
 # モジュールの依存関係を解決した後に、HTTPS証明書の発行とサーバーの起動を行う
 npm install package.json
-sudo apt-get install openssl
 
 
 # パスを指定
