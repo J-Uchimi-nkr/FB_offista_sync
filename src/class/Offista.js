@@ -84,7 +84,7 @@ module.exports = class Offista {
     return return_obj;
   }
 
-  async api_login_rn() {
+  async #api_login_rn() {
     let return_obj = {
       is_successed: false,
       error_message: "",
@@ -131,6 +131,66 @@ module.exports = class Offista {
     return return_obj;
   }
 
+  async get_mynumber(mut_emp, mut_pur) {
+    let return_obj = {
+      is_successed: false,
+      error_message: "",
+      mynumber: [],
+    };
+    const api_name = "GET_MYNUMBER";
+    const sid_obj = await this.#api_login_rn();
+    if (sid_obj.is_successed == false) {
+      return_obj.error_message = sid_obj.error_message;
+      return return_obj;
+    }
+    let body_obj = {
+      api_key: await this.get_api_key(),
+      mut_stid: this.#station_id,
+      emp_kbn: 0,
+      mut_emp: mut_emp,
+      mut_pur: mut_pur,
+      uid: this.#login_id,
+      upw: this.#login_pass,
+      sid: this.#session_id,
+    };
+    console.log(body_obj);
+    const response = await this.#post(api_name, body_obj);
+    if (response.data[0].result != 200) {
+      return_obj.error_message = response.data[0].message;
+    } else {
+      return_obj.mynumber = response.data;
+    }
+    return return_obj;
+  }
+
+  // async entry_my_number(updtype, purpose, mut_emp, mynumber) {
+  //   let return_obj = {
+  //     is_successed: false,
+  //     error_message: "",
+  //   };
+  //   const api_name = "ENTRY_MY_NUMBER";
+  //   const options = {
+  //     mut_emp: mut_emp,
+  //   };
+  //   let body_obj = {
+  //     employee_key: await this.get_employee(this.#station_id, options)
+  //       .customer_employee_id,
+  //     updtype: updtype,
+  //     mynumber: mynumber,
+  //     mut_stid: this.#station_id,
+  //     api_key: this.#api_key,
+  //     uid: this.#login_id,
+  //     upw: this.#login_pass,
+  //     sid: this.#session_id,
+  //     purpose: purpose,
+  //   };
+  //   const response = await this.#post(api_name, body_obj);
+  //   if (response.data.result != 200)
+  //     return_obj.error_message = response.data.message;
+  //   else return_obj.is_successed = true;
+  //   return return_obj;
+  // }
+
   async get_ac_method() {
     let return_obj = { ac_method: "", ac_id: "", one_time_type: "" };
     const api_name = "GET_AC_METHOD";
@@ -171,6 +231,7 @@ module.exports = class Offista {
   }
 
   async get_employee(mut_stid, options) {
+    // options={"mut_emp : 1001"}->emp_id=1001の人のレコードだけ返ってくる
     let return_obj = [{}];
     const api_name = "GET_EMPLOYEE";
     let body_obj = {
@@ -183,14 +244,14 @@ module.exports = class Offista {
       "retiree_ret",
       "employees_kbn_ret",
       "response_blank",
-      "employees",
-      "mut_emp",
+      "employees"
     ];
-    if (typeof options == Object) {
+    if (typeof options == "object") {
       keys.forEach((key) => {
-        if (key in options) body_obj[key] = option[key];
+        if ( key in options) body_obj[key] = options[key];
       });
     }
+    console.log(body_obj)
     const response = await this.#post(api_name, body_obj);
     if (response.data.result == 200) return_obj = response.data.employees;
     return return_obj;
