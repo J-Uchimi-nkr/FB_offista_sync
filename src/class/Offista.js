@@ -131,7 +131,15 @@ module.exports = class Offista {
     return return_obj;
   }
 
-  async get_mynumber(mut_emp, mut_pur) {
+  async get_mynumber(mut_obj) {
+    //{mut_emp:"従業員番号", mut_pur:"取得目的"}
+    const keys = Object.keys(mut_obj);
+    if (
+      keys.length == 0 ||
+      !keys.includes("mut_stid") ||
+      !keys.includes("mut_emp") ||
+      !keys.includes("mut_pur")
+    );
     let return_obj = {
       is_successed: false,
       error_message: "",
@@ -145,10 +153,10 @@ module.exports = class Offista {
     }
     let body_obj = {
       api_key: await this.get_api_key(),
-      mut_stid: this.#station_id,
+      mut_stid: mut_obj.mut_stid,
       emp_kbn: 0,
-      mut_emp: mut_emp,
-      mut_pur: mut_pur,
+      mut_emp: mut_obj.mut_emp,
+      mut_pur: mut_obj.mut_pur,
       uid: this.#login_id,
       upw: this.#login_pass,
       sid: this.#session_id,
@@ -244,14 +252,14 @@ module.exports = class Offista {
       "retiree_ret",
       "employees_kbn_ret",
       "response_blank",
-      "employees"
+      "employees",
     ];
     if (typeof options == "object") {
       keys.forEach((key) => {
-        if ( key in options) body_obj[key] = options[key];
+        if (key in options) body_obj[key] = options[key];
       });
     }
-    console.log(body_obj)
+    console.log(body_obj);
     const response = await this.#post(api_name, body_obj);
     if (response.data.result == 200) return_obj = response.data.employees;
     return return_obj;

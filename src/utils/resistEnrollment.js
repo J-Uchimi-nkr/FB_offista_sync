@@ -7,8 +7,7 @@ module.exports = async (record) => {
   try {
     const company_name = record["会社名"].value;
     const offista_instance = new Offista({ is_dumpLog: true });
-    const api_key = await offista_instance.get_api_key();
-    let result = await offista_instance.get_consignment_customer(api_key);
+    let result = await offista_instance.get_consignment_customer();
 
     let station_id = "";
     result.forEach((element) => {
