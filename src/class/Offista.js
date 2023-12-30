@@ -84,118 +84,50 @@ module.exports = class Offista {
     return return_obj;
   }
 
-  async #api_login_rn() {
-    let return_obj = {
-      is_successed: false,
-      error_message: "",
-      session_id: "",
-    };
-    if (this.#session_id !== "") {
-      return_obj.session_id = this.#session_id;
-      return_obj.is_successed = true;
-      return return_obj;
-    }
-    const api_name = "API_LOGIN_RN";
-
-    const ac_method = await this.get_ac_method();
-    let ac_id = ac_method.ac_id;
-    let rn = this.#rn_list[ac_id];
-    let A1 = rn[0][0];
-    let E5 = rn[4][4];
-
-    let body_obj = {
-      uid: this.#login_id,
-      upw: this.#login_pass,
-      inputs: [
-        {
-          x: "A",
-          y: 1,
-          number: A1,
-        },
-
-        {
-          x: "E",
-          y: 5,
-          number: E5,
-        },
-      ],
-    };
-    const response = await this.#post(api_name, body_obj);
-    if (response.data.result != 200) {
-      return_obj.error_message = response.data.message;
-    } else {
-      this.#session_id = response.data["session-id"];
-      return_obj.is_successed = true;
-      return_obj.session_id = this.#session_id;
-    }
-    return return_obj;
-  }
-
-  async get_mynumber(mut_obj) {
-    //{mut_emp:"従業員番号", mut_pur:"取得目的"}
-    const keys = Object.keys(mut_obj);
-    if (
-      keys.length == 0 ||
-      !keys.includes("mut_stid") ||
-      !keys.includes("mut_emp") ||
-      !keys.includes("mut_pur")
-    );
-    let return_obj = {
-      is_successed: false,
-      error_message: "",
-      mynumber: [],
-    };
-    const api_name = "GET_MYNUMBER";
-    const sid_obj = await this.#api_login_rn();
-    if (sid_obj.is_successed == false) {
-      return_obj.error_message = sid_obj.error_message;
-      return return_obj;
-    }
-    let body_obj = {
-      api_key: await this.get_api_key(),
-      mut_stid: mut_obj.mut_stid,
-      emp_kbn: 0,
-      mut_emp: mut_obj.mut_emp,
-      mut_pur: mut_obj.mut_pur,
-      uid: this.#login_id,
-      upw: this.#login_pass,
-      sid: this.#session_id,
-    };
-    console.log(body_obj);
-    const response = await this.#post(api_name, body_obj);
-    if (response.data[0].result != 200) {
-      return_obj.error_message = response.data[0].message;
-    } else {
-      return_obj.mynumber = response.data;
-    }
-    return return_obj;
-  }
-
-  // async entry_my_number(updtype, purpose, mut_emp, mynumber) {
+  // async #api_login_rn() {
   //   let return_obj = {
   //     is_successed: false,
   //     error_message: "",
+  //     session_id: "",
   //   };
-  //   const api_name = "ENTRY_MY_NUMBER";
-  //   const options = {
-  //     mut_emp: mut_emp,
-  //   };
+  //   if (this.#session_id !== "") {
+  //     return_obj.session_id = this.#session_id;
+  //     return_obj.is_successed = true;
+  //     return return_obj;
+  //   }
+  //   const api_name = "API_LOGIN_RN";
+
+  //   const ac_method = await this.get_ac_method();
+  //   let ac_id = ac_method.ac_id;
+  //   let rn = this.#rn_list[ac_id];
+  //   let A1 = rn[0][0];
+  //   let E5 = rn[4][4];
+
   //   let body_obj = {
-  //     employee_key: await this.get_employee(this.#station_id, options)
-  //       .customer_employee_id,
-  //     updtype: updtype,
-  //     mynumber: mynumber,
-  //     mut_stid: this.#station_id,
-  //     api_key: this.#api_key,
   //     uid: this.#login_id,
   //     upw: this.#login_pass,
-  //     sid: this.#session_id,
-  //     purpose: purpose,
+  //     inputs: [
+  //       {
+  //         x: "A",
+  //         y: 1,
+  //         number: A1,
+  //       },
+
+  //       {
+  //         x: "E",
+  //         y: 5,
+  //         number: E5,
+  //       },
+  //     ],
   //   };
   //   const response = await this.#post(api_name, body_obj);
-  //   if (response.data.result != 200)
+  //   if (response.data.result != 200) {
   //     return_obj.error_message = response.data.message;
-  //   else return_obj.is_successed = true;
+  //   } else {
+  //     this.#session_id = response.data["session-id"];
+  //     return_obj.is_successed = true;
+  //     return_obj.session_id = this.#session_id;
+  //   }
   //   return return_obj;
   // }
 
