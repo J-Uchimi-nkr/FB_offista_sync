@@ -77,9 +77,9 @@ APP.post("/sync", async (req, res) => {
       throw new Error(
         "internal server error: failed to get record from kintone server."
       );
-    const resist_enrollment_result = await data_uploader.resistEnroll(record);
-    if (resist_enrollment_result.is_successed == false)
-      throw new Error(resist_enrollment_result.error_message);
+    const sync_result = await data_uploader.sync(record);
+    if (sync_result.is_successed == false)
+      throw new Error(sync_result.error_message);
     newData.res = record;
     newData.statusCode = 200;
     res.status(200).json({
