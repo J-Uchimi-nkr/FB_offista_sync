@@ -230,9 +230,11 @@ module.exports = class DataUploader
     let family_obj = [];
     const spouse = TRANSFER_LIST.spouse.fields;
     const numbered_dependents = TRANSFER_LIST.numbered_dependents.fields;
-
-    let spouse_data = this.convertKintoneToOffista(record, spouse);
-    family_obj.push(spouse_data);
+    if (record["配偶者は扶養者ですか"].value === "はい")
+    {
+      let spouse_data = this.convertKintoneToOffista(record, spouse);
+      family_obj.push(spouse_data);
+    }
     for (let i = 2; i <= 6; i++)
     {
       if (record[`扶養${i}はいますか`].value != "はい") continue;
