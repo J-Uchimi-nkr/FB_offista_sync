@@ -3,14 +3,41 @@
     "from": "kintone",
     "dest": "offista",
     "fields": [
-      { "from": "社員No", "dest": "customer_employee_id" },
-      { "from": "生年月日", "dest": "birthday" },
-      { "from": "姓", "dest": "shi_name" },
-      { "from": "名", "dest": "mei_name" },
-      { "from": "ｾｲ", "dest": "shi_kana", "type": "full" },
-      { "from": "ﾒｲ", "dest": "mei_kana", "type": "full" },
-      { "from": "性別", "dest": "sex", "type": "int" },
-      { "from": "郵便番号", "dest": "zip" },
+      {
+        "from": "社員No",
+        "dest": "customer_employee_id"
+      },
+      {
+        "from": "生年月日",
+        "dest": "birthday"
+      },
+      {
+        "from": "姓",
+        "dest": "shi_name"
+      },
+      {
+        "from": "名",
+        "dest": "mei_name"
+      },
+      {
+        "from": "ｾｲ",
+        "dest": "shi_kana",
+        "type": "full"
+      },
+      {
+        "from": "ﾒｲ",
+        "dest": "mei_kana",
+        "type": "full"
+      },
+      {
+        "from": "性別",
+        "dest": "sex",
+        "type": "int"
+      },
+      {
+        "from": "郵便番号",
+        "dest": "zip"
+      },
       {
         "from": "住所",
         "dest": "address1"
@@ -20,19 +47,42 @@
         "dest": "address1_kana",
         "type": "full"
       },
-      { "from": "電話番号", "dest": "tel", "type": "insert tel hyphen" },
-      { "from": "メールアドレス", "dest": "mail_address" }
+      {
+        "from": "電話番号",
+        "dest": "tel",
+        "type": "insert tel hyphen"
+      },
+      {
+        "from": "メールアドレス",
+        "dest": "mail_address"
+      }
     ]
   },
   "enroll_residency": {
     "from": "kintone",
     "dest": "offista",
     "fields": [
-      { "from": "外国人区分", "dest": "is_foreigner", "type": "boolean" },
-      { "from": "国籍", "dest": "nationality" },
-      { "from": "ローマ字", "dest": "roman_character_name" },
-      { "from": "在留カードナンバー", "dest": "residence_card_number" },
-      { "from": "在留資格", "dest": "status_residence" },
+      {
+        "from": "外国人区分",
+        "dest": "is_foreigner",
+        "type": "boolean"
+      },
+      {
+        "from": "国籍",
+        "dest": "nationality"
+      },
+      {
+        "from": "ローマ字",
+        "dest": "roman_character_name"
+      },
+      {
+        "from": "在留カードナンバー",
+        "dest": "residence_card_number"
+      },
+      {
+        "from": "在留資格",
+        "dest": "status_residence"
+      },
       {
         "from": "在留期間",
         "dest": "period_stay_to"
@@ -58,21 +108,36 @@
         "dest": "basic_pension_no",
         "type": "remove hyphen"
       },
-      { "from": "入社年月日", "dest": "entering_company_date" },
+      {
+        "from": "入社年月日",
+        "dest": "entering_company_date"
+      },
       {
         "from": "入社時社会保険",
         "dest": "health_division",
         "type": "boolean"
       },
-      { "from": "社会保険取得年月日", "dest": "get_date_health" },
-      { "from": "社保喪失年月日", "dest": "loss_date_health" },
+      {
+        "from": "社会保険取得年月日",
+        "dest": "get_date_health"
+      },
+      {
+        "from": "社保喪失年月日",
+        "dest": "loss_date_health"
+      },
       {
         "from": "入社時社会保険",
         "dest": "welfare_annuity_division",
         "type": "boolean"
       },
-      { "from": "社会保険取得年月日", "dest": "get_date_welfare_annuity" },
-      { "from": "社保喪失年月日", "dest": "loss_date_welfare_annuity" },
+      {
+        "from": "社会保険取得年月日",
+        "dest": "get_date_welfare_annuity"
+      },
+      {
+        "from": "社保喪失年月日",
+        "dest": "loss_date_welfare_annuity"
+      },
       {
         "from": "１ヶ月の賃金見込額",
         "dest": "monthly_remuneration_currency"
@@ -88,19 +153,43 @@
     "from": "kintone",
     "dest": "offista",
     "fields": [
-      { "from": "基礎年金番号無しチェック", "dest": "memo" },
-      { "from": "前職名", "dest": "memo" },
-      { "from": "前職退職日", "dest": "memo" },
-      { "from": "雇用形態", "dest": "memo" },
-      { "from": "給与形態", "dest": "memo" },
-      { "from": "週所定労働時間", "dest": "memo" },
+      {
+        "from": "基礎年金番号無しチェック",
+        "dest": "memo"
+      },
+      {
+        "from": "前職名",
+        "dest": "memo"
+      },
+      {
+        "from": "前職退職日",
+        "dest": "memo"
+      },
+      {
+        "from": "雇用形態",
+        "dest": "memo"
+      },
+      {
+        "from": "給与形態",
+        "dest": "memo"
+      },
+      {
+        "from": "週所定労働時間",
+        "dest": "memo"
+      },
       {
         "from": "入社時雇用保険",
         "dest": "employment_insurance_division",
         "type": "boolean"
       },
-      { "from": "雇用保険取得年月日", "dest": "grant_date" },
-      { "from": "雇保喪失年月日", "dest": "turnover_date" },
+      {
+        "from": "雇用保険取得年月日",
+        "dest": "grant_date"
+      },
+      {
+        "from": "雇保喪失年月日",
+        "dest": "turnover_date"
+      },
       {
         "from": "雇用保険番号",
         "dest": "insured_number_employ"
@@ -110,29 +199,256 @@
         "dest": "contract_period_determined",
         "type": "int"
       },
-      { "from": "契約開始日", "dest": "contract_period_from" },
-      { "from": "契約終了日", "dest": "contract_period_to" }
+      {
+        "from": "契約開始日",
+        "dest": "contract_period_from"
+      },
+      {
+        "from": "契約終了日",
+        "dest": "contract_period_to"
+      }
     ]
   },
   "retire": {
     "from": "kintone",
     "dest": "offista",
     "fields": [
-      { "from": "離職票交付", "dest": "memo" },
-      { "from": "離職票送り先", "dest": "memo" },
+      {
+        "from": "離職票交付",
+        "dest": "memo"
+      },
+      {
+        "from": "離職票送り先",
+        "dest": "memo"
+      },
       {
         "from": "離職後の住所",
         "dest": "memo"
       },
-      { "from": "具体的な離職理由", "dest": "memo" },
-      { "from": "健康保険任意継続", "dest": "memo" },
-      { "from": "一回の契約期間", "dest": "memo" },
-      { "from": "契約の更新回数", "dest": "memo" },
-      { "from": "通算の契約期間", "dest": "memo" },
-      { "from": "前回の契約更新時に次回の更新について", "dest": "memo" },
-      { "from": "労働者の意思表示", "dest": "memo" },
-      { "from": "退職年月日", "dest": "leave_company_date" },
-      { "from": "離職理由", "dest": "loss_qualification_reason_employ" }
+      {
+        "from": "具体的な離職理由",
+        "dest": "memo"
+      },
+      {
+        "from": "健康保険任意継続",
+        "dest": "memo"
+      },
+      {
+        "from": "一回の契約期間",
+        "dest": "memo"
+      },
+      {
+        "from": "契約の更新回数",
+        "dest": "memo"
+      },
+      {
+        "from": "通算の契約期間",
+        "dest": "memo"
+      },
+      {
+        "from": "前回の契約更新時に次回の更新について",
+        "dest": "memo"
+      },
+      {
+        "from": "労働者の意思表示",
+        "dest": "memo"
+      },
+      {
+        "from": "退職年月日",
+        "dest": "leave_company_date"
+      },
+      {
+        "from": "離職理由",
+        "dest": "loss_qualification_reason_employ"
+      }
     ]
+  },
+  "spouse": {
+    "from": "kintone",
+    "dest": "offista",
+    "fields": [
+      {
+        "from": "姓1",
+        "dest": "shi_name"
+      },
+      {
+        "from": "名1",
+        "dest": "mei_name"
+      },
+      {
+        "from": "ｾｲ1",
+        "dest": "shi_kana"
+      },
+      {
+        "from": "ﾒｲ1",
+        "dest": "mei_kana"
+      },
+      {
+        "from": "生年月日1",
+        "dest": "birthday"
+      },
+      {
+        "from": "配偶者性別",
+        "dest": "sex",
+        "type": "int"
+      },
+      {
+        "from": "配偶者続柄",
+        "dest": "relationship",
+        "type": "int"
+      },
+      {
+        "from": "別居の場合の住所",
+        "dest": "address1"
+      },
+      {
+        "from": "配偶者別居の場合の1回の仕送り額と年間回数",
+        "dest": "memo"
+      },
+      {
+        "from": "同居の有無",
+        "dest": "living_together",
+        "type": "int"
+      },
+      {
+        "from": "扶養配偶者になった日",
+        "dest": "tax_law_support_date"
+      },
+      {
+        "from": "扶養配偶者になった理由",
+        "dest": "tax_law_support_add_reason",
+        "type": "remove after ."
+      },
+      {
+        "from": "扶養配偶者になったその他の理由",
+        "dest": "tax_law_support_add_reason_other"
+      },
+      {
+        "from": "配偶者職業",
+        "dest": "occupation"
+      },
+      {
+        "from": "配偶者年間の収入",
+        "dest": "income_estimated_amount"
+      },
+      {
+        "from": "配偶者基礎年金番号",
+        "dest": "basic_pension_no",
+        "type": "remove hyphen"
+      },
+      {
+        "from": "配偶者ローマ字氏名",
+        "dest": "memo"
+      },
+      {
+        "from": "配偶者備考",
+        "dest": "memo"
+      },
+      {
+        "from": "扶養配偶者から外れる日",
+        "dest": "tax_law_support_remove_date"
+      },
+      {
+        "from": "扶養配偶者から外れた理由",
+        "dest": "tax_law_support_del_reason",
+        "type": "remove after ."
+      }
+    ]
+  },
+  "numbered_dependents": {
+    "from": "kintone",
+    "dest": "offista",
+    "fields": [
+      {
+        "from": "姓",
+        "dest": "shi_name"
+      },
+      {
+        "from": "名",
+        "dest": "mei_name"
+      },
+      {
+        "from": "ｾｲ",
+        "dest": "shi_kana"
+      },
+      {
+        "from": "ﾒｲ",
+        "dest": "mei_kana"
+      },
+      {
+        "from": "生年月日",
+        "dest": "birthday"
+      },
+      {
+        "from": "性別",
+        "dest": "sex",
+        "type": "int"
+      },
+      {
+        "from": "続柄",
+        "dest": "relationship",
+        "type": "int"
+      },
+      {
+        "from": "同居の有無",
+        "dest": "living_together",
+        "type": "int"
+      },
+      {
+        "from": "別居の場合の住所",
+        "dest": "address1"
+      },
+      {
+        "from": "別居の場合の1回の仕送り額と年間回数",
+        "dest": "memo"
+      },
+      {
+        "from": "被扶養者になった日",
+        "dest": "tax_law_support_date"
+      },
+      {
+        "from": "被扶養者になった理由",
+        "dest": "tax_law_support_add_reason",
+        "type": "int"
+      },
+      {
+        "from": "被扶養者になったその他の理由",
+        "dest": "tax_law_support_add_reason_other"
+      },
+      {
+        "from": "職業",
+        "dest": "occupation"
+      },
+      {
+        "from": "年間の収入",
+        "dest": "income_estimated_amount"
+      },
+      {
+        "from": "海外特例要件該当",
+        "dest": "memo"
+      },
+      {
+        "from": "海外特例要件非該当_国内転入日",
+        "dest": "memo"
+      },
+      {
+        "from": "備考",
+        "dest": "memo"
+      },
+      {
+        "from": "被扶養者でなくなった日",
+        "dest": "tax_law_support_remove_date"
+      },
+      {
+        "from": "被扶養者でなくなった理由",
+        "dest": "tax_law_support_del_reason",
+        "type": "remove after ."
+      }
+    ]
+  },
+  "dependents": {
+    "from": "kintone",
+    "dest": "offista",
+    "fields": []
   }
 }
