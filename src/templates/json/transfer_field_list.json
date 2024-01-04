@@ -277,11 +277,13 @@
       },
       {
         "from": "ｾｲ1",
-        "dest": "shi_kana"
+        "dest": "shi_kana",
+        "type": "full"
       },
       {
         "from": "ﾒｲ1",
-        "dest": "mei_kana"
+        "dest": "mei_kana",
+        "type": "full"
       },
       {
         "from": "生年月日1",
@@ -369,11 +371,13 @@
       },
       {
         "from": "ｾｲ",
-        "dest": "shi_kana"
+        "dest": "shi_kana",
+        "type": "full"
       },
       {
         "from": "ﾒｲ",
-        "dest": "mei_kana"
+        "dest": "mei_kana",
+        "type": "full"
       },
       {
         "from": "生年月日",
