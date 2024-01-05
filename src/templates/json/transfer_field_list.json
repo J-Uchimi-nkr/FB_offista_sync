@@ -259,7 +259,8 @@
       },
       {
         "from": "離職理由",
-        "dest": "loss_qualification_reason_employ"
+        "dest": "loss_qualification_reason_employ",
+        "type": "int"
       }
     ]
   },

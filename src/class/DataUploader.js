@@ -94,6 +94,31 @@ module.exports = class DataUploader
               else if (value === "別居") value = 2;
               else value = 0;
               break;
+            case "loss_qualification_reason_employ":
+              switch (value)
+              {
+                case "自己都合による退職":
+                  value = 2
+                  break;
+                case "契約期間満了":
+                  value = 0
+                  break;
+                case "退職勧奨":
+                  value = 0
+                  break;
+                case "会社都合":
+                  value = 3
+                  break;
+                case "関連会社移籍":
+                  value = 0
+                  break;
+                case "その他":
+                  value = 0
+                  break;
+                default:
+                  value = 0
+              }
+              break;
             case "relationship":
               // 1夫、2妻、3内縁の夫、4内縁の妻
               switch (value)
