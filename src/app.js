@@ -77,6 +77,7 @@ APP.post("/sync", async (req, res) => {
       throw new Error(
         "internal server error: failed to get record from kintone server."
       );
+      const report_type=record["連絡種別_文字列"].value
     const sync_result = await data_uploader.sync(record);
     if (sync_result.is_successed == false)
       throw new Error(sync_result.error_message);
