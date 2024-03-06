@@ -48,6 +48,24 @@
         "type": "full"
       },
       {
+        "from": null,
+        "dest": "address2"
+      },
+      {
+        "from": null,
+        "dest": "address2_kana",
+        "type": "full"
+      },
+      {
+        "from": null,
+        "dest": "address3"
+      },
+      {
+        "from": null,
+        "dest": "address3_kana",
+        "type": "full"
+      },
+      {
         "from": "電話番号",
         "dest": "tel",
         "type": "insert tel hyphen"

@@ -21,17 +21,23 @@ module.exports = class DataUploader
       const from = element.from;
       const dest = element.dest;
       const type = element.type;
-      const recordObj = kintoneRecord[from];
 
-      if (recordObj === undefined)
+      let value
+      if (from == null)
+        value == ""
+      else 
       {
-        const error_message = `key "${from}" is not defined.\nPlease change the file "${TRANSFER_LIST_PATH}"`;
-        console.error(error_message);
-        return;
+        const recordObj = kintoneRecord[from];
+
+        if (recordObj === undefined)
+        {
+          const error_message = `key "${from}" is not defined.\nPlease change the file "${TRANSFER_LIST_PATH}"`;
+          console.error(error_message);
+          return;
+        }
+        value = recordObj.value;
       }
 
-      let value = recordObj.value;
-      let splited = [];
 
       switch (type)
       {
