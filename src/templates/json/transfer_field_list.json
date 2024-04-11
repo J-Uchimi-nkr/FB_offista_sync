@@ -53,8 +53,7 @@
       },
       {
         "from": null,
-        "dest": "address2_kana",
-        "type": "full"
+        "dest": "address2_kana"
       },
       {
         "from": null,
@@ -62,8 +61,7 @@
       },
       {
         "from": null,
-        "dest": "address3_kana",
-        "type": "full"
+        "dest": "address3_kana"
       },
       {
         "from": "電話番号",

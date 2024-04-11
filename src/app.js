@@ -50,7 +50,8 @@ const APP = express();
 APP.use(cors()); // CORSミドルウェアを使用してクロスオリジンリクエストを許可
 APP.use(bodyParser.json()); // JSONを解析するためのミドルウェアを追加
 
-APP.post("/sync", async (req, res) => {
+APP.post("/sync", async (req, res) =>
+{
   const jsonData = req.body;
   const newData = {
     time: getTimeISO(),
@@ -62,7 +63,8 @@ APP.post("/sync", async (req, res) => {
     statusCode: 200,
     res: "",
   };
-  try {
+  try
+  {
     if (jsonData["record_url"] == undefined)
       throw new Error("record_url is necessary in the post data");
     const app_info = getAppInfo(jsonData["record_url"]);
@@ -77,7 +79,6 @@ APP.post("/sync", async (req, res) => {
       throw new Error(
         "internal server error: failed to get record from kintone server."
       );
-      const report_type=record["連絡種別_文字列"].value
     const sync_result = await data_uploader.sync(record);
     if (sync_result.is_successed == false)
       throw new Error(sync_result.error_message);
@@ -86,7 +87,8 @@ APP.post("/sync", async (req, res) => {
     res.status(200).json({
       message: JSON.stringify(record),
     });
-  } catch (e) {
+  } catch (e)
+  {
     newData.res = e.message;
     newData.statusCode = 500;
     res.status(500).json({
@@ -98,7 +100,8 @@ APP.post("/sync", async (req, res) => {
 });
 
 // 404エラーが発生した際に呼び出されるハンドラ
-APP.use((req, res) => {
+APP.use((req, res) =>
+{
   const newData = {
     time: getTimeISO(),
     from: req.ip,
@@ -108,19 +111,23 @@ APP.use((req, res) => {
     referrer: req.get("Referer"),
     res: "",
   };
-  if (req.method === "GET") {
+  if (req.method === "GET")
+  {
     const absolutePath = path.join(__dirname, ERROR_HTML_PATH);
-    try {
+    try
+    {
       res.status(404).sendFile(absolutePath);
       newData.res = `endpoint=${req.originalUrl} is not defined in server`;
       newData.statusCode = 404;
-    } catch (e) {
+    } catch (e)
+    {
       console.error(e.stack);
       newData.res = `failed to load file: ${absolutePath}`;
       res.sendStatus(500);
       newData.statusCode = 500;
     }
-  } else {
+  } else
+  {
     newData.res = `endpoint=${req.originalUrl} is not defined in server`;
     newData.statusCode = 404;
     res.status(404).json({ error: "404 Not Found" });
@@ -129,17 +136,21 @@ APP.use((req, res) => {
   return;
 });
 
-if (SERVER_PROTOCOL === "https") {
+if (SERVER_PROTOCOL === "https")
+{
   // HTTPSで起動
   const webServer = https.createServer(HTTPS_OPTIONS, APP);
-  webServer.listen(SERVER_PORT, BINDING_PORT, async () => {
+  webServer.listen(SERVER_PORT, BINDING_PORT, async () =>
+  {
     make_log_file();
     update_alive();
     setInterval(update_alive, REPORT_ALIVE_INTERVAL);
   });
-} else if (SERVER_PROTOCOL === "http") {
+} else if (SERVER_PROTOCOL === "http")
+{
   // サーバーをHTTPの指定のポートで起動;
-  APP.listen(SERVER_PORT, BINDING_PORT, async () => {
+  APP.listen(SERVER_PORT, BINDING_PORT, async () =>
+  {
     this_server_ip_addr = getIPAddr();
     make_log_file();
     update_alive();
@@ -147,7 +158,8 @@ if (SERVER_PROTOCOL === "https") {
   });
 }
 
-async function update_alive() {
+async function update_alive()
+{
   this_server_ip_addr = getIPAddr();
   console.log(
     `Server is running on https://${this_server_ip_addr}:${SERVER_PORT}`
@@ -163,26 +175,33 @@ async function update_alive() {
   };
   const report_response = await resistIP(arg_obj);
   if (report_response) console.log(`alive report: ${new Date()}`);
-  else {
+  else
+  {
     console.log("alive report error");
   }
 }
 
-function make_log_file() {
+function make_log_file()
+{
   const jsonData = [];
   // ファイルにJSONデータを書き込む
-  fs.writeFileSync(LOG_FILE_PATH, JSON.stringify(jsonData, null, 2), (err) => {
-    if (err) {
+  fs.writeFileSync(LOG_FILE_PATH, JSON.stringify(jsonData, null, 2), (err) =>
+  {
+    if (err)
+    {
       throw new Error(`faild to make server log file.\n${err}`);
     }
   });
 }
 
-function update_log_file(newData) {
-  try {
+function update_log_file(newData)
+{
+  try
+  {
     // 既存のJSONファイルを読み込む
     let existingData = [];
-    if (fs.existsSync(LOG_FILE_PATH)) {
+    if (fs.existsSync(LOG_FILE_PATH))
+    {
       const fileContent = fs.readFileSync(LOG_FILE_PATH, "utf8");
       existingData = JSON.parse(fileContent);
     }
@@ -194,7 +213,8 @@ function update_log_file(newData) {
     fs.writeFileSync(LOG_FILE_PATH, JSON.stringify(existingData, null, 2));
 
     console.log("log file update successfully:", LOG_FILE_PATH);
-  } catch (err) {
+  } catch (err)
+  {
     console.error("failed to update log file:", err);
   }
 }

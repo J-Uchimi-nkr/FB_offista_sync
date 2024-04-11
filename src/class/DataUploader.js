@@ -6,14 +6,18 @@ const TRANSFER_LIST = require(TRANSFER_LIST_PATH);
 const KanaConverter = new KanaConverter_class();
 const Offista = require(OFFISTA_CLASS_PATH);
 
-module.exports = class DataUploader {
-  constructor() {
+module.exports = class DataUploader
+{
+  constructor()
+  {
     this.offistaInstance = new Offista({ is_dumpLog: false });
   }
 
-  convertKintoneToOffista(kintoneRecord, transferFields) {
+  convertKintoneToOffista(kintoneRecord, transferFields)
+  {
     let returnObj = { relationship: 0, memo: "" };
-    transferFields.forEach((element) => {
+    transferFields.forEach((element) =>
+    {
       const from = element.from;
       const dest = element.dest;
       const type = element.type;
@@ -21,17 +25,20 @@ module.exports = class DataUploader {
       let value
       if (from == null)
         value == ""
-      else {
+      else
+      {
         const recordObj = kintoneRecord[from];
 
-        if (recordObj === undefined) {
+        if (recordObj === undefined)
+        {
           const error_message = `key "${from}" is not defined.\nPlease change the file "${TRANSFER_LIST_PATH}"`;
           console.error(error_message);
           return;
         }
         value = recordObj.value;
 
-        switch (type) {
+        switch (type)
+        {
           case undefined:
             break;
           case "full":
@@ -41,7 +48,8 @@ module.exports = class DataUploader {
             value = KanaConverter.fullToHalf(value);
             break;
           case "boolean":
-            switch (dest) {
+            switch (dest)
+            {
               case "is_foreigner":
                 if (value.includes("日本")) value = 0;
                 else value = 1;
@@ -66,7 +74,8 @@ module.exports = class DataUploader {
             }
             break;
           case "int":
-            switch (dest) {
+            switch (dest)
+            {
               case "contract_period_determined":
                 if (value === "期間の定めあり") value = 1;
                 else if (value === "期間の定めなし") value = 2;
@@ -90,7 +99,8 @@ module.exports = class DataUploader {
                 else value = 0;
                 break;
               case "loss_qualification_reason_employ":
-                switch (value) {
+                switch (value)
+                {
                   case "自己都合による退職":
                     value = 2
                     break;
@@ -115,7 +125,8 @@ module.exports = class DataUploader {
                 break;
               case "relationship":
                 // 1夫、2妻、3内縁の夫、4内縁の妻
-                switch (value) {
+                switch (value)
+                {
                   case "夫":
                     value = 1;
                     break;
@@ -162,7 +173,8 @@ module.exports = class DataUploader {
               case "tax_law_support_add_reason":
                 if (value == null) break;
                 value = value.split(".")[0]
-                switch (value) {
+                switch (value)
+                {
                   case "0":
                     value = 1
                     break;
@@ -201,7 +213,8 @@ module.exports = class DataUploader {
             value = value.replaceAll("-", "");
             break;
           case "insert tel hyphen":
-            if (!value.includes("-")) {
+            if (!value.includes("-"))
+            {
               let formattedNumber =
                 value.substring(0, 3) +
                 "-" +
@@ -224,7 +237,8 @@ module.exports = class DataUploader {
     return returnObj;
   }
 
-  sync_personal_OffistaData(record) {
+  sync_personal_OffistaData(record)
+  {
     const essential = TRANSFER_LIST.essential.fields;
     const enrollResidency = TRANSFER_LIST.enroll_residency.fields;
     const enrollSocialInsurance = TRANSFER_LIST.enroll_social_insurance.fields;
@@ -241,18 +255,27 @@ module.exports = class DataUploader {
     return this.convertKintoneToOffista(record, transferFields);
   }
 
-  sync_family_OffistaData(record) {
+  async backupAddress(companyName)
+  {
+
+  }
+
+  sync_family_OffistaData(record)
+  {
     let family_obj = [];
     const spouse = TRANSFER_LIST.spouse.fields;
     const numbered_dependents = TRANSFER_LIST.numbered_dependents.fields;
-    if (record["配偶者は扶養者ですか"].value[0] === "はい") {
+    if (record["配偶者は扶養者ですか"].value[0] === "はい")
+    {
       let spouse_data = this.convertKintoneToOffista(record, spouse);
       family_obj.push(spouse_data);
     }
-    for (let i = 2; i <= 6; i++) {
+    for (let i = 2; i <= 6; i++)
+    {
       if (record[`扶養${i}はいますか`].value[0] != "はい") continue;
       let target_dependents = JSON.parse(JSON.stringify(numbered_dependents));
-      target_dependents.forEach((elem) => {
+      target_dependents.forEach((elem) =>
+      {
         elem.from = elem.from + String(i)
       })
       let numbered_dependents_data = this.convertKintoneToOffista(record, target_dependents);
@@ -261,11 +284,13 @@ module.exports = class DataUploader {
     return family_obj;
   }
 
-  async checkCompanyResist(companyName) {
+  async checkCompanyResist(companyName)
+  {
     let result = await this.offistaInstance.get_consignment_customer();
 
     let stationId = "";
-    result.forEach((element) => {
+    result.forEach((element) =>
+    {
       if (element.customer_name === companyName) stationId = element.identifier;
     });
 
@@ -276,20 +301,23 @@ module.exports = class DataUploader {
     return stationId;
   }
 
-  async upload(companyName, dataObj) {
+  async upload(companyName, dataObj)
+  {
     this.stationId = await this.checkCompanyResist(companyName);
     if (this.stationId === "")
       return {
         is_successed: false,
         error_message: `"${companyName}" is not defined on the office station server.`,
       };
-    try {
+    try
+    {
       const resistResult = await this.offistaInstance.entry_employee(
         this.stationId,
         [dataObj]
       );
 
-      if (!resistResult.is_successed) {
+      if (!resistResult.is_successed)
+      {
         console.error(
           `Failed to entry employee data.\n${resistResult.error_message}`
         );
@@ -297,7 +325,8 @@ module.exports = class DataUploader {
           resistResult.error_message.includes(
             "既に登録されている従業員が存在します"
           )
-        ) {
+        )
+        {
           return this.update(companyName, dataObj);
         } else
           return {
@@ -307,26 +336,30 @@ module.exports = class DataUploader {
       }
 
       return { is_successed: true, error_message: "" };
-    } catch (e) {
+    } catch (e)
+    {
       console.error(e);
       return { is_successed: false, error_message: e.message || e };
     }
   }
 
-  async update(companyName, dataObj) {
+  async update(companyName, dataObj)
+  {
     this.stationId = await this.checkCompanyResist(companyName);
     if (this.stationId === "")
       return {
         is_successed: false,
         error_message: `"${companyName}" is not defined on the office station server.`,
       };
-    try {
+    try
+    {
       const resistResult = await this.offistaInstance.modify_employee(
         this.stationId,
         [dataObj]
       );
 
-      if (!resistResult.is_successed) {
+      if (!resistResult.is_successed)
+      {
         console.error(
           `Failed to modefy employee data.\n${resistResult.error_message}`
         );
@@ -335,16 +368,23 @@ module.exports = class DataUploader {
           error_message: resistResult.error_message,
         };
       } else return { is_successed: true, error_message: "" };
-    } catch (e) {
+    } catch (e)
+    {
       console.error(e);
       return { is_successed: false, error_message: e.message || e };
     }
   }
 
-  async sync(kintoneRecord) {
+  async sync(kintoneRecord)
+  {
     const companyName = kintoneRecord["会社名"].value;
     const personal_data = await this.sync_personal_OffistaData(kintoneRecord);
     const family_data = await this.sync_family_OffistaData(kintoneRecord);
+    const report_type = record["連絡種別_文字列"].value
+    if (report_type === "住所変更")
+    {
+      backupAddress(companyName)
+    }
 
     const upload_data = { ...personal_data, ...{ family: family_data } };
     console.log("upload_data: ", upload_data)
