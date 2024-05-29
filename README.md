@@ -10,6 +10,6 @@
 > [!IMPORTANT]
 > - must download above files into `src/config/`
 >
-> - ```https://drive.google.com/file/d/1hk_uxsLNvq8AgHY83Qs1Tos9CDlduUh-/view?usp=drive_link```
+> - [kintone_config.json](https://drive.google.com/file/d/1hk_uxsLNvq8AgHY83Qs1Tos9CDlduUh-/view?usp=drive_link)  
 > 
-> - ```https://drive.google.com/file/d/1E7ijrMsOt8Yc0MRKqbFdM6rqmwAWntgT/view?usp=drive_link```
+> - [offista_config.json](https://drive.google.com/file/d/1E7ijrMsOt8Yc0MRKqbFdM6rqmwAWntgT/view?usp=drive_link)
