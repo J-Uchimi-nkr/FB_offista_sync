@@ -348,14 +348,14 @@ module.exports = class DataUploader {
   async sync(kintoneRecord) {
     const companyName = kintoneRecord["会社名"].value;
     const personal_data = await this.sync_personal_OffistaData(kintoneRecord);
-    // const family_data = await this.sync_family_OffistaData(kintoneRecord);
+    const family_data = await this.sync_family_OffistaData(kintoneRecord);
     const report_type = kintoneRecord["連絡種別_文字列"].value
     if (report_type === "住所変更") {
       backupAddress(companyName)
     }
 
-    // const upload_data = { ...personal_data, ...{ family: family_data } };
-    const upload_data = { ...personal_data };
+    const upload_data = { ...personal_data, ...{ family: family_data } };
+    // const upload_data = { ...personal_data };
     console.log("upload_data: ", upload_data)
     // return upload_data
     return await this.upload(companyName, upload_data);
