@@ -1,0 +1,2 @@
+# kintone_offista_FB
+FBでの入力後にオフィステに同期するプログラム
