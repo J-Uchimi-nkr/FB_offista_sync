@@ -1,0 +1,13 @@
+[
+  {
+    "time": "2024-06-23T14:13:48.204Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=000"
+    },
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  }
+]

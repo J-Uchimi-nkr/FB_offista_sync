@@ -1,0 +1,15 @@
+[
+  {
+    "time": "2024-06-24T14:15:50.504Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=000",
+      "unique_key_value": "2024-06-24-37044"
+    },
+    "referrer": "https://916163bf.form.kintoneapp.com/",
+    "statusCode": 500,
+    "res": "index number 0 employee object has not a key {customer_employee_id}."
+  }
+]

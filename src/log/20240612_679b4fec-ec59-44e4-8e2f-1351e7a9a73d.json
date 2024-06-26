@@ -1,0 +1,681 @@
+[
+  {
+    "time": "2024-06-12T11:22:46.596Z",
+    "from": "172.24.16.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=237"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"561[本人]:生年月日 を正しい日付形式で入力してください。（例 2024/04/18）\""
+  },
+  {
+    "time": "2024-06-12T11:22:48.600Z",
+    "from": "172.24.16.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=236"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 200,
+    "res": {
+      "レコード番号": {
+        "type": "RECORD_NUMBER",
+        "value": "236"
+      },
+      "離職理由": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "具体的な離職理由": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "住所4カナ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "担当者名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "前職退職日": {
+        "type": "DATE",
+        "value": null
+      },
+      "役職": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ミドルネームビジネスカナ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "離職後の住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "会社レコード番号": {
+        "type": "NUMBER",
+        "value": "76"
+      },
+      "連絡の添付ファイル": {
+        "type": "FILE",
+        "value": []
+      },
+      "通勤経路情報": {
+        "type": "SUBTABLE",
+        "value": [
+          {
+            "id": "2272274",
+            "value": {
+              "通勤手段": {
+                "type": "DROP_DOWN",
+                "value": null
+              },
+              "定期券期間": {
+                "type": "RADIO_BUTTON",
+                "value": "１か月"
+              },
+              "片道距離": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "乗車駅": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "片道運賃": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "所要時間": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "定期代": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "降車駅": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              }
+            }
+          }
+        ]
+      },
+      "前職者源泉徴収票": {
+        "type": "FILE",
+        "value": []
+      },
+      "契約期間": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "この連絡は": {
+        "type": "RADIO_BUTTON",
+        "value": "処理完了"
+      },
+      "在留カードナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "会社名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "株式会社小林商事"
+      },
+      "生年月日年_0": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "契約開始日": {
+        "type": "DATE",
+        "value": null
+      },
+      "在留期間": {
+        "type": "DATE",
+        "value": null
+      },
+      "ミドルネームビジネス": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "個人メールアドレス": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡元レコードURL": {
+        "type": "LINK",
+        "value": ""
+      },
+      "電話番号2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "障害者区分": {
+        "type": "DROP_DOWN",
+        "value": "該当しない"
+      },
+      "在留資格": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "一回の契約期間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "就労制限の有無": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "雇保喪失年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "基礎年金番号無しチェック": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "携帯番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "080-1076-3277"
+      },
+      "$id": {
+        "type": "__ID__",
+        "value": "236"
+      },
+      "雇用保険番号有無_radioBotton": {
+        "type": "RADIO_BUTTON",
+        "value": "雇用保険番号あり"
+      },
+      "名ビジネス": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "照会履歴": {
+        "type": "SUBTABLE",
+        "value": [
+          {
+            "id": "2282281",
+            "value": {
+              "照会者": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "照会日時": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              }
+            }
+          }
+        ]
+      },
+      "離職票交付": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "通算の契約期間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓ビジネス": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "血液型": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "入社時社会保険": {
+        "type": "RADIO_BUTTON",
+        "value": "加入しない"
+      },
+      "１ヶ月の賃金見込額": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "本人確認書類": {
+        "type": "FILE",
+        "value": []
+      },
+      "ビジネスメールアドレス": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "社員補助No": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "0"
+      },
+      "作成者": {
+        "type": "CREATOR",
+        "value": {
+          "code": "Administrator",
+          "name": "Administrator"
+        }
+      },
+      "雇用形態": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "生年月日日_0": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "更新日時": {
+        "type": "UPDATED_TIME",
+        "value": "2024-06-12T02:19:00Z"
+      },
+      "_401k加入有無": {
+        "type": "RADIO_BUTTON",
+        "value": "無"
+      },
+      "本人マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "顧問先背番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "2013014"
+      },
+      "ミドルネーム戸籍カナ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓戸籍": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "宮内"
+      },
+      "退職年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "契約終了日": {
+        "type": "DATE",
+        "value": null
+      },
+      "メイビジネスカナ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "生年月日": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "1986-04-07"
+      },
+      "雇用契約書最終を添付": {
+        "type": "FILE",
+        "value": []
+      },
+      "基礎年金番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "1254453371"
+      },
+      "性別戸籍": {
+        "type": "DROP_DOWN",
+        "value": "男"
+      },
+      "週所定労働時間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "1900/1/1 16:00"
+      },
+      "職種": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "住所2カナ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "ソウサシ"
+      },
+      "本人マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "生年月日月_0": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "誓約書・雇用契約書等": {
+        "type": "FILE",
+        "value": []
+      },
+      "雇用保険番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "5065-303781-3"
+      },
+      "備考メッセージ": {
+        "type": "MULTI_LINE_TEXT",
+        "value": ""
+      },
+      "緊急連絡先": {
+        "type": "SUBTABLE",
+        "value": [
+          {
+            "id": "2272272",
+            "value": {
+              "緊急連絡先姓カナ": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "緊急連絡先名カナ": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "電話番号予備": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "続柄": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "緊急連絡先名": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "住所": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "電話番号": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "緊急連絡先姓": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              }
+            }
+          }
+        ]
+      },
+      "離職票送り先": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "NKR担当者": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "雇用保険_社会保険の加入_脱退の場合": {
+        "type": "RADIO_BUTTON",
+        "value": "変更なし"
+      },
+      "給与形態": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "名戸籍": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "將行"
+      },
+      "在留カード所有": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "郵便番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "2892102"
+      },
+      "マイページURL": {
+        "type": "LINK",
+        "value": ""
+      },
+      "外国人": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "入社年月日": {
+        "type": "DATE",
+        "value": "2021-06-01"
+      },
+      "住所2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "匝瑳市"
+      },
+      "住所1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "千葉県"
+      },
+      "住所4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "入社時雇用保険": {
+        "type": "RADIO_BUTTON",
+        "value": "加入しない"
+      },
+      "住所3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "椿961-5"
+      },
+      "セイ戸籍カナ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "ミヤウチ"
+      },
+      "枝番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "100"
+      },
+      "顔写真": {
+        "type": "FILE",
+        "value": []
+      },
+      "作成日時": {
+        "type": "CREATED_TIME",
+        "value": "2024-06-06T05:58:00Z"
+      },
+      "連絡種別": {
+        "type": "RADIO_BUTTON",
+        "value": "入社連絡"
+      },
+      "基礎年金番号有無": {
+        "type": "RADIO_BUTTON",
+        "value": "基礎年金番号あり"
+      },
+      "社会保険取得年月日": {
+        "type": "DATE",
+        "value": "2021-06-01"
+      },
+      "退職願を添付": {
+        "type": "FILE",
+        "value": []
+      },
+      "更新者": {
+        "type": "MODIFIER",
+        "value": {
+          "code": "j-uchimi",
+          "name": "内海"
+        }
+      },
+      "前職名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "台帳番号": {
+        "type": "NUMBER",
+        "value": ""
+      },
+      "メイ戸籍カナ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マサユキ"
+      },
+      "社保喪失年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "住所3カナ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "ツバキ"
+      },
+      "健康保険任意継続": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "在籍状況": {
+        "type": "DROP_DOWN",
+        "value": "在籍中"
+      },
+      "ミドルネーム戸籍": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "給与振込口座情報": {
+        "type": "SUBTABLE",
+        "value": [
+          {
+            "id": "2272273",
+            "value": {
+              "支店コード": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "支店名": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "口座番号": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "金融機関コード": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "預金種別": {
+                "type": "DROP_DOWN",
+                "value": null
+              },
+              "金融機関名": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "口座名義": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              }
+            }
+          }
+        ]
+      },
+      "check_box": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "ローマ字": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "所属事業所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "労働者の意思表示": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "扶養控除等申告書": {
+        "type": "FILE",
+        "value": []
+      },
+      "派遣・請負の区分": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "契約の更新回数": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "契約更新条項の有無": {
+        "type": "RADIO_BUTTON",
+        "value": "あり"
+      },
+      "社員No": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "538"
+      },
+      "前回の契約更新時に次回の更新について": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "担当者メールアドレス": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "$revision": {
+        "type": "__REVISION__",
+        "value": "4"
+      },
+      "雇用保険取得年月日": {
+        "type": "DATE",
+        "value": "2021-06-01"
+      },
+      "被保険者整理番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "資格外活動の許可": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "NKRメールアドレス": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "セイビジネスカナ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "国籍": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "識別コード": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "2011012100"
+      },
+      "履歴書・職務経歴書等": {
+        "type": "FILE",
+        "value": []
+      }
+    }
+  },
+  {
+    "time": "2024-06-12T11:22:49.493Z",
+    "from": "172.24.16.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=237"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"561[本人]:生年月日 を正しい日付形式で入力してください。（例 2024/04/18）\""
+  },
+  {
+    "time": "2024-06-12T11:23:36.235Z",
+    "from": "172.24.16.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=238"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"591[本人]:生年月日 を正しい日付形式で入力してください。（例 2024/04/18）\""
+  },
+  {
+    "time": "2024-06-12T11:23:39.152Z",
+    "from": "172.24.16.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=239"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"131[本人]:生年月日 を正しい日付形式で入力してください。（例 2024/04/18）,131[本人]:丁目・番地 (カナ) は全角のカナ・アルファベット・数字・ハイフン・スペースで入力してください。\""
+  }
+]

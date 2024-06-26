@@ -1,0 +1,14 @@
+[
+  {
+    "time": "2024-06-17T15:02:04.213Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=431&l.view=6450553&l.q&l.sort_0=f6442685&l.order_0=DESC&l.next=437&l.prev=0&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to modify data.\n\"0.0000111[扶養家族1]:続柄が 夫・妻 の場合、扶養になった理由 (税法上) に (配偶者以外) その他 は選択できません。従業員詳細をご確認ください。,0.0000111[扶養家族2]:扶養を外れた理由 (税法上) が その他 でない場合 扶養を外れた理由その他 (税法上) は入力できません。\""
+  }
+]

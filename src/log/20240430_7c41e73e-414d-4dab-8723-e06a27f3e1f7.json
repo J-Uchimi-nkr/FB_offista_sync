@@ -1,0 +1,58 @@
+[
+  {
+    "time": "2024-05-02T10:57:35.696Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/",
+    "method": "GET",
+    "body": {},
+    "referrer": "https://nkr-group.cybozu.com/",
+    "res": "endpoint=/ is not defined in server",
+    "statusCode": 404
+  },
+  {
+    "time": "2024-05-02T10:57:35.808Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/favicon.ico",
+    "method": "GET",
+    "body": {},
+    "referrer": "https://192.168.1.120:3000/",
+    "res": "endpoint=/favicon.ico is not defined in server",
+    "statusCode": 404
+  },
+  {
+    "time": "2024-05-02T10:57:42.628Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/1240/show#record=9911&l.sort_0=f2227&l.order_0=desc&l.q=f6138560%20%3D%20%22https%3A%2F%2Fnkr-group.cybozu.com%2Fk%2Fguest%2F235%2F1578%2Fshow%23record%3D53%22&tab=none"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-05-02T10:58:08.771Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/1240/show#record=9911&l.sort_0=f2227&l.order_0=desc&l.q=f6138560%20%3D%20%22https%3A%2F%2Fnkr-group.cybozu.com%2Fk%2Fguest%2F235%2F1578%2Fshow%23record%3D53%22"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-05-02T11:05:42.032Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/1240/show#record=9919&l.sort_0=f2227&l.order_0=desc&l.q=f6138560%20%3D%20%22https%3A%2F%2Fnkr-group.cybozu.com%2Fk%2Fguest%2F235%2F1578%2Fshow%23record%3D53%22"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  }
+]

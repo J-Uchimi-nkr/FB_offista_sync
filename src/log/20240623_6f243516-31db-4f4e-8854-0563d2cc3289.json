@@ -1,0 +1,38 @@
+[
+  {
+    "time": "2024-06-23T21:44:23.244Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=000"
+    },
+    "referrer": "https://916163bf.form.kintoneapp.com/",
+    "statusCode": 500,
+    "res": "window is not defined"
+  },
+  {
+    "time": "2024-06-23T21:48:07.153Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=000"
+    },
+    "referrer": "https://916163bf.form.kintoneapp.com/",
+    "statusCode": 500,
+    "res": "window is not defined"
+  },
+  {
+    "time": "2024-06-23T21:48:47.421Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=000"
+    },
+    "referrer": "https://916163bf.form.kintoneapp.com/",
+    "statusCode": 500,
+    "res": "window is not defined"
+  }
+]

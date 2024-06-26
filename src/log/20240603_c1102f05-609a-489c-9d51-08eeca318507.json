@@ -1,0 +1,112 @@
+[
+  {
+    "time": "2024-06-03T23:06:16.925Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/",
+    "method": "GET",
+    "body": {},
+    "referrer": "https://nkr-group.cybozu.com/",
+    "res": "endpoint=/ is not defined in server",
+    "statusCode": 404
+  },
+  {
+    "time": "2024-06-03T23:06:18.601Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/1240/show#record=8835&l.sort_0=f2223&l.order_0=desc&l.size=ks2&l.view=6142425&l.q=f6135838%2520like%2520%2522%25E3%2583%25AC%25E3%2583%25B3%25E3%2582%25B7%25E3%2583%25A5%25E3%2582%25A6%2522"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "record is not defined"
+  },
+  {
+    "time": "2024-06-04T10:42:35.154Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/",
+    "method": "GET",
+    "body": {},
+    "referrer": "https://nkr-group.cybozu.com/",
+    "res": "endpoint=/ is not defined in server",
+    "statusCode": 404
+  },
+  {
+    "time": "2024-06-04T10:42:35.247Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/favicon.ico",
+    "method": "GET",
+    "body": {},
+    "referrer": "https://192.168.1.110:3000/",
+    "res": "endpoint=/favicon.ico is not defined in server",
+    "statusCode": 404
+  },
+  {
+    "time": "2024-06-04T10:42:39.226Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/1240/show#record=10130&l.sort_0=f2227&l.order_0=desc&l.q=f6138560%20%3D%20%22https%3A%2F%2Fnkr-group.cybozu.com%2Fk%2Fguest%2F237%2F1582%2Fshow%23record%3D190%22"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "record is not defined"
+  },
+  {
+    "time": "2024-06-04T11:18:03.082Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/1240/show#record=10130&l.sort_0=f2227&l.order_0=desc&l.q=f6138560%20%3D%20%22https%3A%2F%2Fnkr-group.cybozu.com%2Fk%2Fguest%2F237%2F1582%2Fshow%23record%3D190%22&tab=none&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "record is not defined"
+  },
+  {
+    "time": "2024-06-05T11:05:10.346Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/",
+    "method": "GET",
+    "body": {},
+    "referrer": "https://nkr-group.cybozu.com/",
+    "res": "endpoint=/ is not defined in server",
+    "statusCode": 404
+  },
+  {
+    "time": "2024-06-05T11:05:10.728Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/favicon.ico",
+    "method": "GET",
+    "body": {},
+    "referrer": "https://192.168.1.110:3000/",
+    "res": "endpoint=/favicon.ico is not defined in server",
+    "statusCode": 404
+  },
+  {
+    "time": "2024-06-05T11:05:15.272Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/1240/show#record=10118&l.sort_0=f2227&l.order_0=desc&l.q=f6138560%20%3D%20%22https%3A%2F%2Fnkr-group.cybozu.com%2Fk%2Fguest%2F381%2F3039%2Fshow%23record%3D12%22&tab=none&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "record is not defined"
+  },
+  {
+    "time": "2024-06-05T11:06:29.730Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/1240/show#record=10118&l.sort_0=f2227&l.order_0=desc&l.q=f6138560%20%3D%20%22https%3A%2F%2Fnkr-group.cybozu.com%2Fk%2Fguest%2F381%2F3039%2Fshow%23record%3D12%22&tab=none&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "record is not defined"
+  }
+]

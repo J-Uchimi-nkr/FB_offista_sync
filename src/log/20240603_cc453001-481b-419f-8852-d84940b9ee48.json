@@ -1,0 +1,24 @@
+[
+  {
+    "time": "2024-06-03T13:34:47.759Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/",
+    "method": "GET",
+    "body": {},
+    "referrer": "https://nkr-group.cybozu.com/",
+    "res": "endpoint=/ is not defined in server",
+    "statusCode": 404
+  },
+  {
+    "time": "2024-06-03T13:34:49.455Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/1240/show#record=8835&l.sort_0=f2223&l.order_0=desc&l.size=ks0&l.view=6142425&l.q=f6135838%2520like%2520%2522%25E3%2583%25AC%25E3%2583%25B3%25E3%2582%25B7%25E3%2583%25A5%25E3%2582%25A6%2522"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "record is not defined"
+  }
+]

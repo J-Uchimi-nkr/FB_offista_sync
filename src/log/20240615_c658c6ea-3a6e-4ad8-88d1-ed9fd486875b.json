@@ -1,0 +1,74 @@
+[
+  {
+    "time": "2024-06-15T08:59:51.301Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=431&l.view=6450553&l.q&l.sort_0=f6442685&l.order_0=DESC&l.next=432&l.prev=0&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to modify data.\n\"0.0000111[扶養家族2]:生年月日 は必須入力です。,0.0000111[扶養家族1]:選択された 続柄 は正しくありません。\""
+  },
+  {
+    "time": "2024-06-15T09:00:53.340Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=431&l.view=6450553&l.q&l.sort_0=f6442685&l.order_0=DESC&l.next=432&l.prev=0&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to modify data.\n\"0.0000111[扶養家族2]:生年月日 は必須入力です。,0.0000111[扶養家族1]:選択された 続柄 は正しくありません。\""
+  },
+  {
+    "time": "2024-06-15T09:01:42.202Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=431&l.view=6450553&l.q&l.sort_0=f6442685&l.order_0=DESC&l.next=432&l.prev=0&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to modify data.\n\"0.0000111[扶養家族2]:生年月日 は必須入力です。,0.0000111[扶養家族1]:選択された 続柄 は正しくありません。\""
+  },
+  {
+    "time": "2024-06-15T09:03:08.287Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=431&l.view=6450553&l.q&l.sort_0=f6442685&l.order_0=DESC&l.next=432&l.prev=0&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to modify data.\n\"0.0000111[扶養家族1]:選択された 続柄 は正しくありません。\""
+  },
+  {
+    "time": "2024-06-15T09:07:07.635Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=431&l.view=6450553&l.q&l.sort_0=f6442685&l.order_0=DESC&l.next=432&l.prev=0&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to modify data.\n\"0.0000111[扶養家族1]:選択された 続柄 は正しくありません。\""
+  },
+  {
+    "time": "2024-06-15T09:07:34.334Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=431&l.view=6450553&l.q&l.sort_0=f6442685&l.order_0=DESC&l.next=432&l.prev=0&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to modify data.\n\"0.0000111[扶養家族1]:生年月日 を正しい日付形式で入力してください。（例 2023-04-18）\""
+  }
+]

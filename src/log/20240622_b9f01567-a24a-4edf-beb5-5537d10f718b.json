@@ -1,0 +1,26 @@
+[
+  {
+    "time": "2024-06-22T20:03:17.803Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=431&l.view=6450553&l.q&l.sort_0=f6442685&l.order_0=DESC&l.next=438&l.prev=436"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-22T20:03:36.156Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=431&l.view=6450553&l.q&l.sort_0=f6442685&l.order_0=DESC&l.next=438&l.prev=436"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  }
+]

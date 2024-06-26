@@ -1,0 +1,5984 @@
+[
+  {
+    "time": "2024-04-12T19:05:41.827Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/",
+    "method": "GET",
+    "body": {},
+    "referrer": "https://nkr-group.cybozu.com/",
+    "res": "endpoint=/ is not defined in server",
+    "statusCode": 404
+  },
+  {
+    "time": "2024-04-12T19:05:42.043Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/favicon.ico",
+    "method": "GET",
+    "body": {},
+    "referrer": "https://192.168.1.120:3000/",
+    "res": "endpoint=/favicon.ico is not defined in server",
+    "statusCode": 404
+  },
+  {
+    "time": "2024-04-12T19:06:05.218Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/1240/show#record=9775&l.sort_0=f2227&l.order_0=desc&l.q=f6138560%20%3D%20%22https%3A%2F%2Fnkr-group.cybozu.com%2Fk%2Fguest%2F395%2F3508%2Fshow%23record%3D8%22&tab=none&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"0001[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-04-12T19:06:22.308Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/1240/show#record=9775&l.sort_0=f2227&l.order_0=desc&l.q=f6138560%20%3D%20%22https%3A%2F%2Fnkr-group.cybozu.com%2Fk%2Fguest%2F395%2F3508%2Fshow%23record%3D8%22&tab=none&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 200,
+    "res": {
+      "配偶者マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "離職理由": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "具体的な離職理由": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "資格証明書作成完了チェック": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "扶養4マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "康幸"
+      },
+      "担当者名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "前職退職日": {
+        "type": "DATE",
+        "value": null
+      },
+      "扶養配偶者になった日": {
+        "type": "DATE",
+        "value": null
+      },
+      "会社レコード番号": {
+        "type": "NUMBER",
+        "value": "417"
+      },
+      "被保険者証記号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "会社名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "株式会社水穿"
+      },
+      "扶養5マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "契約開始日": {
+        "type": "DATE",
+        "value": null
+      },
+      "在留期間": {
+        "type": "DATE",
+        "value": null
+      },
+      "外国人区分": {
+        "type": "RADIO_BUTTON",
+        "value": "日本人"
+      },
+      "年間の収入4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "年間の収入5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "年間の収入2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡元レコードURL": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "https://nkr-group.cybozu.com/k/guest/395/3508/show#record=8"
+      },
+      "年間の収入3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "在留資格": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "一回の契約期間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者性別": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "別居の場合の住所5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "雇保喪失年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "別居の場合の住所6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "年間の収入6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "基礎年金番号無しチェック": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "ﾒｲ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "$id": {
+        "type": "__ID__",
+        "value": "9775"
+      },
+      "被扶養者になった理由6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった理由5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった理由4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "扶養配偶者になったその他の理由": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "離職票交付": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった理由3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "メールアドレス": {
+        "type": "LINK",
+        "value": "yasu19751009@gmail.com"
+      },
+      "被扶養者になった理由2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "生年月日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "入社時社会保険": {
+        "type": "RADIO_BUTTON",
+        "value": "加入しない"
+      },
+      "管轄健保住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養5マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "性別4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "性別5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "性別2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "性別3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "資格証明書フォルダURL": {
+        "type": "LINK",
+        "value": ""
+      },
+      "性別6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日1": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "退職年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "扶養5はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "扶養2はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "雇用契約書最終を添付": {
+        "type": "FILE",
+        "value": []
+      },
+      "被扶養者でなくなった日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者でなくなった日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者でなくなった日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "週所定労働時間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職種": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "一般"
+      },
+      "扶養3マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "保険変更パターン_文字列": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "変更なし"
+      },
+      "本人マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考メッセージ": {
+        "type": "MULTI_LINE_TEXT",
+        "value": ""
+      },
+      "離職票送り先": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者でなくなった日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者でなくなった日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "NKR担当者": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "川上・津幡"
+      },
+      "雇用保険_社会保険の加入_脱退の場合": {
+        "type": "RADIO_BUTTON",
+        "value": "変更なし"
+      },
+      "扶養6はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "姓1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "入社時雇用保険": {
+        "type": "RADIO_BUTTON",
+        "value": "加入しない"
+      },
+      "配偶者基礎年金番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養6マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡種別": {
+        "type": "RADIO_BUTTON",
+        "value": "入社連絡"
+      },
+      "海外特例要件該当2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "海外特例要件該当6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "住所ﾌﾘｶﾞﾅ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "ﾎｯｶｲﾄﾞｳｷﾀﾐｼﾎｸｵｳﾁｮｳ"
+      },
+      "社会保険取得年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "海外特例要件該当5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "海外特例要件該当4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "前職名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "海外特例要件該当3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "姓5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "台帳番号": {
+        "type": "NUMBER",
+        "value": ""
+      },
+      "姓6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "社保喪失年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "健康保険任意継続": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "職業6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "本証明書発行の理由": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "資格取得手続き中のため。"
+      },
+      "扶養6マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "ローマ字": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "性別": {
+        "type": "DROP_DOWN",
+        "value": "男"
+      },
+      "配偶者続柄": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "北海道北見市北央町101－19"
+      },
+      "派遣・請負の区分": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "ｾｲ6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の1回の仕送り額と年間回数2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "同居の有無": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "別居の場合の1回の仕送り額と年間回数3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "契約の更新回数": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "社員No": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "0001"
+      },
+      "別居の場合の1回の仕送り額と年間回数4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "担当者メールアドレス": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の1回の仕送り額と年間回数5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の1回の仕送り額と年間回数6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "所属事業場": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "本社"
+      },
+      "扶養配偶者から外れる日": {
+        "type": "DATE",
+        "value": null
+      },
+      "配偶者別居の場合の1回の仕送り額と年間回数": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "会社住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "保険者番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "NKRメールアドレス": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "m-tsuhata@nkr-group.com,h-kawakami@nkr-group.com"
+      },
+      "国籍": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "レコード番号": {
+        "type": "RECORD_NUMBER",
+        "value": "9775"
+      },
+      "配偶者年間の収入": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被保険者証番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "離職後の住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡の添付ファイル": {
+        "type": "FILE",
+        "value": []
+      },
+      "契約期間": {
+        "type": "DROP_DOWN",
+        "value": "期間の定めなし"
+      },
+      "この連絡は": {
+        "type": "RADIO_BUTTON",
+        "value": "初回の連絡"
+      },
+      "在留カードナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者職業": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "代表役職": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者ローマ字氏名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養配偶者になった理由": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "照会履歴": {
+        "type": "SUBTABLE",
+        "value": [
+          {
+            "id": "2186841",
+            "value": {
+              "照会者": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "照会日時": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              }
+            }
+          }
+        ]
+      },
+      "管轄健保": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "通算の契約期間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養4マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "１ヶ月の賃金見込額": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "同居の有無2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "同居の有無4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "作成者": {
+        "type": "CREATOR",
+        "value": {
+          "code": "Administrator",
+          "name": "Administrator"
+        }
+      },
+      "雇用形態": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "同居の有無3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "同居の有無6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "同居の有無5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "代表氏名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "交付年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "更新日時": {
+        "type": "UPDATED_TIME",
+        "value": "2024-04-12T10:06:00Z"
+      },
+      "扶養配偶者から外れた理由": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "本人マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバー入力済みです"
+      },
+      "扶養家族の確認": {
+        "type": "RADIO_BUTTON",
+        "value": "いない"
+      },
+      "契約終了日": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日": {
+        "type": "DATE",
+        "value": "1975-10-09"
+      },
+      "海外特例要件非該当_国内転入日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "海外特例要件非該当_国内転入日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "基礎年金番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "雇用保険番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養4はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "電話番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "09095110411"
+      },
+      "給与形態": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "この連絡は_文字列": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "初回の連絡"
+      },
+      "被扶養者でなくなった理由5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "扶養3はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "被扶養者でなくなった理由6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者でなくなった理由3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者でなくなった理由4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "会社名を入力して取得をクリック": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "郵便番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "090-0822"
+      },
+      "被扶養者でなくなった理由2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "扶養3マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "マイページURL": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "https://5ea2a167.viewer.kintoneapp.com/public/130a825cdd02452f97a886edee14e947ca4963439fa5275641959c6cb1b92753/detail/def502006c7c200582a8c824ded12b53988714bcfaac554f992e1673306aa66e353976723407e8f501533b09e28e45f41869fa2669db4305448b22cbf7e9ebe08f9db114477576df8049a6a11cc3741f62a9416153a7dcc73db390ad0ce94c948bbe291adae7bdebf28215a183788fa0cabfa5717fba38baa74488bacdcbc74a41f886718b9821c27f1563259f35ce5ed3773d5a5bd9"
+      },
+      "ｾｲ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "入社年月日": {
+        "type": "DATE",
+        "value": "2023-05-10"
+      },
+      "海外特例要件非該当_国内転入日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "作成日時": {
+        "type": "CREATED_TIME",
+        "value": "2024-04-11T05:54:00Z"
+      },
+      "海外特例要件非該当_国内転入日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "海外特例要件非該当_国内転入日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "名5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者は扶養者ですか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "名6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "退職願を添付": {
+        "type": "FILE",
+        "value": []
+      },
+      "更新者": {
+        "type": "MODIFIER",
+        "value": {
+          "code": "h-kawakami",
+          "name": "川上"
+        }
+      },
+      "ﾒｲ6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養2マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "ﾒｲ3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡種別_文字列": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "入社連絡"
+      },
+      "名1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "小池"
+      },
+      "扶養2マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "労働者の意思表示": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "前回の契約更新時に次回の更新について": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "続柄6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "$revision": {
+        "type": "__REVISION__",
+        "value": "3"
+      },
+      "雇用保険取得年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "続柄2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "配偶者備考": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "続柄3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "続柄4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "続柄5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "資格外活動の許可": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "資格取得年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "有効期限": {
+        "type": "DATE",
+        "value": null
+      }
+    }
+  },
+  {
+    "time": "2024-04-12T19:06:36.717Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/1240/show#record=9776&l.sort_0=f2227&l.order_0=desc&l.q=f6138560%20%3D%20%22https%3A%2F%2Fnkr-group.cybozu.com%2Fk%2Fguest%2F395%2F3508%2Fshow%23record%3D9%22"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"0055[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-04-12T19:07:34.239Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/1240/show#record=9776&l.sort_0=f2227&l.order_0=desc&l.q=f6138560%20%3D%20%22https%3A%2F%2Fnkr-group.cybozu.com%2Fk%2Fguest%2F395%2F3508%2Fshow%23record%3D9%22&tab=none&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"0055[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-04-12T19:07:51.882Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/1240/show#record=9776&l.sort_0=f2227&l.order_0=desc&l.q=f6138560%20%3D%20%22https%3A%2F%2Fnkr-group.cybozu.com%2Fk%2Fguest%2F395%2F3508%2Fshow%23record%3D9%22&tab=none&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"0055[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-04-12T19:08:13.458Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/1240/show#record=9776&l.sort_0=f2227&l.order_0=desc&l.q=f6138560%20%3D%20%22https%3A%2F%2Fnkr-group.cybozu.com%2Fk%2Fguest%2F395%2F3508%2Fshow%23record%3D9%22&tab=none&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 200,
+    "res": {
+      "配偶者マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "離職理由": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "具体的な離職理由": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "資格証明書作成完了チェック": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "扶養4マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "汰一"
+      },
+      "担当者名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "前職退職日": {
+        "type": "DATE",
+        "value": null
+      },
+      "扶養配偶者になった日": {
+        "type": "DATE",
+        "value": null
+      },
+      "会社レコード番号": {
+        "type": "NUMBER",
+        "value": "417"
+      },
+      "被保険者証記号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "会社名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "株式会社水穿"
+      },
+      "扶養5マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "契約開始日": {
+        "type": "DATE",
+        "value": null
+      },
+      "在留期間": {
+        "type": "DATE",
+        "value": null
+      },
+      "外国人区分": {
+        "type": "RADIO_BUTTON",
+        "value": "日本人"
+      },
+      "年間の収入4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "年間の収入5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "年間の収入2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡元レコードURL": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "https://nkr-group.cybozu.com/k/guest/395/3508/show#record=9"
+      },
+      "年間の収入3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "在留資格": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "一回の契約期間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者性別": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "別居の場合の住所5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "雇保喪失年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "別居の場合の住所6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "年間の収入6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "基礎年金番号無しチェック": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "ﾒｲ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "ﾀｲﾁ"
+      },
+      "$id": {
+        "type": "__ID__",
+        "value": "9776"
+      },
+      "被扶養者になった理由6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった理由5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった理由4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "扶養配偶者になったその他の理由": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "離職票交付": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった理由3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "メールアドレス": {
+        "type": "LINK",
+        "value": ""
+      },
+      "被扶養者になった理由2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "生年月日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "入社時社会保険": {
+        "type": "RADIO_BUTTON",
+        "value": "加入しない"
+      },
+      "管轄健保住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養5マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "性別4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "性別5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "性別2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "性別3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "資格証明書フォルダURL": {
+        "type": "LINK",
+        "value": ""
+      },
+      "性別6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日1": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "退職年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "扶養5はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "扶養2はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "雇用契約書最終を添付": {
+        "type": "FILE",
+        "value": []
+      },
+      "被扶養者でなくなった日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者でなくなった日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者でなくなった日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "週所定労働時間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職種": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "一般"
+      },
+      "扶養3マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "保険変更パターン_文字列": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "変更なし"
+      },
+      "本人マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考メッセージ": {
+        "type": "MULTI_LINE_TEXT",
+        "value": ""
+      },
+      "離職票送り先": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者でなくなった日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者でなくなった日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "NKR担当者": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "川上・津幡"
+      },
+      "雇用保険_社会保険の加入_脱退の場合": {
+        "type": "RADIO_BUTTON",
+        "value": "変更なし"
+      },
+      "扶養6はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "姓1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "入社時雇用保険": {
+        "type": "RADIO_BUTTON",
+        "value": "加入しない"
+      },
+      "配偶者基礎年金番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養6マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡種別": {
+        "type": "RADIO_BUTTON",
+        "value": "入社連絡"
+      },
+      "海外特例要件該当2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "海外特例要件該当6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "住所ﾌﾘｶﾞﾅ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "ﾎｯｶｲﾄﾞｳｷﾀﾐｼﾄｳﾘｮｳﾁｮｳ"
+      },
+      "社会保険取得年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "海外特例要件該当5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "海外特例要件該当4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "前職名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "海外特例要件該当3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "姓5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "台帳番号": {
+        "type": "NUMBER",
+        "value": ""
+      },
+      "姓6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "社保喪失年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "健康保険任意継続": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "職業6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "本証明書発行の理由": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "資格取得手続き中のため。"
+      },
+      "扶養6マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "ローマ字": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "性別": {
+        "type": "DROP_DOWN",
+        "value": "男"
+      },
+      "配偶者続柄": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "北海道北見市東陵町111番地2北苑寮"
+      },
+      "派遣・請負の区分": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "ｾｲ6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の1回の仕送り額と年間回数2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "同居の有無": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "別居の場合の1回の仕送り額と年間回数3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "契約の更新回数": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "社員No": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "0055"
+      },
+      "別居の場合の1回の仕送り額と年間回数4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "担当者メールアドレス": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の1回の仕送り額と年間回数5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の1回の仕送り額と年間回数6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "所属事業場": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "本社"
+      },
+      "扶養配偶者から外れる日": {
+        "type": "DATE",
+        "value": null
+      },
+      "配偶者別居の場合の1回の仕送り額と年間回数": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "会社住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "保険者番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "NKRメールアドレス": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "m-tsuhata@nkr-group.com,h-kawakami@nkr-group.com"
+      },
+      "国籍": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "レコード番号": {
+        "type": "RECORD_NUMBER",
+        "value": "9776"
+      },
+      "配偶者年間の収入": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被保険者証番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "離職後の住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡の添付ファイル": {
+        "type": "FILE",
+        "value": []
+      },
+      "契約期間": {
+        "type": "DROP_DOWN",
+        "value": "期間の定めなし"
+      },
+      "この連絡は": {
+        "type": "RADIO_BUTTON",
+        "value": "初回の連絡"
+      },
+      "在留カードナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者職業": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "代表役職": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者ローマ字氏名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養配偶者になった理由": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "照会履歴": {
+        "type": "SUBTABLE",
+        "value": [
+          {
+            "id": "2186843",
+            "value": {
+              "照会者": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "照会日時": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              }
+            }
+          }
+        ]
+      },
+      "管轄健保": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "通算の契約期間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養4マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "１ヶ月の賃金見込額": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "同居の有無2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "同居の有無4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "作成者": {
+        "type": "CREATOR",
+        "value": {
+          "code": "Administrator",
+          "name": "Administrator"
+        }
+      },
+      "雇用形態": {
+        "type": "DROP_DOWN",
+        "value": "アルバイト"
+      },
+      "同居の有無3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "同居の有無6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "同居の有無5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "代表氏名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "交付年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "更新日時": {
+        "type": "UPDATED_TIME",
+        "value": "2024-04-12T10:08:00Z"
+      },
+      "扶養配偶者から外れた理由": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "本人マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバー入力済みです"
+      },
+      "扶養家族の確認": {
+        "type": "RADIO_BUTTON",
+        "value": "いない"
+      },
+      "契約終了日": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日": {
+        "type": "DATE",
+        "value": "2001-11-15"
+      },
+      "海外特例要件非該当_国内転入日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "海外特例要件非該当_国内転入日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "基礎年金番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "雇用保険番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養4はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "電話番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "0000000000"
+      },
+      "給与形態": {
+        "type": "DROP_DOWN",
+        "value": "時給"
+      },
+      "この連絡は_文字列": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "初回の連絡"
+      },
+      "被扶養者でなくなった理由5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "扶養3はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "被扶養者でなくなった理由6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者でなくなった理由3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者でなくなった理由4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "会社名を入力して取得をクリック": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "郵便番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "090-0061"
+      },
+      "被扶養者でなくなった理由2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "扶養3マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "マイページURL": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "https://5ea2a167.viewer.kintoneapp.com/public/130a825cdd02452f97a886edee14e947ca4963439fa5275641959c6cb1b92753/detail/def50200633adea2d1d42e00348d995101e55b1d70a9a08916c368173474184b4aa8a6b44820e0592beca7992a4888c572ded2f97ff0320c190bec2c2d4a80854e344111a65fdd5fd5c8223871bdc8dc0df6be27a4bed67c742d5d47ce48fe345053232e61184a6b87140ead1bb795213f87de9bb387e6e0d2246387a632aba84102775d72d4c7b1bfced11d90b011f36f831015f286"
+      },
+      "ｾｲ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "入社年月日": {
+        "type": "DATE",
+        "value": "2023-07-20"
+      },
+      "海外特例要件非該当_国内転入日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "作成日時": {
+        "type": "CREATED_TIME",
+        "value": "2024-04-11T05:59:00Z"
+      },
+      "海外特例要件非該当_国内転入日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "海外特例要件非該当_国内転入日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "名5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者は扶養者ですか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "名6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "退職願を添付": {
+        "type": "FILE",
+        "value": []
+      },
+      "更新者": {
+        "type": "MODIFIER",
+        "value": {
+          "code": "h-kawakami",
+          "name": "川上"
+        }
+      },
+      "ﾒｲ6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養2マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "ﾒｲ3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡種別_文字列": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "入社連絡"
+      },
+      "名1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "片岡"
+      },
+      "扶養2マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "労働者の意思表示": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "前回の契約更新時に次回の更新について": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "続柄6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "$revision": {
+        "type": "__REVISION__",
+        "value": "4"
+      },
+      "雇用保険取得年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "続柄2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "配偶者備考": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "続柄3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "続柄4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "続柄5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "資格外活動の許可": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "資格取得年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "有効期限": {
+        "type": "DATE",
+        "value": null
+      }
+    }
+  },
+  {
+    "time": "2024-04-12T19:09:20.038Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/1240/show#record=9777&l.sort_0=f2227&l.order_0=desc&l.q=f6138560%20%3D%20%22https%3A%2F%2Fnkr-group.cybozu.com%2Fk%2Fguest%2F395%2F3508%2Fshow%23record%3D10%22&mode=show&tab=none"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 200,
+    "res": {
+      "配偶者マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "離職理由": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "具体的な離職理由": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "資格証明書作成完了チェック": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "扶養4マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "洋美"
+      },
+      "担当者名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "前職退職日": {
+        "type": "DATE",
+        "value": null
+      },
+      "扶養配偶者になった日": {
+        "type": "DATE",
+        "value": null
+      },
+      "会社レコード番号": {
+        "type": "NUMBER",
+        "value": "417"
+      },
+      "被保険者証記号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "会社名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "株式会社水穿"
+      },
+      "扶養5マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "契約開始日": {
+        "type": "DATE",
+        "value": null
+      },
+      "在留期間": {
+        "type": "DATE",
+        "value": null
+      },
+      "外国人区分": {
+        "type": "RADIO_BUTTON",
+        "value": "日本人"
+      },
+      "年間の収入4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "年間の収入5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "年間の収入2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡元レコードURL": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "https://nkr-group.cybozu.com/k/guest/395/3508/show#record=10"
+      },
+      "年間の収入3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "在留資格": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "一回の契約期間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者性別": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "別居の場合の住所5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "雇保喪失年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "別居の場合の住所6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "年間の収入6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "基礎年金番号無しチェック": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "ﾒｲ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "ﾋﾛﾐ"
+      },
+      "$id": {
+        "type": "__ID__",
+        "value": "9777"
+      },
+      "被扶養者になった理由6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった理由5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった理由4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "扶養配偶者になったその他の理由": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "離職票交付": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった理由3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "メールアドレス": {
+        "type": "LINK",
+        "value": ""
+      },
+      "被扶養者になった理由2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "生年月日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "入社時社会保険": {
+        "type": "RADIO_BUTTON",
+        "value": "加入しない"
+      },
+      "管轄健保住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養5マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "性別4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "性別5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "性別2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "性別3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "資格証明書フォルダURL": {
+        "type": "LINK",
+        "value": ""
+      },
+      "性別6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日1": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "退職年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "扶養5はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "扶養2はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "雇用契約書最終を添付": {
+        "type": "FILE",
+        "value": []
+      },
+      "被扶養者でなくなった日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者でなくなった日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者でなくなった日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "週所定労働時間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職種": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "一般"
+      },
+      "扶養3マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "保険変更パターン_文字列": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "変更なし"
+      },
+      "本人マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考メッセージ": {
+        "type": "MULTI_LINE_TEXT",
+        "value": ""
+      },
+      "離職票送り先": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者でなくなった日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者でなくなった日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "NKR担当者": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "川上・津幡"
+      },
+      "雇用保険_社会保険の加入_脱退の場合": {
+        "type": "RADIO_BUTTON",
+        "value": "変更なし"
+      },
+      "扶養6はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "姓1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "入社時雇用保険": {
+        "type": "RADIO_BUTTON",
+        "value": "加入しない"
+      },
+      "配偶者基礎年金番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養6マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡種別": {
+        "type": "RADIO_BUTTON",
+        "value": "入社連絡"
+      },
+      "海外特例要件該当2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "海外特例要件該当6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "住所ﾌﾘｶﾞﾅ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "ﾎｯｶｲﾄﾞｳｷﾀﾐｼﾄｷﾜﾁｮｳ"
+      },
+      "社会保険取得年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "海外特例要件該当5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "海外特例要件該当4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "前職名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "海外特例要件該当3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "姓5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "台帳番号": {
+        "type": "NUMBER",
+        "value": ""
+      },
+      "姓6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "社保喪失年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "健康保険任意継続": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "職業6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "本証明書発行の理由": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "資格取得手続き中のため。"
+      },
+      "扶養6マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "ローマ字": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "性別": {
+        "type": "DROP_DOWN",
+        "value": "女"
+      },
+      "配偶者続柄": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "北海道北見市常盤町4－14－8"
+      },
+      "派遣・請負の区分": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "ｾｲ6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の1回の仕送り額と年間回数2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "同居の有無": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "別居の場合の1回の仕送り額と年間回数3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "契約の更新回数": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "社員No": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "0059"
+      },
+      "別居の場合の1回の仕送り額と年間回数4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "担当者メールアドレス": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の1回の仕送り額と年間回数5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の1回の仕送り額と年間回数6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "所属事業場": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "本社"
+      },
+      "扶養配偶者から外れる日": {
+        "type": "DATE",
+        "value": null
+      },
+      "配偶者別居の場合の1回の仕送り額と年間回数": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "会社住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "保険者番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "NKRメールアドレス": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "m-tsuhata@nkr-group.com,h-kawakami@nkr-group.com"
+      },
+      "国籍": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "レコード番号": {
+        "type": "RECORD_NUMBER",
+        "value": "9777"
+      },
+      "配偶者年間の収入": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被保険者証番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "離職後の住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡の添付ファイル": {
+        "type": "FILE",
+        "value": []
+      },
+      "契約期間": {
+        "type": "DROP_DOWN",
+        "value": "期間の定めなし"
+      },
+      "この連絡は": {
+        "type": "RADIO_BUTTON",
+        "value": "初回の連絡"
+      },
+      "在留カードナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者職業": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "代表役職": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者ローマ字氏名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養配偶者になった理由": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "照会履歴": {
+        "type": "SUBTABLE",
+        "value": [
+          {
+            "id": "2186846",
+            "value": {
+              "照会者": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "照会日時": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              }
+            }
+          }
+        ]
+      },
+      "管轄健保": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "通算の契約期間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養4マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "１ヶ月の賃金見込額": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "同居の有無2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "同居の有無4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "作成者": {
+        "type": "CREATOR",
+        "value": {
+          "code": "Administrator",
+          "name": "Administrator"
+        }
+      },
+      "雇用形態": {
+        "type": "DROP_DOWN",
+        "value": "アルバイト"
+      },
+      "同居の有無3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "同居の有無6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "同居の有無5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "代表氏名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "交付年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "更新日時": {
+        "type": "UPDATED_TIME",
+        "value": "2024-04-12T10:08:00Z"
+      },
+      "扶養配偶者から外れた理由": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "本人マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバー入力済みです"
+      },
+      "扶養家族の確認": {
+        "type": "RADIO_BUTTON",
+        "value": "いない"
+      },
+      "契約終了日": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日": {
+        "type": "DATE",
+        "value": "1974-09-18"
+      },
+      "海外特例要件非該当_国内転入日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "海外特例要件非該当_国内転入日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "基礎年金番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "雇用保険番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養4はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "電話番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "0000000000"
+      },
+      "給与形態": {
+        "type": "DROP_DOWN",
+        "value": "時給"
+      },
+      "この連絡は_文字列": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "初回の連絡"
+      },
+      "被扶養者でなくなった理由5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "扶養3はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "被扶養者でなくなった理由6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者でなくなった理由3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者でなくなった理由4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "会社名を入力して取得をクリック": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "郵便番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "090-0817"
+      },
+      "被扶養者でなくなった理由2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "扶養3マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "マイページURL": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "https://5ea2a167.viewer.kintoneapp.com/public/130a825cdd02452f97a886edee14e947ca4963439fa5275641959c6cb1b92753/detail/def50200c96af3c7430f28686e3ae0b5512fa823970964aaa80752fb6b088ae07db45c028d1e6532b4f6255782f3468089ac5b21890bc6dd60d427b96cce5e6e925e2c3882fc091eb1ba77be7d57fd5e8439d4d841d18988e3e0b1c5ae220092e946f59e14222b31c4ed203cbab836c8e0f1d1a5db812a8af8a71bc439c87294c9cfb35922e5edfebbad7a91241d9875d5aecd4befc664"
+      },
+      "ｾｲ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "ｻｻｷ"
+      },
+      "配偶者マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "入社年月日": {
+        "type": "DATE",
+        "value": "2023-09-23"
+      },
+      "海外特例要件非該当_国内転入日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "作成日時": {
+        "type": "CREATED_TIME",
+        "value": "2024-04-11T06:01:00Z"
+      },
+      "海外特例要件非該当_国内転入日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "海外特例要件非該当_国内転入日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "名5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者は扶養者ですか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "名6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "退職願を添付": {
+        "type": "FILE",
+        "value": []
+      },
+      "更新者": {
+        "type": "MODIFIER",
+        "value": {
+          "code": "h-kawakami",
+          "name": "川上"
+        }
+      },
+      "ﾒｲ6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養2マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "ﾒｲ3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡種別_文字列": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "入社連絡"
+      },
+      "名1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "佐々木"
+      },
+      "扶養2マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "労働者の意思表示": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "前回の契約更新時に次回の更新について": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "続柄6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "$revision": {
+        "type": "__REVISION__",
+        "value": "2"
+      },
+      "雇用保険取得年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "続柄2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "配偶者備考": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "続柄3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "続柄4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "続柄5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "資格外活動の許可": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "資格取得年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "有効期限": {
+        "type": "DATE",
+        "value": null
+      }
+    }
+  },
+  {
+    "time": "2024-04-12T19:10:37.329Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/1240/show#record=9778&l.sort_0=f2227&l.order_0=desc&l.q=f6138560%20%3D%20%22https%3A%2F%2Fnkr-group.cybozu.com%2Fk%2Fguest%2F395%2F3508%2Fshow%23record%3D11%22&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 200,
+    "res": {
+      "配偶者マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "離職理由": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "具体的な離職理由": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "資格証明書作成完了チェック": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "扶養4マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "公貴"
+      },
+      "担当者名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "前職退職日": {
+        "type": "DATE",
+        "value": null
+      },
+      "扶養配偶者になった日": {
+        "type": "DATE",
+        "value": null
+      },
+      "会社レコード番号": {
+        "type": "NUMBER",
+        "value": "417"
+      },
+      "被保険者証記号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "会社名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "株式会社水穿"
+      },
+      "扶養5マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "契約開始日": {
+        "type": "DATE",
+        "value": null
+      },
+      "在留期間": {
+        "type": "DATE",
+        "value": null
+      },
+      "外国人区分": {
+        "type": "RADIO_BUTTON",
+        "value": "日本人"
+      },
+      "年間の収入4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "年間の収入5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "年間の収入2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡元レコードURL": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "https://nkr-group.cybozu.com/k/guest/395/3508/show#record=11"
+      },
+      "年間の収入3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "在留資格": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "一回の契約期間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者性別": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "別居の場合の住所5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "雇保喪失年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "別居の場合の住所6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "年間の収入6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "基礎年金番号無しチェック": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "ﾒｲ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "ｺｳｷ"
+      },
+      "$id": {
+        "type": "__ID__",
+        "value": "9778"
+      },
+      "被扶養者になった理由6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった理由5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった理由4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "扶養配偶者になったその他の理由": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "離職票交付": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった理由3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "メールアドレス": {
+        "type": "LINK",
+        "value": ""
+      },
+      "被扶養者になった理由2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "生年月日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "入社時社会保険": {
+        "type": "RADIO_BUTTON",
+        "value": "加入しない"
+      },
+      "管轄健保住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養5マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "性別4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "性別5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "性別2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "性別3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "資格証明書フォルダURL": {
+        "type": "LINK",
+        "value": ""
+      },
+      "性別6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日1": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "退職年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "扶養5はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "扶養2はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "雇用契約書最終を添付": {
+        "type": "FILE",
+        "value": []
+      },
+      "被扶養者でなくなった日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者でなくなった日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者でなくなった日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "週所定労働時間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職種": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "一般"
+      },
+      "扶養3マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "保険変更パターン_文字列": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "変更なし"
+      },
+      "本人マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考メッセージ": {
+        "type": "MULTI_LINE_TEXT",
+        "value": ""
+      },
+      "離職票送り先": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者でなくなった日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者でなくなった日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "NKR担当者": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "川上・津幡"
+      },
+      "雇用保険_社会保険の加入_脱退の場合": {
+        "type": "RADIO_BUTTON",
+        "value": "変更なし"
+      },
+      "扶養6はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "姓1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "入社時雇用保険": {
+        "type": "RADIO_BUTTON",
+        "value": "加入しない"
+      },
+      "配偶者基礎年金番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養6マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡種別": {
+        "type": "RADIO_BUTTON",
+        "value": "入社連絡"
+      },
+      "海外特例要件該当2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "海外特例要件該当6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "住所ﾌﾘｶﾞﾅ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "ﾎｯｶｲﾄﾞｳｷﾀﾐｼﾌﾞﾝｷｮｳﾁｮｳ"
+      },
+      "社会保険取得年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "海外特例要件該当5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "海外特例要件該当4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "前職名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "海外特例要件該当3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "姓5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "台帳番号": {
+        "type": "NUMBER",
+        "value": ""
+      },
+      "姓6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "社保喪失年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "健康保険任意継続": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "職業6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "本証明書発行の理由": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "資格取得手続き中のため。"
+      },
+      "扶養6マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "ローマ字": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "性別": {
+        "type": "DROP_DOWN",
+        "value": "男"
+      },
+      "配偶者続柄": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "北海道北見市文京町636-24"
+      },
+      "派遣・請負の区分": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "ｾｲ6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の1回の仕送り額と年間回数2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "同居の有無": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "別居の場合の1回の仕送り額と年間回数3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "契約の更新回数": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "社員No": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "0037"
+      },
+      "別居の場合の1回の仕送り額と年間回数4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "担当者メールアドレス": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の1回の仕送り額と年間回数5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の1回の仕送り額と年間回数6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "所属事業場": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "本社"
+      },
+      "扶養配偶者から外れる日": {
+        "type": "DATE",
+        "value": null
+      },
+      "配偶者別居の場合の1回の仕送り額と年間回数": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "会社住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "保険者番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "NKRメールアドレス": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "m-tsuhata@nkr-group.com,h-kawakami@nkr-group.com"
+      },
+      "国籍": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "レコード番号": {
+        "type": "RECORD_NUMBER",
+        "value": "9778"
+      },
+      "配偶者年間の収入": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被保険者証番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "離職後の住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡の添付ファイル": {
+        "type": "FILE",
+        "value": []
+      },
+      "契約期間": {
+        "type": "DROP_DOWN",
+        "value": "期間の定めなし"
+      },
+      "この連絡は": {
+        "type": "RADIO_BUTTON",
+        "value": "初回の連絡"
+      },
+      "在留カードナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者職業": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "代表役職": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者ローマ字氏名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養配偶者になった理由": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "照会履歴": {
+        "type": "SUBTABLE",
+        "value": [
+          {
+            "id": "2186848",
+            "value": {
+              "照会者": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "照会日時": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              }
+            }
+          }
+        ]
+      },
+      "管轄健保": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "通算の契約期間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養4マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "１ヶ月の賃金見込額": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "同居の有無2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "同居の有無4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "作成者": {
+        "type": "CREATOR",
+        "value": {
+          "code": "Administrator",
+          "name": "Administrator"
+        }
+      },
+      "雇用形態": {
+        "type": "DROP_DOWN",
+        "value": "アルバイト"
+      },
+      "同居の有無3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "同居の有無6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "同居の有無5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "代表氏名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "交付年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "更新日時": {
+        "type": "UPDATED_TIME",
+        "value": "2024-04-12T10:10:00Z"
+      },
+      "扶養配偶者から外れた理由": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "本人マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバー入力済みです"
+      },
+      "扶養家族の確認": {
+        "type": "RADIO_BUTTON",
+        "value": "いない"
+      },
+      "契約終了日": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日": {
+        "type": "DATE",
+        "value": "2000-11-30"
+      },
+      "海外特例要件非該当_国内転入日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "海外特例要件非該当_国内転入日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "基礎年金番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "雇用保険番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養4はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "電話番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "0000000000"
+      },
+      "給与形態": {
+        "type": "DROP_DOWN",
+        "value": "時給"
+      },
+      "この連絡は_文字列": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "初回の連絡"
+      },
+      "被扶養者でなくなった理由5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "扶養3はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "被扶養者でなくなった理由6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者でなくなった理由3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者でなくなった理由4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "会社名を入力して取得をクリック": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "郵便番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "090-0014"
+      },
+      "被扶養者でなくなった理由2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "扶養3マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "マイページURL": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "https://5ea2a167.viewer.kintoneapp.com/public/130a825cdd02452f97a886edee14e947ca4963439fa5275641959c6cb1b92753/detail/def50200e291482bda83753017f84aa716ec8a35f8c029e03baa9dd3140c9d8a5909a5c1b4c718beda531ba6172512ece23767caf81c179e24f4adc75c09348aced4cb33ba815f3d6a8879948bd079540a4ba251b6eb1f1970ea2e560c7bf9c9cde49a38b8b26800ee518f7aad25cad410e9eb6c5cee0f42f1ab73284586281afca706186368f71c9a59eaaf039332bfe5f462e4a59892"
+      },
+      "ｾｲ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "ｲｼﾄﾔ"
+      },
+      "配偶者マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "入社年月日": {
+        "type": "DATE",
+        "value": "2019-07-17"
+      },
+      "海外特例要件非該当_国内転入日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "作成日時": {
+        "type": "CREATED_TIME",
+        "value": "2024-04-11T06:04:00Z"
+      },
+      "海外特例要件非該当_国内転入日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "海外特例要件非該当_国内転入日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "名5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者は扶養者ですか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "名6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "退職願を添付": {
+        "type": "FILE",
+        "value": []
+      },
+      "更新者": {
+        "type": "MODIFIER",
+        "value": {
+          "code": "h-kawakami",
+          "name": "川上"
+        }
+      },
+      "ﾒｲ6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養2マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "ﾒｲ3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡種別_文字列": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "入社連絡"
+      },
+      "名1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "石戸谷"
+      },
+      "扶養2マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "労働者の意思表示": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "前回の契約更新時に次回の更新について": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "続柄6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "$revision": {
+        "type": "__REVISION__",
+        "value": "2"
+      },
+      "雇用保険取得年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "続柄2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "配偶者備考": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "続柄3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "続柄4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "続柄5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "資格外活動の許可": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "資格取得年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "有効期限": {
+        "type": "DATE",
+        "value": null
+      }
+    }
+  },
+  {
+    "time": "2024-04-18T13:35:01.575Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/",
+    "method": "GET",
+    "body": {},
+    "referrer": "https://nkr-group.cybozu.com/",
+    "res": "endpoint=/ is not defined in server",
+    "statusCode": 404
+  },
+  {
+    "time": "2024-04-18T13:35:01.667Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/favicon.ico",
+    "method": "GET",
+    "body": {},
+    "referrer": "https://192.168.1.120:3000/",
+    "res": "endpoint=/favicon.ico is not defined in server",
+    "statusCode": 404
+  },
+  {
+    "time": "2024-04-18T13:35:23.797Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/1240/show#record=9825&l.sort_0=f2227&l.order_0=desc&l.q=f6138560%20%3D%20%22https%3A%2F%2Fnkr-group.cybozu.com%2Fk%2Fguest%2F237%2F1582%2Fshow%23record%3D186%22&tab=none"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "\"株式会社YSW\" is not defined on the office station server."
+  },
+  {
+    "time": "2024-04-18T13:36:48.039Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/1240/show#record=9825&l.sort_0=f2227&l.order_0=desc&l.q=f6138560%20%3D%20%22https%3A%2F%2Fnkr-group.cybozu.com%2Fk%2Fguest%2F237%2F1582%2Fshow%23record%3D186%22&tab=none&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 200,
+    "res": {
+      "配偶者マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "離職理由": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "具体的な離職理由": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "資格証明書作成完了チェック": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "扶養4マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "浩太"
+      },
+      "担当者名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "吉野　隼人"
+      },
+      "前職退職日": {
+        "type": "DATE",
+        "value": null
+      },
+      "扶養配偶者になった日": {
+        "type": "DATE",
+        "value": null
+      },
+      "会社レコード番号": {
+        "type": "NUMBER",
+        "value": "395"
+      },
+      "被保険者証記号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "会社名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "株式会社ＹＳＷ"
+      },
+      "扶養5マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "契約開始日": {
+        "type": "DATE",
+        "value": null
+      },
+      "在留期間": {
+        "type": "DATE",
+        "value": null
+      },
+      "外国人区分": {
+        "type": "RADIO_BUTTON",
+        "value": "日本人"
+      },
+      "年間の収入4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "年間の収入5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "年間の収入2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡元レコードURL": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "https://nkr-group.cybozu.com/k/guest/237/1582/show#record=186"
+      },
+      "年間の収入3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "在留資格": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "一回の契約期間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者性別": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "別居の場合の住所5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "雇保喪失年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "別居の場合の住所6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "年間の収入6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "基礎年金番号無しチェック": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "ﾒｲ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "コウタ"
+      },
+      "$id": {
+        "type": "__ID__",
+        "value": "9825"
+      },
+      "被扶養者になった理由6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった理由5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった理由4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "扶養配偶者になったその他の理由": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "離職票交付": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった理由3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "メールアドレス": {
+        "type": "LINK",
+        "value": ""
+      },
+      "被扶養者になった理由2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "生年月日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "入社時社会保険": {
+        "type": "RADIO_BUTTON",
+        "value": "加入する"
+      },
+      "管轄健保住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養5マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "性別4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "性別5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "性別2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "性別3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "資格証明書フォルダURL": {
+        "type": "LINK",
+        "value": ""
+      },
+      "性別6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日1": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "退職年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "扶養5はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "扶養2はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "雇用契約書最終を添付": {
+        "type": "FILE",
+        "value": []
+      },
+      "被扶養者でなくなった日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者でなくなった日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者でなくなった日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "週所定労働時間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "40：00"
+      },
+      "別居の場合の住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職種": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養3マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "保険変更パターン_文字列": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "変更なし"
+      },
+      "本人マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考メッセージ": {
+        "type": "MULTI_LINE_TEXT",
+        "value": "健康保険資格証明書　発行希望"
+      },
+      "離職票送り先": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者でなくなった日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者でなくなった日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "NKR担当者": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "上原・藤田・岡部・大谷・川村・柴田・藤井"
+      },
+      "雇用保険_社会保険の加入_脱退の場合": {
+        "type": "RADIO_BUTTON",
+        "value": "変更なし"
+      },
+      "扶養6はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "姓1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "入社時雇用保険": {
+        "type": "RADIO_BUTTON",
+        "value": "加入する"
+      },
+      "配偶者基礎年金番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養6マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡種別": {
+        "type": "RADIO_BUTTON",
+        "value": "入社連絡"
+      },
+      "海外特例要件該当2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "海外特例要件該当6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "住所ﾌﾘｶﾞﾅ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "ｶﾅｶﾞﾜｹﾝｻｶﾞﾐﾊﾗｼﾁｭｳｵｳｸﾌｼﾞﾐ"
+      },
+      "社会保険取得年月日": {
+        "type": "DATE",
+        "value": "2024-04-13"
+      },
+      "海外特例要件該当5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "海外特例要件該当4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "前職名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "海外特例要件該当3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "姓5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "台帳番号": {
+        "type": "NUMBER",
+        "value": ""
+      },
+      "姓6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "社保喪失年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "健康保険任意継続": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "職業6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "本証明書発行の理由": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "資格取得手続き中のため。"
+      },
+      "扶養6マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "ローマ字": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "性別": {
+        "type": "DROP_DOWN",
+        "value": "男"
+      },
+      "配偶者続柄": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "神奈川県相模原市中央区富士見5-12-15サンブリス203"
+      },
+      "派遣・請負の区分": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "ｾｲ6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の1回の仕送り額と年間回数2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "同居の有無": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "別居の場合の1回の仕送り額と年間回数3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "契約の更新回数": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "社員No": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "421080"
+      },
+      "別居の場合の1回の仕送り額と年間回数4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "担当者メールアドレス": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "hayato-yoshino@ysk-ap.co.jp"
+      },
+      "別居の場合の1回の仕送り額と年間回数5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の1回の仕送り額と年間回数6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "所属事業場": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養配偶者から外れる日": {
+        "type": "DATE",
+        "value": null
+      },
+      "配偶者別居の場合の1回の仕送り額と年間回数": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "会社住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "保険者番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "NKRメールアドレス": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "g-uehara@nkr-group.com,t-fujita@nkr-group.com,a-okabe@nkr-group.com,k-otani@nkr-group.com,t-kawamura@nkr-group.com,n-shibata@nkr-group.com,k-fujii@nkr-group.com"
+      },
+      "国籍": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "レコード番号": {
+        "type": "RECORD_NUMBER",
+        "value": "9825"
+      },
+      "配偶者年間の収入": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被保険者証番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "離職後の住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡の添付ファイル": {
+        "type": "FILE",
+        "value": []
+      },
+      "契約期間": {
+        "type": "DROP_DOWN",
+        "value": "期間の定めなし"
+      },
+      "この連絡は": {
+        "type": "RADIO_BUTTON",
+        "value": "初回の連絡"
+      },
+      "在留カードナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者職業": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "代表役職": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者ローマ字氏名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養配偶者になった理由": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "照会履歴": {
+        "type": "SUBTABLE",
+        "value": [
+          {
+            "id": "2198910",
+            "value": {
+              "照会者": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "照会日時": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              }
+            }
+          }
+        ]
+      },
+      "管轄健保": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "通算の契約期間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養4マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "１ヶ月の賃金見込額": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "同居の有無2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "同居の有無4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "作成者": {
+        "type": "CREATOR",
+        "value": {
+          "code": "Administrator",
+          "name": "Administrator"
+        }
+      },
+      "雇用形態": {
+        "type": "DROP_DOWN",
+        "value": "正社員"
+      },
+      "同居の有無3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "同居の有無6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "同居の有無5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "代表氏名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "交付年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "更新日時": {
+        "type": "UPDATED_TIME",
+        "value": "2024-04-18T04:36:00Z"
+      },
+      "扶養配偶者から外れた理由": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "本人マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバー入力済みです"
+      },
+      "扶養家族の確認": {
+        "type": "RADIO_BUTTON",
+        "value": "いない"
+      },
+      "契約終了日": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日": {
+        "type": "DATE",
+        "value": "1981-08-23"
+      },
+      "海外特例要件非該当_国内転入日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "海外特例要件非該当_国内転入日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "基礎年金番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "雇用保険番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養4はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "電話番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "09024060203"
+      },
+      "給与形態": {
+        "type": "DROP_DOWN",
+        "value": "月給"
+      },
+      "この連絡は_文字列": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "初回の連絡"
+      },
+      "被扶養者でなくなった理由5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "扶養3はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "被扶養者でなくなった理由6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者でなくなった理由3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者でなくなった理由4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "会社名を入力して取得をクリック": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "郵便番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "252-0236"
+      },
+      "被扶養者でなくなった理由2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "扶養3マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "マイページURL": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "https://5ea2a167.viewer.kintoneapp.com/public/cca72df7661e4b939660de32b41e82daa1a1aa4b546ec9b6c9833ace512eddaf/detail/def502006f68f9f6cd12165dddb8869372078888231d97b3e5f5efb05f6ea6da5a3732abddc74bc1e5379f39c016b2aa176c33baf5be2a9c3ff5ae82c4e58726933102fbc9d6c60d0c7f07104c5962628ca5aace14811ed30c0508f0d2c05f3346464a8049120d508e5a8584115a62cd5583c7acb83f04f8075a6351308a768a53857544bdcd7cf8a6ddb0e60c7f342e2d133651940fee90"
+      },
+      "ｾｲ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "イマイ"
+      },
+      "配偶者マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "入社年月日": {
+        "type": "DATE",
+        "value": "2024-04-13"
+      },
+      "海外特例要件非該当_国内転入日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "作成日時": {
+        "type": "CREATED_TIME",
+        "value": "2024-04-18T03:41:00Z"
+      },
+      "海外特例要件非該当_国内転入日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "海外特例要件非該当_国内転入日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "名5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者は扶養者ですか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "名6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "退職願を添付": {
+        "type": "FILE",
+        "value": []
+      },
+      "更新者": {
+        "type": "MODIFIER",
+        "value": {
+          "code": "n-shibata",
+          "name": "柴田"
+        }
+      },
+      "ﾒｲ6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養2マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "ﾒｲ3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡種別_文字列": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "入社連絡"
+      },
+      "名1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "今井"
+      },
+      "扶養2マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "労働者の意思表示": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "前回の契約更新時に次回の更新について": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "続柄6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "$revision": {
+        "type": "__REVISION__",
+        "value": "2"
+      },
+      "雇用保険取得年月日": {
+        "type": "DATE",
+        "value": "2024-04-13"
+      },
+      "続柄2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "配偶者備考": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "続柄3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "続柄4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "続柄5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "資格外活動の許可": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "資格取得年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "有効期限": {
+        "type": "DATE",
+        "value": null
+      }
+    }
+  },
+  {
+    "time": "2024-04-23T10:44:21.353Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/",
+    "method": "GET",
+    "body": {},
+    "referrer": "https://nkr-group.cybozu.com/",
+    "res": "endpoint=/ is not defined in server",
+    "statusCode": 404
+  },
+  {
+    "time": "2024-04-23T10:44:21.615Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/favicon.ico",
+    "method": "GET",
+    "body": {},
+    "referrer": "https://192.168.1.120:3000/",
+    "res": "endpoint=/favicon.ico is not defined in server",
+    "statusCode": 404
+  },
+  {
+    "time": "2024-04-23T10:44:25.090Z",
+    "from": "172.17.144.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/1240/show#record=9777&l.sort_0=f2227&l.order_0=desc&l.q=f6138560%20%3D%20%22https%3A%2F%2Fnkr-group.cybozu.com%2Fk%2Fguest%2F395%2F3508%2Fshow%23record%3D10%22&tab=none"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 200,
+    "res": {
+      "配偶者マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "離職理由": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "具体的な離職理由": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "資格証明書作成完了チェック": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "扶養4マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "洋美"
+      },
+      "担当者名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "前職退職日": {
+        "type": "DATE",
+        "value": null
+      },
+      "扶養配偶者になった日": {
+        "type": "DATE",
+        "value": null
+      },
+      "会社レコード番号": {
+        "type": "NUMBER",
+        "value": "417"
+      },
+      "被保険者証記号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "会社名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "株式会社水穿"
+      },
+      "扶養5マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "契約開始日": {
+        "type": "DATE",
+        "value": null
+      },
+      "在留期間": {
+        "type": "DATE",
+        "value": null
+      },
+      "外国人区分": {
+        "type": "RADIO_BUTTON",
+        "value": "日本人"
+      },
+      "年間の収入4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "年間の収入5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "年間の収入2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡元レコードURL": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "https://nkr-group.cybozu.com/k/guest/395/3508/show#record=10"
+      },
+      "年間の収入3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "在留資格": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "一回の契約期間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者性別": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "別居の場合の住所5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "雇保喪失年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "別居の場合の住所6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "年間の収入6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "基礎年金番号無しチェック": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "ﾒｲ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "ﾋﾛﾐ"
+      },
+      "$id": {
+        "type": "__ID__",
+        "value": "9777"
+      },
+      "被扶養者になった理由6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった理由5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった理由4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "扶養配偶者になったその他の理由": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "離職票交付": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった理由3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "メールアドレス": {
+        "type": "LINK",
+        "value": ""
+      },
+      "被扶養者になった理由2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "生年月日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "入社時社会保険": {
+        "type": "RADIO_BUTTON",
+        "value": "加入しない"
+      },
+      "管轄健保住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養5マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "性別4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "性別5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "性別2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "性別3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "資格証明書フォルダURL": {
+        "type": "LINK",
+        "value": ""
+      },
+      "性別6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者になった日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日1": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者になった日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "退職年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "扶養5はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "扶養2はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "雇用契約書最終を添付": {
+        "type": "FILE",
+        "value": []
+      },
+      "被扶養者でなくなった日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者でなくなった日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者でなくなった日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "週所定労働時間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職種": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "一般"
+      },
+      "扶養3マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "保険変更パターン_文字列": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "変更なし"
+      },
+      "本人マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考メッセージ": {
+        "type": "MULTI_LINE_TEXT",
+        "value": ""
+      },
+      "離職票送り先": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者でなくなった日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "被扶養者でなくなった日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "NKR担当者": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "川上・津幡"
+      },
+      "雇用保険_社会保険の加入_脱退の場合": {
+        "type": "RADIO_BUTTON",
+        "value": "変更なし"
+      },
+      "扶養6はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "姓1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "入社時雇用保険": {
+        "type": "RADIO_BUTTON",
+        "value": "加入しない"
+      },
+      "配偶者基礎年金番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養6マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡種別": {
+        "type": "RADIO_BUTTON",
+        "value": "入社連絡"
+      },
+      "海外特例要件該当2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "海外特例要件該当6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "住所ﾌﾘｶﾞﾅ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "ﾎｯｶｲﾄﾞｳｷﾀﾐｼﾄｷﾜﾁｮｳ"
+      },
+      "社会保険取得年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "海外特例要件該当5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "海外特例要件該当4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "前職名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "海外特例要件該当3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "姓5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "台帳番号": {
+        "type": "NUMBER",
+        "value": ""
+      },
+      "姓6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "社保喪失年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "健康保険任意継続": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "職業6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "本証明書発行の理由": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "資格取得手続き中のため。"
+      },
+      "扶養6マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "ローマ字": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "性別": {
+        "type": "DROP_DOWN",
+        "value": "女"
+      },
+      "配偶者続柄": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "北海道北見市常盤町4－14－8"
+      },
+      "派遣・請負の区分": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "ｾｲ6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の1回の仕送り額と年間回数2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "同居の有無": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "別居の場合の1回の仕送り額と年間回数3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "契約の更新回数": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "社員No": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "0059"
+      },
+      "別居の場合の1回の仕送り額と年間回数4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "担当者メールアドレス": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の1回の仕送り額と年間回数5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "別居の場合の1回の仕送り額と年間回数6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "所属事業場": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "本社"
+      },
+      "扶養配偶者から外れる日": {
+        "type": "DATE",
+        "value": null
+      },
+      "配偶者別居の場合の1回の仕送り額と年間回数": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "職業2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "会社住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "保険者番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "NKRメールアドレス": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "m-tsuhata@nkr-group.com,h-kawakami@nkr-group.com"
+      },
+      "国籍": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "レコード番号": {
+        "type": "RECORD_NUMBER",
+        "value": "9777"
+      },
+      "配偶者年間の収入": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被保険者証番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "離職後の住所": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡の添付ファイル": {
+        "type": "FILE",
+        "value": []
+      },
+      "契約期間": {
+        "type": "DROP_DOWN",
+        "value": "期間の定めなし"
+      },
+      "この連絡は": {
+        "type": "RADIO_BUTTON",
+        "value": "初回の連絡"
+      },
+      "在留カードナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ｾｲ1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者職業": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "代表役職": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者ローマ字氏名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養配偶者になった理由": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "照会履歴": {
+        "type": "SUBTABLE",
+        "value": [
+          {
+            "id": "2186846",
+            "value": {
+              "照会者": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              },
+              "照会日時": {
+                "type": "SINGLE_LINE_TEXT",
+                "value": ""
+              }
+            }
+          }
+        ]
+      },
+      "管轄健保": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "通算の契約期間": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養4マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "１ヶ月の賃金見込額": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "同居の有無2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "同居の有無4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "作成者": {
+        "type": "CREATOR",
+        "value": {
+          "code": "Administrator",
+          "name": "Administrator"
+        }
+      },
+      "雇用形態": {
+        "type": "DROP_DOWN",
+        "value": "アルバイト"
+      },
+      "同居の有無3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "同居の有無6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "同居の有無5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "代表氏名": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "交付年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "更新日時": {
+        "type": "UPDATED_TIME",
+        "value": "2024-04-12T10:08:00Z"
+      },
+      "扶養配偶者から外れた理由": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "本人マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバー入力済みです"
+      },
+      "扶養家族の確認": {
+        "type": "RADIO_BUTTON",
+        "value": "いない"
+      },
+      "契約終了日": {
+        "type": "DATE",
+        "value": null
+      },
+      "生年月日": {
+        "type": "DATE",
+        "value": "1974-09-18"
+      },
+      "海外特例要件非該当_国内転入日3": {
+        "type": "DATE",
+        "value": null
+      },
+      "海外特例要件非該当_国内転入日2": {
+        "type": "DATE",
+        "value": null
+      },
+      "基礎年金番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "雇用保険番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養4はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "電話番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "0000000000"
+      },
+      "給与形態": {
+        "type": "DROP_DOWN",
+        "value": "時給"
+      },
+      "この連絡は_文字列": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "初回の連絡"
+      },
+      "被扶養者でなくなった理由5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "扶養3はいますか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "被扶養者でなくなった理由6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者でなくなった理由3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "被扶養者でなくなった理由4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "会社名を入力して取得をクリック": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "郵便番号": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "090-0817"
+      },
+      "被扶養者でなくなった理由2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "扶養3マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "マイページURL": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "https://5ea2a167.viewer.kintoneapp.com/public/130a825cdd02452f97a886edee14e947ca4963439fa5275641959c6cb1b92753/detail/def50200c96af3c7430f28686e3ae0b5512fa823970964aaa80752fb6b088ae07db45c028d1e6532b4f6255782f3468089ac5b21890bc6dd60d427b96cce5e6e925e2c3882fc091eb1ba77be7d57fd5e8439d4d841d18988e3e0b1c5ae220092e946f59e14222b31c4ed203cbab836c8e0f1d1a5db812a8af8a71bc439c87294c9cfb35922e5edfebbad7a91241d9875d5aecd4befc664"
+      },
+      "ｾｲ": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "ｻｻｷ"
+      },
+      "配偶者マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "入社年月日": {
+        "type": "DATE",
+        "value": "2023-09-23"
+      },
+      "海外特例要件非該当_国内転入日6": {
+        "type": "DATE",
+        "value": null
+      },
+      "作成日時": {
+        "type": "CREATED_TIME",
+        "value": "2024-04-11T06:01:00Z"
+      },
+      "海外特例要件非該当_国内転入日5": {
+        "type": "DATE",
+        "value": null
+      },
+      "海外特例要件非該当_国内転入日4": {
+        "type": "DATE",
+        "value": null
+      },
+      "名5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "配偶者は扶養者ですか": {
+        "type": "CHECK_BOX",
+        "value": []
+      },
+      "名6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "退職願を添付": {
+        "type": "FILE",
+        "value": []
+      },
+      "更新者": {
+        "type": "MODIFIER",
+        "value": {
+          "code": "h-kawakami",
+          "name": "川上"
+        }
+      },
+      "ﾒｲ6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "扶養2マイナンバー結果": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "マイナンバーは「未入力」"
+      },
+      "ﾒｲ3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "連絡種別_文字列": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "入社連絡"
+      },
+      "名1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "ﾒｲ1": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "名2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "姓": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": "佐々木"
+      },
+      "扶養2マイナンバー": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考4": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考2": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "備考3": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由5": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "被扶養者になったその他の理由6": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "労働者の意思表示": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "前回の契約更新時に次回の更新について": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "続柄6": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "$revision": {
+        "type": "__REVISION__",
+        "value": "2"
+      },
+      "雇用保険取得年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "続柄2": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "配偶者備考": {
+        "type": "SINGLE_LINE_TEXT",
+        "value": ""
+      },
+      "続柄3": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "続柄4": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "続柄5": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "資格外活動の許可": {
+        "type": "DROP_DOWN",
+        "value": null
+      },
+      "資格取得年月日": {
+        "type": "DATE",
+        "value": null
+      },
+      "有効期限": {
+        "type": "DATE",
+        "value": null
+      }
+    }
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "time": "2024-06-23T21:28:25.883Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=000"
+    },
+    "referrer": "https://916163bf.form.kintoneapp.com/",
+    "statusCode": 500,
+    "res": "unique_key is not defined"
+  }
+]

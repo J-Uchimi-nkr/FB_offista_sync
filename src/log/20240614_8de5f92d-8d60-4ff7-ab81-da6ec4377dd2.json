@@ -1,0 +1,14 @@
+[
+  {
+    "time": "2024-06-14T17:30:53.074Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=431&l.view=6450553&l.q&l.sort_0=f6442685&l.order_0=DESC&l.next=426&l.prev=0"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"0.0000111[本人]:在留カード番号 は英字2桁-数字8桁-英字2桁で入力してください。（例 AB12345678CD）,0.0000111[本人]:派遣・請負就労区分 が正しくありません。\""
+  }
+]

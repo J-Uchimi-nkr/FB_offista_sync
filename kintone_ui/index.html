@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App</title>
+    <script src="FB_button.js"></script>
+    <style>
+        .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="title">kintoneオフィステ同期ページ</div>
+    <div class="container">
+        <div class="gaia-argoui-app-index-toolbar">
+            <!-- ここにボタンと入力フィールドが追加されます -->
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            addSyncButton();
+        };
+    </script>
+</body>
+</html>

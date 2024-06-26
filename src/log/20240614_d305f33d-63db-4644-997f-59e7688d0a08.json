@@ -1,0 +1,14 @@
+[
+  {
+    "time": "2024-06-14T17:25:01.333Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=431&l.view=6450553&l.q&l.sort_0=f6442685&l.order_0=DESC&l.next=426&l.prev=0"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of null (reading '0')"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "time": "2024-06-23T22:01:20.948Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=000"
+    },
+    "referrer": "https://916163bf.form.kintoneapp.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-23T22:01:47.059Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=000"
+    },
+    "referrer": "https://916163bf.form.kintoneapp.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  }
+]

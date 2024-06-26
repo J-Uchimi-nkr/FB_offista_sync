@@ -1,0 +1,14 @@
+[
+  {
+    "time": "2024-06-24T15:42:27.083Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=474&l.view=6450553&l.q&l.sort_0=f6442685&l.order_0=DESC&l.next=473&l.prev=0"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "internal server error: unique_key is missing."
+  }
+]

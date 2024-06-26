@@ -1,0 +1,2942 @@
+[
+  {
+    "time": "2024-06-14T16:27:25.849Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=1"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:27:28.881Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=2"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:27:29.524Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=3"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:27:30.141Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=4"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:27:30.735Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=5"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:27:31.345Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=6"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:27:31.952Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=7"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:27:43.467Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=8"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:27:50.548Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=9"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:27:51.746Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=10"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:27:53.478Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=11"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:27:54.775Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=12"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:27:58.645Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=13"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:27:59.705Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=14"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:28:00.288Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=15"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:28:00.903Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=16"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:28:01.712Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=17"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:28:02.334Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=18"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:28:02.981Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=19"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:28:03.663Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=20"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:28:04.341Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=21"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:28:05.074Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=22"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:28:05.789Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=23"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:28:06.421Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=24"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:28:07.065Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=25"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"1[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:28:19.679Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=26"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"2[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:28:28.861Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=27"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"14[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:28:31.811Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=28"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"10[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:28:33.465Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=29"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"23[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:28:34.923Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=30"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"38[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:28:36.420Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=31"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:28:37.849Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=32"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"18[本人]:電話番号 の形式が正しくありません。,18[本人]:基礎年金番号 は数字 10 桁である必要があります。\""
+  },
+  {
+    "time": "2024-06-14T16:28:44.739Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=33"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  },
+  {
+    "time": "2024-06-14T16:28:45.658Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=34"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"41[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:28:48.944Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=35"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"223[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:28:50.399Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=36"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"51[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:28:51.995Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=37"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"55[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:28:53.780Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=38"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"65[本人]:丁目・番地 (カナ) は全角のカナ・アルファベット・数字・ハイフン・スペースで入力してください。,65[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:00.665Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=39"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"147[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:03.637Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=40"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"73[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:08.062Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=41"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"66[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:09.622Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=42"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"202[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:10.886Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=43"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"142[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:12.519Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=44"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"46[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:14.182Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=45"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"163[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:15.943Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=46"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"108[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:18.969Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=47"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"28[本人]:電話番号 の形式が正しくありません。,28[本人]:基礎年金番号 は数字 10 桁である必要があります。\""
+  },
+  {
+    "time": "2024-06-14T16:29:26.178Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=48"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"6[本人]:電話番号 の形式が正しくありません。,6[本人]:被保険者番号 は[1234-123456-1]または[1234-123456]形式で入力してください。\""
+  },
+  {
+    "time": "2024-06-14T16:29:28.081Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=49"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"50[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:29.963Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=50"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"39[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:35.532Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=51"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"106[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:37.099Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=52"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"12[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:40.035Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=53"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"26[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:40.792Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=54"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"9[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:41.675Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=55"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"103[本人]:電話番号 の形式が正しくありません。,103[本人]:被保険者番号 は[1234-123456-1]または[1234-123456]形式で入力してください。\""
+  },
+  {
+    "time": "2024-06-14T16:29:42.579Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=56"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"216[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:43.468Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=57"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"35[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:44.243Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=58"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"136[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:45.140Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=59"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"107[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:46.093Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=60"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"83[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:46.965Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=61"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"201[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:47.806Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=62"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"87[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:48.546Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=63"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"145[本人]:電話番号 の形式が正しくありません。,145[本人]:基礎年金番号 は数字 10 桁である必要があります。\""
+  },
+  {
+    "time": "2024-06-14T16:29:49.428Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=64"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"85[本人]:電話番号 の形式が正しくありません。,85[本人]:被保険者番号 は[1234-123456-1]または[1234-123456]形式で入力してください。\""
+  },
+  {
+    "time": "2024-06-14T16:29:50.315Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=65"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"212[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:51.219Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=66"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"226[本人]:電話番号 の形式が正しくありません。,226[本人]:被保険者番号 は[1234-123456-1]または[1234-123456]形式で入力してください。\""
+  },
+  {
+    "time": "2024-06-14T16:29:52.089Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=67"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"56[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:52.838Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=68"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"58[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:53.633Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=69"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"128[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:54.529Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=70"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"177[本人]:電話番号 の形式が正しくありません。,177[本人]:基礎年金番号 は数字 10 桁である必要があります。\""
+  },
+  {
+    "time": "2024-06-14T16:29:55.402Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=71"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"232[本人]:電話番号 の形式が正しくありません。,232[本人]:基礎年金番号 は数字 10 桁である必要があります。\""
+  },
+  {
+    "time": "2024-06-14T16:29:56.324Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=72"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"72[本人]:電話番号 の形式が正しくありません。,72[本人]:被保険者番号 は[1234-123456-1]または[1234-123456]形式で入力してください。\""
+  },
+  {
+    "time": "2024-06-14T16:29:57.219Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=73"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"179[本人]:電話番号 の形式が正しくありません。,179[本人]:基礎年金番号 は数字 10 桁である必要があります。\""
+  },
+  {
+    "time": "2024-06-14T16:29:58.177Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=74"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"233[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:58.983Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=75"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"132[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:29:59.776Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=76"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"161[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:00.571Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=77"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"126[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:01.482Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=78"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"188[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:02.377Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=79"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"244[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:03.326Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=80"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"167[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:04.297Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=81"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"166[本人]:電話番号 の形式が正しくありません。,166[本人]:被保険者番号 は[1234-123456-1]または[1234-123456]形式で入力してください。\""
+  },
+  {
+    "time": "2024-06-14T16:30:05.210Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=82"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"198[本人]:電話番号 の形式が正しくありません。,198[本人]:被保険者番号 は[1234-123456-1]または[1234-123456]形式で入力してください。\""
+  },
+  {
+    "time": "2024-06-14T16:30:06.160Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=83"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"79[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:07.206Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=84"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"246[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:08.022Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=85"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"209[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:08.839Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=86"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"247[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:09.821Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=87"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"116[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:10.786Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=88"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"154[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:11.517Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=89"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"153[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:12.449Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=90"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"203[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:13.249Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=91"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"92[本人]:電話番号 の形式が正しくありません。,92[本人]:被保険者番号 は[1234-123456-1]または[1234-123456]形式で入力してください。\""
+  },
+  {
+    "time": "2024-06-14T16:30:14.189Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=92"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"160[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:14.922Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=93"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"88[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:15.838Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=94"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"228[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:20.731Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=95"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"912[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:21.594Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=96"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"217[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:22.440Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=97"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"238[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:23.301Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=98"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"252[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:24.145Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=99"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"259[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:24.932Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=100"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"205[本人]:電話番号 の形式が正しくありません。,205[本人]:被保険者番号 は[1234-123456-1]または[1234-123456]形式で入力してください。\""
+  },
+  {
+    "time": "2024-06-14T16:30:25.811Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=101"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"213[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:26.714Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=102"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"95[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:27.461Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=103"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"181[本人]:電話番号 の形式が正しくありません。,181[本人]:基礎年金番号 は数字 10 桁である必要があります。,181[本人]:被保険者番号 は[1234-123456-1]または[1234-123456]形式で入力してください。\""
+  },
+  {
+    "time": "2024-06-14T16:30:28.351Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=104"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"53[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:29.261Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=105"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"267[本人]:電話番号 の形式が正しくありません。,267[本人]:基礎年金番号 は数字 10 桁である必要があります。\""
+  },
+  {
+    "time": "2024-06-14T16:30:30.204Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=106"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"45[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:31.018Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=107"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"42[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:30:31.869Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=108"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"44[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:24.321Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=109"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"99[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:25.232Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=110"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"195[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:26.107Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=111"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"196[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:26.969Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=112"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"197[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:27.878Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=113"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"914[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:28.690Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=114"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"129[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:29.533Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=115"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"36[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:30.434Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=116"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"54[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:31.266Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=117"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"49[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:32.248Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=118"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"77[本人]:電話番号 の形式が正しくありません。,77[本人]:基礎年金番号 は数字 10 桁である必要があります。,77[本人]:被保険者番号 は[1234-123456-1]または[1234-123456]形式で入力してください。\""
+  },
+  {
+    "time": "2024-06-14T16:31:33.118Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=119"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"241[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:34.092Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=120"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"500[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:34.949Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=121"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"504[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:35.886Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=122"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"503[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:36.936Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=123"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"207[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:37.819Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=124"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"512[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:38.702Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=125"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"515[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:39.726Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=126"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"521[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:40.628Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=127"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"522[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:41.604Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=128"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"524[本人]:電話番号 の形式が正しくありません。,524[本人]:基礎年金番号 は数字 10 桁である必要があります。\""
+  },
+  {
+    "time": "2024-06-14T16:31:42.421Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=129"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"528[本人]:電話番号 の形式が正しくありません。,528[本人]:基礎年金番号 は数字 10 桁である必要があります。\""
+  },
+  {
+    "time": "2024-06-14T16:31:43.325Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=130"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"530[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:44.288Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=131"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"532[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:45.242Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=132"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"541[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:46.204Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=133"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"214[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:47.013Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=134"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"540[本人]:電話番号 の形式が正しくありません。,540[本人]:基礎年金番号 は数字 10 桁である必要があります。\""
+  },
+  {
+    "time": "2024-06-14T16:31:47.987Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=135"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"544[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:48.786Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=136"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"545[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:49.605Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=137"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"547[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:50.542Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=138"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"550[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:51.474Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=139"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"553[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:52.376Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=140"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"554[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:53.321Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=141"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"556[本人]:電話番号 の形式が正しくありません。,556[本人]:基礎年金番号 は数字 10 桁である必要があります。\""
+  },
+  {
+    "time": "2024-06-14T16:31:54.191Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=142"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"255[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:55.145Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=143"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"560[本人]:電話番号 の形式が正しくありません。,560[本人]:基礎年金番号 は数字 10 桁である必要があります。\""
+  },
+  {
+    "time": "2024-06-14T16:31:56.075Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=144"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"564[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:57.056Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=145"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"563[本人]:電話番号 の形式が正しくありません。,563[本人]:基礎年金番号 は数字 10 桁である必要があります。\""
+  },
+  {
+    "time": "2024-06-14T16:31:57.894Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=146"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"562[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:58.893Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=147"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"566[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:31:59.813Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=148"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"260[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:00.745Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=149"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"220[本人]:電話番号 の形式が正しくありません。,220[本人]:被保険者番号 は[1234-123456-1]または[1234-123456]形式で入力してください。\""
+  },
+  {
+    "time": "2024-06-14T16:32:02.007Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=150"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"219[本人]:電話番号 の形式が正しくありません。,219[本人]:被保険者番号 は[1234-123456-1]または[1234-123456]形式で入力してください。\""
+  },
+  {
+    "time": "2024-06-14T16:32:03.095Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=151"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"215[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:04.045Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=152"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"570[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:04.888Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=153"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"262[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:05.820Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=154"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"190[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:06.736Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=155"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"199[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:07.585Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=156"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"580[本人]:電話番号 の形式が正しくありません。,580[本人]:基礎年金番号 は数字 10 桁である必要があります。\""
+  },
+  {
+    "time": "2024-06-14T16:32:08.559Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=157"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"134[本人]:電話番号 の形式が正しくありません。,134[本人]:被保険者番号 は[1234-123456-1]または[1234-123456]形式で入力してください。\""
+  },
+  {
+    "time": "2024-06-14T16:32:09.372Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=158"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"583[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:10.380Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=159"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"584[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:11.315Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=160"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"582[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:12.499Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=161"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"587[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:13.642Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=162"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"588[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:14.553Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=163"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"595[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:15.660Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=164"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"596[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:16.516Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=165"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"597[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:17.612Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=166"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"601[本人]:電話番号 の形式が正しくありません。,601[本人]:基礎年金番号 は数字 10 桁である必要があります。\""
+  },
+  {
+    "time": "2024-06-14T16:32:18.599Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=167"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"186[本人]:電話番号 の形式が正しくありません。,186[本人]:基礎年金番号 は数字 10 桁である必要があります。\""
+  },
+  {
+    "time": "2024-06-14T16:32:19.475Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=168"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"574[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:20.490Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=169"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"608[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:21.382Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=170"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"610[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:22.469Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=171"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"611[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:23.291Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=172"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"612[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:24.218Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=173"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"616[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:25.093Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=174"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"617[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:26.089Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=175"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"619[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:27.036Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=176"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"119[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:27.925Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=177"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"621[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:28.709Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=178"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"624[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:29.563Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=179"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"629[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:30.478Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=180"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"628[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:31.370Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=181"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"625[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:32.266Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=182"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"626[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:33.140Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=183"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"627[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:33.934Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=184"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"32[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:35.124Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=185"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"40[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:36.148Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=186"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"149[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:37.133Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=187"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"169[本人]:電話番号 の形式が正しくありません。,169[本人]:被保険者番号 は[1234-123456-1]または[1234-123456]形式で入力してください。\""
+  },
+  {
+    "time": "2024-06-14T16:32:38.038Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=188"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"221[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:38.922Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=189"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"224[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:39.690Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=190"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"248[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:40.426Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=191"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"251[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:41.307Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=192"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"263[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:42.208Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=193"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"265[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:43.079Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=194"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"520[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:44.009Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=195"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"573[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:44.918Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=196"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"575[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:45.785Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=197"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"586[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:46.661Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=198"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"615[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:47.400Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=199"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"631[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:48.538Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=200"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"630[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:49.475Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=201"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"632[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:50.387Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=202"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"61[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:51.371Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=203"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"81[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:52.196Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=204"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"913[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:53.180Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=205"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"122[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:53.956Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=206"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"225[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:54.870Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=207"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"96[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:55.745Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=208"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"229[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:56.626Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=209"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"507[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:32:57.531Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=210"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"178[本人]:電話番号 の形式が正しくありません。,178[本人]:被保険者番号 は[1234-123456-1]または[1234-123456]形式で入力してください。\""
+  },
+  {
+    "time": "2024-06-14T16:32:58.284Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=211"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"543[本人]:電話番号 の形式が正しくありません。,543[本人]:基礎年金番号 は数字 10 桁である必要があります。\""
+  },
+  {
+    "time": "2024-06-14T16:32:59.134Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=212"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"549[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:00.212Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=213"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"559[本人]:電話番号 の形式が正しくありません。,559[本人]:基礎年金番号 は数字 10 桁である必要があります。\""
+  },
+  {
+    "time": "2024-06-14T16:33:01.001Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=214"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"567[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:01.812Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=215"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"923[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:02.707Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=216"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"568[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:03.620Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=217"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"928[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:04.582Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=218"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"569[本人]:電話番号 の形式が正しくありません。,569[本人]:基礎年金番号 は数字 10 桁である必要があります。\""
+  },
+  {
+    "time": "2024-06-14T16:33:05.460Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=219"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"604[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:06.444Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=220"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"606[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:07.356Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=221"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"607[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:08.241Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=222"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"618[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:09.391Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=223"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"623[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:10.288Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=224"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"140[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:11.401Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=225"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"204[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:12.350Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=226"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"91[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:13.307Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=227"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"254[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:14.250Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=228"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"516[本人]:電話番号 の形式が正しくありません。,516[本人]:氏名 (ローマ字) は半角アルファベットの大文字・半角スペース以外使用できません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:15.202Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=229"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"557[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:16.001Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=230"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"130[本人]:電話番号 の形式が正しくありません。,130[本人]:氏名 (ローマ字) は半角アルファベットの大文字・半角スペース以外使用できません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:16.905Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=231"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"600[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:17.686Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=232"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"620[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:18.588Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=233"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"622[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:19.479Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=234"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"234[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:20.382Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=235"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"542[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:21.269Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=236"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"538[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:22.309Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=237"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"561[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:23.272Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=238"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"591[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:24.026Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=239"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"131[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:24.823Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=240"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"239[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:25.795Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=241"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"505[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:26.817Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=242"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"592[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:27.846Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=243"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"903[本人]:生年月日 を正しい日付形式で入力してください。（例 2024/04/18）,903[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:28.794Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=244"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"111111[本人]:電話番号 の形式が正しくありません。\""
+  },
+  {
+    "time": "2024-06-14T16:33:29.802Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=245"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to entry data.\n\"0.0101[本人]:電話番号 の形式が正しくありません。\""
+  }
+]

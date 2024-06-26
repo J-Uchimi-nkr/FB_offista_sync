@@ -1,0 +1,26 @@
+[
+  {
+    "time": "2024-06-17T15:04:28.629Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=431&l.view=6450553&l.q&l.sort_0=f6442685&l.order_0=DESC&l.next=437&l.prev=0&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to modify data.\n\"0.0000111[扶養家族2]:扶養になった理由 (税法上) が正しくありません。,0.0000111[扶養家族2]:扶養を外れた理由 (税法上) が正しくありません。\""
+  },
+  {
+    "time": "2024-06-17T15:04:39.879Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=431&l.view=6450553&l.q&l.sort_0=f6442685&l.order_0=DESC&l.next=437&l.prev=0&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "office station error: failed to modify data.\n\"0.0000111[扶養家族2]:扶養になった理由 (税法上) が正しくありません。,0.0000111[扶養家族2]:扶養を外れた理由 (税法上) が正しくありません。\""
+  }
+]

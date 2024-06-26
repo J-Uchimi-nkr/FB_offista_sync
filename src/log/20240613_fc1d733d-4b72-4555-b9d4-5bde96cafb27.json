@@ -1,0 +1,50 @@
+[
+  {
+    "time": "2024-06-13T11:30:20.326Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=245&l.view=6128448&l.q&l.sort_0=f2223&l.order_0=DESC&l.next=244&l.prev=0&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "this.upload is not a function"
+  },
+  {
+    "time": "2024-06-13T11:30:40.054Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=245&l.view=6128448&l.q&l.sort_0=f2223&l.order_0=DESC&l.next=244&l.prev=0&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "this.upload is not a function"
+  },
+  {
+    "time": "2024-06-13T11:30:56.208Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=245&l.view=6128448&l.q&l.sort_0=f2223&l.order_0=DESC&l.next=244&l.prev=0&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "this.upload is not a function"
+  },
+  {
+    "time": "2024-06-13T11:34:57.174Z",
+    "from": "192.168.0.4",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=245&l.view=6128448&l.q&l.sort_0=f2223&l.order_0=DESC&l.next=244&l.prev=0&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "this.upload is not a function"
+  }
+]

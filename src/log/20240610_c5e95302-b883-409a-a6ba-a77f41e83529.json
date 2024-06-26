@@ -1,0 +1,108 @@
+[
+  {
+    "time": "2024-06-10T16:15:56.749Z",
+    "from": "192.168.1.110",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3698/show#record=232&l.view=6128448&l.q&l.sort_0=f2223&l.order_0=DESC&l.next=231&l.prev=0"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of null (reading 'includes')"
+  },
+  {
+    "time": "2024-06-10T16:16:27.128Z",
+    "from": "192.168.1.110",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3698/show#record=232&l.view=6128448&l.q&l.sort_0=f2223&l.order_0=DESC&l.next=231&l.prev=0"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of null (reading 'includes')"
+  },
+  {
+    "time": "2024-06-10T16:17:23.775Z",
+    "from": "192.168.1.110",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3698/show#record=232&l.view=6128448&l.q&l.sort_0=f2223&l.order_0=DESC&l.next=231&l.prev=0"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of null (reading 'includes')"
+  },
+  {
+    "time": "2024-06-10T16:20:46.295Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/",
+    "method": "GET",
+    "body": {},
+    "referrer": "https://nkr-group.cybozu.com/",
+    "res": "endpoint=/ is not defined in server",
+    "statusCode": 404
+  },
+  {
+    "time": "2024-06-10T16:20:48.137Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/guest/389/3439/show#record=251&l.view=6128448&l.q&l.sort_0=f2223&l.order_0=DESC&l.next=250&l.prev=252"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "internal server error: incorrect app_info."
+  },
+  {
+    "time": "2024-06-10T16:46:52.613Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/guest/397/3717/show#record=1&l.view=6128448&l.q&l.sort_0=f2223&l.order_0=DESC&l.next=0&l.prev=0"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "internal server error: incorrect app_info."
+  },
+  {
+    "time": "2024-06-10T16:50:32.866Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/guest/397/3717/show#record=1&l.view=6128448&l.q&l.sort_0=f2223&l.order_0=DESC&l.next=0&l.prev=0&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "internal server error: incorrect app_info."
+  },
+  {
+    "time": "2024-06-10T16:51:11.221Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/guest/397/3717/show#record=1&l.view=6128448&l.q&l.sort_0=f2223&l.order_0=DESC&l.next=0&l.prev=0&mode=show"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "internal server error: incorrect app_info."
+  },
+  {
+    "time": "2024-06-10T16:54:39.366Z",
+    "from": "192.168.1.110",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3202/show#record=242&l.view=6128448&l.q&l.sort_0=f2223&l.order_0=DESC&l.next=241&l.prev=0"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "Cannot read properties of undefined (reading 'value')"
+  }
+]
