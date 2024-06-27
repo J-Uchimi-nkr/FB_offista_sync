@@ -367,22 +367,44 @@ module.exports = class DataUploader {
 
   }
 
-  sync_family_OffistaData(record) {
+    sync_family_OffistaData(record) {
     let family_obj = [];
     const spouse = TRANSFER_LIST.spouse.fields;
-    const numbered_dependents = TRANSFER_LIST.numbered_dependents.fields;
-    if (record["区分"].value[0] === "配偶者") {
-      let spouse_data = this.convertKintoneToOffista(record, spouse);
-      family_obj.push(spouse_data);
+    const numbered_dependents = [
+      TRANSFER_LIST.numbered_dependents_2.fields,
+      TRANSFER_LIST.numbered_dependents_3.fields,
+      TRANSFER_LIST.numbered_dependents_4.fields,
+      TRANSFER_LIST.numbered_dependents_5.fields,
+      TRANSFER_LIST.numbered_dependents_6.fields
+  ];
+    if (record["連絡種別"].value === "入社連絡") {
+        if (record["配偶者はいますか"].value[0] === "はい") {
+          let spouse_data = this.convertKintoneToOffista(record, spouse);
+          console.log("Converted Spouse Data: ", spouse_data); // ここでログを追加
+          family_obj.push(spouse_data);
+        }
+        let family_count = parseInt(record['配偶者以外の家族人数'].value, 10);
+        for (let i = 0; i <= family_count - 1; i++) {
+          let target_dependents = JSON.parse(JSON.stringify(numbered_dependents[i]));
+
+          let numbered_dependents_data = this.convertKintoneToOffista(record, target_dependents);
+          console.log("Converted Dependent Data: ", numbered_dependents_data); // ここでログを追加
+          family_obj.push(numbered_dependents_data);
+        }
+        return family_obj;
     }
-    else if (record["区分"].value[0] === "家族") {
-      let target_dependents = JSON.parse(JSON.stringify(numbered_dependents));
-      family_obj.push(spouse_data);
-      let numbered_dependents_data = this.convertKintoneToOffista(record, target_dependents);
-      family_obj.push(numbered_dependents_data);
+    else if (record["連絡種別"].value === "家族の追加" || record["連絡種別"].value === "家族の扶養変更") {
+      if (record["区分"].value[0] === "配偶者") {
+        let spouse_data = this.convertKintoneToOffista(record, spouse);
+        family_obj.push(spouse_data);
+      }
+      else if (record["区分"].value[0] === "家族") {
+        let target_dependents = JSON.parse(JSON.stringify(TRANSFER_LIST.numbered_dependents_2.fields));
+        let numbered_dependents_data = this.convertKintoneToOffista(record, target_dependents);
+        family_obj.push(numbered_dependents_data);
+      }
+
     }
-  
-    return family_obj;
   }
 
   async checkCompanyResist(companyName) {
