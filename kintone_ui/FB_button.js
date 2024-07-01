@@ -1,4 +1,4 @@
-var unique_key_value
+var unique_key_value;
 
 (function() {
     "use strict"; 
@@ -12,6 +12,7 @@ var unique_key_value
         var button = document.createElement("button");
         button.innerHTML = "Office Station同期";
         button.className = "ui button";
+        button.id = "syncButton"; // ボタンにIDを設定
 
         // ボタンのスタイルを直接設定
         button.style.backgroundColor = "green";
@@ -60,8 +61,8 @@ var unique_key_value
         endpoint: "/sync",
     };
 
-    // エラーメッセージを格納する配列
-    let errorMessages = [];
+    // エラーメッセージを格納する変数
+    let currentErrorMessage = "";
 
     // 全レコード同期処理
     async function syncAllRecords() {
@@ -75,7 +76,7 @@ var unique_key_value
             const postData = {
                 record_url: record_url,
                 unique_key_value: unique_key_value // 修正: 固有キーを送信データに追加
-              };
+            };
 
             const response = await fetch(host_url, {
                 method: "POST",
@@ -90,32 +91,31 @@ var unique_key_value
                 console.log(`Record does not exist. Skipping...`);
             } else {
                 const data = await response.json(); // レスポンスデータをJSONとして取得
-            
 
                 // レスポンスのステータスが200の場合
                 if (response.status === 200) {
                     console.log(`Record synced successfully.`);
+                    alert(`Sync process completed.`);
                 } else {
                     const error_message = JSON.parse(data.message).message;
-                    errorMessages.push(`failed to sync record.\n\ndetail: \n${error_message}`);
+                    currentErrorMessage = `failed to sync record.\n\ndetail: \n${error_message}`;
                 }
             }
-
-            alert(`Sync process completed.`);
         } catch (error) {
             console.error("syncOfficeStation Error:", error);
-            errorMessages.push(`failed to sync\n\ndetail: \n${error}`);
+            currentErrorMessage = `failed to sync\n\ndetail: \n${error}`;
         } finally {
-            displayErrorMessages(); // エラーメッセージをポップアップで表示
+            displayErrorMessage(); // エラーメッセージをポップアップで表示
             newButton.style.backgroundColor = "green"; // ボタンの色を元に戻す
             newButton.style.pointerEvents = "auto"; // クリックを再び有効化
         }
     }
 
     // エラーメッセージをポップアップで表示する関数
-    async function displayErrorMessages() {
-        if (errorMessages.length > 0) {
-            alert(errorMessages.join("\n\n"));
+    async function displayErrorMessage() {
+        if (currentErrorMessage) {
+            alert(currentErrorMessage);
+            currentErrorMessage = ""; // エラーメッセージをクリア
         }
     }
 
