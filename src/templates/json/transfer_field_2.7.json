@@ -430,5 +430,135 @@
         "type": "remove after ."
       }
     ]
+  },
+  "spouse_spare": {
+    "from": "kintone",
+    "dest": "offista",
+    "fields": [
+      {
+        "from": "続柄2",
+        "dest": "relationship",
+        "type": "int"
+      },
+      {
+        "from": "家族2職業",
+        "dest": "occupation",
+        "type": "int"
+      }
+    ]
+  },
+  "numbered_dependents": {
+    "from": "kintone",
+    "dest": "offista",
+    "fields": [
+      {
+        "from": "姓{i}",
+        "dest": "shi_name"
+      },
+      {
+        "from": "名{i}",
+        "dest": "mei_name"
+      },
+      {
+        "from": "セイ{i}",
+        "dest": "shi_kana",
+        "type": "full"
+      },
+      {
+        "from": "メイ{i}",
+        "dest": "mei_kana",
+        "type": "full"
+      },
+      {
+        "from": "生年月日{i}",
+        "dest": "birthday",
+        "type": "insert_born_hyphen"
+      },
+      {
+        "from": "性別{i}",
+        "dest": "sex",
+        "type": "int"
+      },
+      {
+        "from": "続柄{i}",
+        "dest": "relationship",
+        "type": "int"
+      },
+      {
+        "from": "別居の場合の住所{i}",
+        "dest": "address1"
+      },
+      {
+        "from": "別居の場合の1回の仕送り額と年間回数{i}",
+        "dest": "memo"
+      },
+      {
+        "from": "同居の有無{i}",
+        "dest": "living_together",
+        "type": "int"
+      },
+      {
+        "from": "家族{i}職業",
+        "dest": "occupation"
+      },
+      {
+        "from": "家族{i}障害者区分",
+        "dest": "handicapped_div",
+        "type": "int"
+      },
+      {
+        "from": "年間の収入{i}",
+        "dest": "income_estimated_amount"
+      },
+      {
+        "from": "備考{i}",
+        "dest": "memo"
+      },
+      {
+        "from": "社会保険上の扶養区分{i}",
+        "dest": "si_support",
+        "type": "int"
+      },
+      {
+        "from": "税法上の扶養区分{i}",
+        "dest": "tax_law_support",
+        "type": "int"
+      },
+      {
+        "from": "扶養になった日{i}社保",
+        "dest": "spouse_date"
+      },
+      {
+        "from": "扶養を外れた日{i}社保",
+        "dest": "spouse_remove_date"
+      },
+      {
+        "from": "扶養になった日{i}税法",
+        "dest": "tax_law_support_date"
+      },
+      {
+        "from": "扶養になった理由{i}税法",
+        "dest": "tax_law_support_add_reason",
+        "type": "int"
+      },
+      {
+        "from": "扶養になった理由その他{i}税法",
+        "dest": "tax_law_support_add_reason_other"
+      },
+      {
+        "from": "扶養を外れた日{i}税法",
+        "dest": "tax_law_support_remove_date"
+      },
+      {
+        "from": "扶養を外れた理由{i}税法",
+        "dest": "tax_law_support_del_reason",
+        "type": "int"
+      },
+      {
+        "from": "扶養を外れた理由{i}その他税法",
+        "dest": "tax_law_support_del_reason_other",
+        "type": "remove after ."
+      }
+    ]
   }
 }

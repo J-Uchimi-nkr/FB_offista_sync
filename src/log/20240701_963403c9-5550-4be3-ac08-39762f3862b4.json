@@ -1,0 +1,33 @@
+[
+  {
+    "time": "2024-07-01T11:34:18.301Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "GET",
+    "body": {},
+    "res": "endpoint=/sync is not defined in server",
+    "statusCode": 404
+  },
+  {
+    "time": "2024-07-01T11:34:18.457Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/favicon.ico",
+    "method": "GET",
+    "body": {},
+    "referrer": "https://127.0.0.1:3000/sync",
+    "res": "endpoint=/favicon.ico is not defined in server",
+    "statusCode": 404
+  },
+  {
+    "time": "2024-07-01T11:35:18.721Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=539&l.view=6450553&l.q&l.sort_0=f6442685&l.order_0=DESC&l.next=487&l.prev=0"
+    },
+    "referrer": "https://nkr-group.cybozu.com/",
+    "statusCode": 500,
+    "res": "internal server error: unique_key is missing."
+  }
+]

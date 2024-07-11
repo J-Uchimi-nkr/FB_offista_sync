@@ -176,8 +176,8 @@ module.exports = class DataUploader {
                 else if (value === "無") value = 2;
                 break;
               case "dispatch_contract_working_classification":
-                if (value === "該当する") value = 1;
-                else if (value === "該当しない") value = 2;
+                if (value === "該当") value = 1;
+                else if (value === "非該当") value = 2;
                 break;
               case "sex":
                 if (value === "男") value = 1;
@@ -294,7 +294,7 @@ module.exports = class DataUploader {
             }
             break;
           case "divide by 1000":
-            value = String(Number(value) / 1000);
+            value = String(Math.round(Number(value) / 1000));
             break;
           case "remove hyphen":
             value = value.replaceAll("-", "");
@@ -360,6 +360,9 @@ module.exports = class DataUploader {
         retire
       );
     }
+    else if (record["連絡種別"].value === "家族の追加" || record["連絡種別"].value === "家族の扶養変更") {
+      transferFields = essential;
+    }
     return this.convertKintoneToOffista(record, transferFields);
   }
 
@@ -367,21 +370,35 @@ module.exports = class DataUploader {
 
   }
 
-  sync_family_OffistaData(record) {
+    sync_family_OffistaData(record) {
     let family_obj = [];
+    let transferFields = [];
     const spouse = TRANSFER_LIST.spouse.fields;
-    const numbered_dependents = TRANSFER_LIST.numbered_dependents.fields;
-    if (record["区分"].value[0] === "配偶者") {
-      let spouse_data = this.convertKintoneToOffista(record, spouse);
+    const spouse_spare = TRANSFER_LIST.spouse_spare.fields;
+    const numbered_dependents = TRANSFER_LIST.numbered_dependents.fields
+    
+    if (record["連絡種別"].value === "入社連絡") {
+      if (record["配偶者はいますか"].value[0] === "はい") {
+          let spouse_data = this.convertKintoneToOffista(record, spouse);
+          family_obj.push(spouse_data);
+        }
+      let family_count = parseInt(record['配偶者以外の家族人数'].value, 10);
+      for (let i = 2; i <= family_count + 1; i++) {
+        let target_dependents = JSON.parse(JSON.stringify(numbered_dependents));
+        target_dependents.forEach((elem) => {
+          elem.from = elem.from.replace('{i}', String(i)); // プレースホルダーを置換
+        })
+        let numbered_dependents_data = this.convertKintoneToOffista(record, target_dependents);
+        family_obj.push(numbered_dependents_data);
+      }
+    }
+    else if (record["連絡種別"].value === "家族の追加" || record["連絡種別"].value === "家族の扶養変更") {
+      transferFields = spouse.concat(
+        spouse_spare
+      );  
+      let spouse_data = this.convertKintoneToOffista(record, transferFields); 
       family_obj.push(spouse_data);
     }
-    else if (record["区分"].value[0] === "家族") {
-      let target_dependents = JSON.parse(JSON.stringify(numbered_dependents));
-      family_obj.push(spouse_data);
-      let numbered_dependents_data = this.convertKintoneToOffista(record, target_dependents);
-      family_obj.push(numbered_dependents_data);
-    }
-  
     return family_obj;
   }
 

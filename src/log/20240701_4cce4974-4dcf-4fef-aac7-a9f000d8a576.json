@@ -1,0 +1,15 @@
+[
+  {
+    "time": "2024-07-01T13:13:33.124Z",
+    "from": "127.0.0.1",
+    "originalUrl": "/sync",
+    "method": "POST",
+    "body": {
+      "record_url": "https://nkr-group.cybozu.com/k/3253/show#record=000",
+      "unique_key_value": "2024070126389"
+    },
+    "referrer": "https://916163bf.form.kintoneapp.com/",
+    "statusCode": 500,
+    "res": "spouse_spare is not defined"
+  }
+]
