@@ -359,15 +359,15 @@
         "type": "int"
       },
       {
-        "from": "職業",
+        "from": "配偶者職業",
         "dest": "occupation"
       },
       {
-        "from": "年間の収入",
+        "from": "配偶者年間の収入",
         "dest": "income_estimated_amount"
       },
       {
-        "from": "基礎年金番号",
+        "from": "配偶者基礎年金番号",
         "dest": "basic_pension_no",
         "type": "remove hyphen"
       },
@@ -381,7 +381,7 @@
         "type": "int"
       },
       {
-        "from": "備考",
+        "from": "配偶者備考",
         "dest": "memo"
       },
       {
