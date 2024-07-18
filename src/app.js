@@ -50,7 +50,7 @@ const APP = express();
 APP.use(cors()); // CORSミドルウェアを使用してクロスオリジンリクエストを許可
 APP.use(bodyParser.json()); // JSONを解析するためのミドルウェアを追加
 
-APP.post("/syncFB", async (req, res) => {
+APP.post("/sync", async (req, res) => {
   const jsonData = req.body;
   const newData = {
     time: getTimeISO(),
@@ -73,6 +73,54 @@ APP.post("/syncFB", async (req, res) => {
     )
       throw new Error("internal server error: incorrect app_info.");
     const record = await getKintoneRecord(app_info.app_id, app_info.record_id);
+    if (record == [])
+      throw new Error(
+        "internal server error: failed to get record from kintone server."
+      );
+    const sync_result = await data_uploader.sync(record);
+    if (sync_result.is_successed == false)
+      throw new Error(sync_result.error_message);
+    newData.res = record;
+    newData.statusCode = 200;
+    res.status(200).json({
+      message: JSON.stringify(record),
+    });
+  } catch (e) {
+    newData.res = e.message;
+    newData.statusCode = 500;
+    res.status(500).json({
+      message: JSON.stringify({ message: e.message }),
+    });
+  }
+  update_log_file(newData);
+  return;
+});
+
+APP.post("/sync", async (req, res) => {
+  const jsonData = req.body;
+  const newData = {
+    time: getTimeISO(),
+    from: req.ip,
+    originalUrl: req.originalUrl,
+    method: req.method,
+    body: req.body,
+    referrer: req.get("Referer"),
+    statusCode: 200,
+    res: "",
+  };
+  try {
+    if (jsonData["record_url"] == undefined)
+      throw new Error("record_url is necessary in the post data");
+    const app_info = getAppInfo(jsonData["record_url"]);
+    if (
+      !app_info ||
+      app_info.app_id == undefined
+    )
+      throw new Error("internal server error: incorrect app_info.");
+    const unique_key = jsonData["unique_key_value"]; // unique_key を jsonData から取得
+      if (!unique_key)
+        throw new Error("internal server error: unique_key is missing.");
+    const record = await getKintoneRecord(app_info.app_id, unique_key);
     if (record == [])
       throw new Error(
         "internal server error: failed to get record from kintone server."
