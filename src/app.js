@@ -50,7 +50,7 @@ const APP = express();
 APP.use(cors()); // CORSミドルウェアを使用してクロスオリジンリクエストを許可
 APP.use(bodyParser.json()); // JSONを解析するためのミドルウェアを追加
 
-APP.post("/sync", async (req, res) => {
+APP.post("/syncFB", async (req, res) => {
   const jsonData = req.body;
   const newData = {
     time: getTimeISO(),
