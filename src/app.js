@@ -96,7 +96,7 @@ APP.post("/sync", async (req, res) => {
   return;
 });
 
-APP.post("/sync", async (req, res) => {
+APP.post("/syncFB", async (req, res) => {
   const jsonData = req.body;
   const newData = {
     time: getTimeISO(),
