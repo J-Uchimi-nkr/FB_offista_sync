@@ -5,12 +5,14 @@ const INTERNAL_SERVER_ERROR_PATH = "./templates/html/500.html";
 const UTILS_PATH = "./utils";
 const GETIPADDR_PATH = UTILS_PATH + "/getIPAddr";
 const GETKINTONERECORD_PATH = UTILS_PATH + "/getKintoneRecord";
+const GETKINTONERECORDFB_PATH = UTILS_PATH + "/getKintoneRecordFB";
 const GETAPPINFO_PATH = UTILS_PATH + "/getInfoFromURL.js";
 const GETLOCALTIMEISO_PATH = UTILS_PATH + "/getLocalTimeISO";
 const RESISTIPADDRKINTONE_PATH = UTILS_PATH + "/resistIPaddrKintone";
 const HTTPS_KEY_PATH = "./src/cert/cert_server.key";
 const HTTPS_CERT_PATH = "./src/cert/cert_server.crt";
 const DATAUPLOADER_PATH = "./class/DataUploader.js";
+const DATAUPLOADERFB_PATH = "./class/DataUploaderFB.js";
 
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -26,6 +28,7 @@ const HTTPS_OPTIONS = {
 };
 const getIPAddr = require(GETIPADDR_PATH);
 const getKintoneRecord = require(GETKINTONERECORD_PATH);
+const getKintoneRecordFB = require(GETKINTONERECORDFB_PATH);
 const getAppInfo = require(GETAPPINFO_PATH);
 const getTimeISO = require(GETLOCALTIMEISO_PATH);
 const SERVER_CONFIG = require(SERVER_CONFIG_PATH);
@@ -38,6 +41,8 @@ const APP_NAME = GENERAL_CONFIG.app_name;
 const resistIP = require(RESISTIPADDRKINTONE_PATH);
 const DataUploader = require(DATAUPLOADER_PATH);
 const data_uploader = new DataUploader();
+const DataUploaderFB = require(DATAUPLOADERFB_PATH);
+const data_uploaderFB = new DataUploaderFB();
 
 const INIT_TIME = getTimeISO();
 const LOG_FILE_PATH = `./src/log/${INIT_TIME.slice(0, 10).replace(
