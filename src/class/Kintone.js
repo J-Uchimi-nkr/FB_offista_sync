@@ -1,7 +1,12 @@
+const path = require("path");
+const config = require(path.join(process.cwd(), "config.json"));
+
 const axios = require("axios");
-const { resourceLimits } = require("worker_threads");
-const CONFIG_PATH = "../config/kintone_config.json";
-const CONFIG = require(CONFIG_PATH);
+const kintone_config = require(path.join(
+  process.cwd(),
+  config["path"]["kintone_config"]
+));
+
 module.exports = class Kintone {
   #host;
   #id;
@@ -12,12 +17,12 @@ module.exports = class Kintone {
   constructor(id) {
     this.#id = String(id);
     this.#token = this.#getToken(id);
-    this.#host = CONFIG.host_url;
+    this.#host = kintone_config.host_url;
   }
 
   #getToken(id) {
-    if (CONFIG.ids && CONFIG.ids[id] && CONFIG.ids[id].api_token) {
-      return CONFIG.ids[id].api_token;
+    if (kintone_config.ids && kintone_config.ids[id] && kintone_config.ids[id].api_token) {
+      return kintone_config.ids[id].api_token;
     } else {
       return "";
     }

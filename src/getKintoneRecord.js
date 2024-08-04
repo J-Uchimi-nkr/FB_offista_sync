@@ -1,4 +1,6 @@
-const KINTONE_CLASS_PATH = "../class/Kintone";
+const path = require("path");
+const config = require(path.join(process.cwd(), "config.json"));
+const KINTONE_CLASS_PATH = path.join(process.cwd(), config["path"]["kintone"]);
 const Kintone = require(KINTONE_CLASS_PATH);
 
 module.exports = async (app_id, record_id) => {

@@ -1,0 +1,32 @@
+{
+    "server": {
+        "port": 3000,
+        "binding_port": "0.0.0.0",
+        "protocol": "https",
+        "report_alive_interval": 60000
+    },
+    "oauth": {
+        "allowed_domains": [
+            "nkr-group.com"
+        ]
+    },
+    "path": {
+        "404": "templates/404.html",
+        "500": "templates/500.html",
+        "getKintoneRecord": "src/getKintoneRecord.js",
+        "getKintoneRecordFB": "src/getKintoneRecordFB.js",
+        "getInfoFromURL": "src/getInfoFromURL.js",
+        "dataUploader": "src/class/DataUploader.js",
+        "dataUploaderFB": "src/class/DataUploaderFB.js",
+        "kanaConverter": "src/class/KanaConverter.js",
+        "kintone": "src/class/Kintone.js",
+        "offista": "src/class/Offista.js",
+        "employee": "src/json/employee.json",
+        "kana_map": "src/json/kana_map.json",
+        "kintone_config": "src/json/kintone_config.json",
+        "offista_config": "src/json/offista_config.json",
+        "mandetory_employee": "src/json/mandetory_employee.json",
+        "transfer_field_2.7": "src/json/transfer_field_2.7.json",
+        "transfer_field_list": "src/json/transfer_field_list.json"
+    }
+}

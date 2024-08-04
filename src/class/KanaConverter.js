@@ -1,41 +1,35 @@
-const MAP_PATH = "../config/kana_map.json";
+const path = require("path");
+const config = require(path.join(process.cwd(), "config.json"));
+
+const MAP_PATH = path.join(process.cwd(), config["path"]["kana_map"]);
 const CONVERSIONMAP = require(MAP_PATH);
 
-module.exports = class KanaConverter
-{
-  constructor()
-  {
+module.exports = class KanaConverter {
+  constructor() {
     this.conversionMap = CONVERSIONMAP;
   }
 
-  halfToFull(str)
-  {
+  halfToFull(str) {
     return this.convert(str, "half", "full");
   }
 
-  fullToHalf(str)
-  {
+  fullToHalf(str) {
     return this.convert(str, "full", "half");
   }
 
-  convert(str, fromType, toType)
-  {
+  convert(str, fromType, toType) {
     const str_array = Array.from(str);
     let result_arr = [];
-    str_array.forEach((elem) =>
-    {
-      if (elem == "ﾞ")
-      {
+    str_array.forEach((elem) => {
+      if (elem == "ﾞ") {
         let tmp = result_arr.pop();
         result_arr.push(tmp + elem);
-      } else
-      {
+      } else {
         result_arr.push(elem);
       }
     });
     const convertedString = result_arr
-      .map((char) =>
-      {
+      .map((char) => {
         const conversion = this.conversionMap.find(
           (entry) => entry[fromType] === char
         );

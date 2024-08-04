@@ -6,3 +6,5 @@ src/log/*
 
 # npm installでinstallできる
 node_modules/* 
+
+.env

@@ -1,10 +1,14 @@
-const KINTONE_CLASS_PATH = "../class/Kintone";
+const path = require("path");
+const config = require(path.join(process.cwd(), "config.json"));
+const KINTONE_CLASS_PATH = path.join(process.cwd(), config["path"]["kintone"]);
 const Kintone = require(KINTONE_CLASS_PATH);
-module.exports = async (app_id, unique_key) => {  // 修正: unique_key を引数に追加
+
+module.exports = async (app_id, unique_key) => {
+  // 修正: unique_key を引数に追加
   const c = new Kintone(app_id);
   await c.build();
 
-  const query_str = `固有キー="${unique_key}"`;  // 修正: window.unique_key を unique_key に変更
+  const query_str = `固有キー="${unique_key}"`; // 修正: window.unique_key を unique_key に変更
   const result = await c.get(query_str);
   try {
     const records = result.records;

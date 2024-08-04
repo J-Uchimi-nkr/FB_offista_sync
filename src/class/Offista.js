@@ -1,21 +1,30 @@
 // Offista.js
-const axios = require("axios");
-const CONFIG_PATH = "../config/offista_config.json";
-const MONDETORY_EMPLOYEE_PATH = "../templates/json/mandetory_employee.json";
 
-const CONFIG = require(CONFIG_PATH);
+const path = require("path");
+const config = require(path.join(process.cwd(), "config.json"));
+
+const axios = require("axios");
+const MONDETORY_EMPLOYEE_PATH = path.join(
+  process.cwd(),
+  config["path"]["mandetory_employee"]
+);
 const MONDETORY_EMPLOYEE = require(MONDETORY_EMPLOYEE_PATH);
+const offista_config = require(path.join(
+  process.cwd(),
+  config["path"]["offista_config"]
+));
+
 module.exports = class Offista {
-  #user_name = CONFIG.user_name;
-  #user = CONFIG.users[this.#user_name];
+  #user_name = offista_config.user_name;
+  #user = offista_config.users[this.#user_name];
   #endpoint_name = this.#user.endpoint_name;
-  #endpoint = CONFIG[this.#endpoint_name];
+  #endpoint = offista_config[this.#endpoint_name];
   #station_id = this.#user.station_id;
   #login_id = this.#user.login_id;
   #login_pass = this.#user.login_pass;
-  #rn_list = CONFIG.rn_list;
-  #product_id = CONFIG.product_id;
-  #email = CONFIG.email;
+  #rn_list = offista_config.rn_list;
+  #product_id = offista_config.product_id;
+  #email = offista_config.email;
   #dump_log = false;
 
   #api_key = "";

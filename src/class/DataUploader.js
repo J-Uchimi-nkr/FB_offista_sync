@@ -1,6 +1,15 @@
-const KANACONVERTER_PATH = "./KanaConverter";
-const TRANSFER_LIST_PATH = "../templates/json/transfer_field_list.json";
-const OFFISTA_CLASS_PATH = "./Offista";
+const path = require("path");
+const config = require(path.join(process.cwd(), "config.json"));
+
+const KANACONVERTER_PATH = path.join(
+  process.cwd(),
+  config["path"]["kanaConverter"]
+);
+const TRANSFER_LIST_PATH = path.join(
+  process.cwd(),
+  config["path"]["transfer_field_list"]
+);
+const OFFISTA_CLASS_PATH = path.join(process.cwd(), config["path"]["offista"]);
 const KanaConverter_class = require(KANACONVERTER_PATH);
 const TRANSFER_LIST = require(TRANSFER_LIST_PATH);
 const KanaConverter = new KanaConverter_class();
@@ -18,9 +27,8 @@ module.exports = class DataUploader {
       const dest = element.dest;
       const type = element.type;
 
-      let value
-      if (from == null)
-        value == ""
+      let value;
+      if (from == null) value == "";
       else {
         const recordObj = kintoneRecord[from];
 
@@ -92,25 +100,25 @@ module.exports = class DataUploader {
               case "loss_qualification_reason_employ":
                 switch (value) {
                   case "自己都合による退職":
-                    value = 2
+                    value = 2;
                     break;
                   case "契約期間満了":
-                    value = 0
+                    value = 0;
                     break;
                   case "退職勧奨":
-                    value = 0
+                    value = 0;
                     break;
                   case "会社都合":
-                    value = 3
+                    value = 3;
                     break;
                   case "関連会社移籍":
-                    value = 0
+                    value = 0;
                     break;
                   case "その他":
-                    value = 0
+                    value = 0;
                     break;
                   default:
-                    value = 0
+                    value = 0;
                 }
                 break;
               case "relationship":
@@ -161,28 +169,28 @@ module.exports = class DataUploader {
                 break;
               case "tax_law_support_add_reason":
                 if (value == null) break;
-                value = value.split(".")[0]
+                value = value.split(".")[0];
                 switch (value) {
                   case "0":
-                    value = 1
+                    value = 1;
                     break;
                   case "1":
-                    value = 31
+                    value = 31;
                     break;
                   case "2":
-                    value = 32
+                    value = 32;
                     break;
                   case "3":
-                    value = 33
+                    value = 33;
                     break;
                   case "4":
-                    value = 34
+                    value = 34;
                     break;
                   case "5":
-                    value = 35
+                    value = 35;
                     break;
                   default:
-                    value = 35
+                    value = 35;
                     break;
                 }
                 break;
@@ -212,7 +220,9 @@ module.exports = class DataUploader {
             }
             break;
           default:
-            console.error(`the type "${type}/${dest}" is not defined in program`);
+            console.error(
+              `the type "${type}/${dest}" is not defined in program`
+            );
             return;
         }
       }
@@ -241,9 +251,7 @@ module.exports = class DataUploader {
     return this.convertKintoneToOffista(record, transferFields);
   }
 
-  async backupAddress(companyName) {
-
-  }
+  async backupAddress(companyName) {}
 
   sync_family_OffistaData(record) {
     let family_obj = [];
@@ -257,9 +265,12 @@ module.exports = class DataUploader {
       if (record[`扶養${i}はいますか`].value[0] != "はい") continue;
       let target_dependents = JSON.parse(JSON.stringify(numbered_dependents));
       target_dependents.forEach((elem) => {
-        elem.from = elem.from + String(i)
-      })
-      let numbered_dependents_data = this.convertKintoneToOffista(record, target_dependents);
+        elem.from = elem.from + String(i);
+      });
+      let numbered_dependents_data = this.convertKintoneToOffista(
+        record,
+        target_dependents
+      );
       family_obj.push(numbered_dependents_data);
     }
     return family_obj;
@@ -349,14 +360,14 @@ module.exports = class DataUploader {
     const companyName = kintoneRecord["会社名"].value;
     const personal_data = await this.sync_personal_OffistaData(kintoneRecord);
     const family_data = await this.sync_family_OffistaData(kintoneRecord);
-    const report_type = kintoneRecord["連絡種別_文字列"].value
+    const report_type = kintoneRecord["連絡種別_文字列"].value;
     if (report_type === "住所変更") {
-      backupAddress(companyName)
+      backupAddress(companyName);
     }
 
     const upload_data = { ...personal_data, ...{ family: family_data } };
     // const upload_data = { ...personal_data };
-    console.log("upload_data: ", upload_data)
+    console.log("upload_data: ", upload_data);
     // return upload_data
     return await this.upload(companyName, upload_data);
   }
