@@ -5,11 +5,14 @@
 1. add .env file
 
    ```env
-   CLIENT_ID=
-   CLIENT_SECRET=
+   CLIENT_ID=your_client_id
+   CLIENT_SECRET=your_client_secret
    REDIRECT_URI=http://localhost:3000/oauth2callback
-   JWT_SECRET=
+   JWT_SECRET=your_jwt_secret
    ```
+
+   - `CLIENT_ID`と`CLIENT_SECRET`は[こちら](https://github.com/NKR-24/kintone_app_resister)を参考に取得
+   - `JWT_SECRET`は任意の文字列
 
 2. add config files
 

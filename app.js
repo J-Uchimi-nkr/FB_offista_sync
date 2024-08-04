@@ -35,6 +35,12 @@ const DataUploaderFB = require(path.join(
 ));
 const data_uploaderFB = new DataUploaderFB();
 
+const CLIENT_ID = process.env.CLIENT_ID;
+const CLIENT_SECRET = process.env.CLIENT_SECRET;
+const REDIRECT_URI = process.env.REDIRECT_URI;
+const JWT_SECRET = process.env.JWT_SECRET; // JWT_SECRETを.envから読み込む
+const client = new OAuth2Client(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI);
+
 const APP = express();
 APP.use(cors()); // CORSミドルウェアを使用してクロスオリジンリクエストを許可
 APP.use(bodyParser.json()); // JSONを解析するためのミドルウェアを追加
@@ -44,15 +50,9 @@ APP.use(
     secret: "ofnkrdevdev", // セッションを暗号化するためのシークレット
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: false }, // HTTPSを使用していない場合はfalseに設定
+    cookie: { secure: REDIRECT_URI.startsWith("https://") }, // HTTPSを使用していない場合はfalseに設定
   })
 );
-
-const CLIENT_ID = process.env.CLIENT_ID;
-const CLIENT_SECRET = process.env.CLIENT_SECRET;
-const REDIRECT_URI = process.env.REDIRECT_URI;
-const JWT_SECRET = process.env.JWT_SECRET; // JWT_SECRETを.envから読み込む
-const client = new OAuth2Client(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI);
 
 // トークン認証用のミドルウェア
 function authenticateToken(req, res, next) {

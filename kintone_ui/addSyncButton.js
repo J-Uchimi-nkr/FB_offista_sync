@@ -1,5 +1,5 @@
 let server_info = {
-  host: "http://localhost:3000",
+  host: "https://offistasync-qzfx6k62aq-an.a.run.app",
   endpoint: "/sync",
 };
 
@@ -42,6 +42,13 @@ async function addSyncButton() {
     existingElement.appendChild(newButton);
   } catch (e) {
     console.error(e);
+  }
+
+  // urlにtokenが含まれている場合
+  if (window.location.hash.includes("token=")) {
+    newButton.style.backgroundColor = "gray";
+    newButton.style.pointerEvents = "none"; // クリックを無効化
+    syncOfficeStation();
   }
 }
 
