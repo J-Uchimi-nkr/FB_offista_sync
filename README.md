@@ -1,5 +1,7 @@
 # Kintone-Offista-Sync
 
+kintoneの詳細画面URLをpostすると，該当従業員のoffistaとデータ連携するサーバ
+
 ## setup
 
 1. add .env file
