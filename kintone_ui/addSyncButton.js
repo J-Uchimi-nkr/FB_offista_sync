@@ -1,10 +1,13 @@
 let server_info = {
-  host: "https://offistasync-qzfx6k62aq-an.a.run.app",
+  // host: "https://offistasync-qzfx6k62aq-an.a.run.app",
+  host: "http://localhost:8080",
   endpoint: "/sync",
+  token: undefined,
 };
 
 function getToken() {
   //hashからtokenを取得
+  if (server_info.token != undefined) return server_info.token;
   const token = window.location.hash.split("token=")[1];
   return token;
 }
@@ -61,7 +64,7 @@ async function syncOfficeStation() {
 
   try {
     const url = server_info.host + server_info.endpoint;
-    const token = getToken(); // トークンを取得
+    token = getToken(); // トークンを取得
     const response = await fetch(url, {
       method: "POST",
       headers: {
@@ -73,11 +76,32 @@ async function syncOfficeStation() {
 
     // 401だったらserver_info.host/loginにリダイレクト. 呼び出し元のURLを/loginに渡す
     if (response.status === 401) {
-      const redirect_url = encodeURIComponent(location.href);
-      window.location.href = `${server_info.host}/login?redirect_url=${redirect_url}`;
+      // const redirect_url = encodeURIComponent(location.href);
+      const targetOrigin = encodeURIComponent(location.href);
+      // window.location.href = `${server_info.host}/login?targetOrigin=${targetOrigin}`;
+      // return;
+      const fetch_url = `${server_info.host}/login?targetOrigin=${targetOrigin}`;
+      const fetch_response = await fetch(fetch_url);
+      const data = await fetch_response.json();
+      const authorization_url = data.authorization_url;
+
+      window.open(authorization_url, "_blank");
+
+      // postMessageをlistenして、ログインが完了したら、トークンを取得して、syncOfficeStationを再度呼び出す
+      console.log("listen postMessage");
+      window.addEventListener("message", (event) => {
+        if (event.origin === server_info.host) {
+          const token = event.data;
+          console.log("token:", token);
+          server_info.token = token;
+          syncOfficeStation();
+          return;
+        } else {
+          console.log("Unkown origin:", event.origin);
+        }
+      });
       return;
-    }
-    if (response.status === 403) {
+    } else if (response.status === 403) {
       alert("Forbidden");
       // google アカウントでログインしているときはログアウトする.redirect_urlは現在のURL
       const redirect_url = encodeURIComponent(location.href);

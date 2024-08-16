@@ -219,6 +219,9 @@ module.exports = class DataUploader {
               value = formattedNumber;
             }
             break;
+          case "remove after .":
+            if (value != null) value = value.split(".")[0];
+            break;
           default:
             console.error(
               `the type "${type}/${dest}" is not defined in program`
@@ -367,7 +370,7 @@ module.exports = class DataUploader {
 
     const upload_data = { ...personal_data, ...{ family: family_data } };
     // const upload_data = { ...personal_data };
-    console.log("upload_data: ", upload_data);
+    // console.log("upload_data: ", upload_data);
     // return upload_data
     return await this.upload(companyName, upload_data);
   }

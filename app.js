@@ -44,6 +44,8 @@ const client = new OAuth2Client(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI);
 const APP = express();
 APP.use(cors()); // CORSミドルウェアを使用してクロスオリジンリクエストを許可
 APP.use(bodyParser.json()); // JSONを解析するためのミドルウェアを追加
+APP.set("views", "templates");
+APP.set("view engine", "ejs");
 
 APP.use(
   session({
@@ -136,7 +138,7 @@ APP.post("/syncFB", authenticateToken, async (req, res) => {
 });
 
 APP.get("/login", async (req, res) => {
-  const redirect_url = req.query.redirect_url;
+  const targetOrigin = req.query.targetOrigin;
   const authorization_url = client.generateAuthUrl({
     access_type: "offline",
     scope: [
@@ -144,17 +146,16 @@ APP.get("/login", async (req, res) => {
       "https://www.googleapis.com/auth/userinfo.profile",
     ],
     redirect_uri: REDIRECT_URI,
-    state: redirect_url,
+    state: targetOrigin,
   });
-  res.redirect(authorization_url);
+
+  res.status(200).json({ authorization_url: authorization_url });
 });
 
 APP.get("/oauth2callback", async (req, res) => {
   const { code, state } = req.query;
 
-  if (!code) {
-    return res.redirect("/login"); // 認証が失敗した場合は再度ログインページにリダイレクト
-  }
+  if (!code) return res.status(401).json({ message: "Unauthorized" });
 
   try {
     // トークンを取得
@@ -171,7 +172,7 @@ APP.get("/oauth2callback", async (req, res) => {
     // allowed_domains に含まれているか確認
     const allowed_domains = config["oauth"]["allowed_domains"];
     if (!allowed_domains.includes(payload.hd)) {
-      return res.status(401).json({ message: "Unauthorized" });
+      return res.status(403).json({ message: "Forbidden" });
     }
     console.log("domain:", payload.hd);
     console.log("allowed");
@@ -181,12 +182,18 @@ APP.get("/oauth2callback", async (req, res) => {
     delete userPayload.exp; // expプロパティを削除
     const token = jwt.sign(userPayload, JWT_SECRET, { expiresIn: "1h" });
 
-    // stateパラメータから元のリダイレクトURLをデコード
-    const redirect_url = decodeURIComponent(state);
+    const targetOrigin_decoded = decodeURIComponent(state);
+    //targetOriginに対してpostMessageを送信
+    const postMessage_html = `<script>window.opener.postMessage("${token}", "${targetOrigin_decoded}");window.close();</script>`;
+    console.log("sent postMessage_html");
+    res.status(200).send(postMessage_html);
 
-    // すでにredirect_urlにtokenがある場合は、tokenを一回削除
-    const redirect_url_without_token = redirect_url.split("?token=")[0];
-    res.redirect(`${redirect_url_without_token}?token=${token}`); // 元のページにトークンを付けてリダイレクト
+    // // stateパラメータから元のリダイレクトURLをデコード
+    // const redirect_url = decodeURIComponent(state);
+
+    // // すでにredirect_urlにtokenがある場合は、tokenを一回削除
+    // const redirect_url_without_token = redirect_url.split("?token=")[0];
+    // res.redirect(`${redirect_url_without_token}?token=${token}`); // 元のページにトークンを付けてリダイレクト
   } catch (e) {
     console.error(e);
     res.status(500).send("Authentication failed.");

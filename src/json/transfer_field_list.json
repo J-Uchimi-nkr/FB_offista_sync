@@ -65,7 +65,8 @@
       },
       {
         "from": "電話番号",
-        "dest": "tel"
+        "dest": "tel",
+        "type": "insert tel hyphen"
       },
       {
         "from": "メールアドレス",

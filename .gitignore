@@ -6,6 +6,6 @@ src/log/*
 .DS_Store
 
 # npm installでinstallできる
-node_modules/* 
+node_modules
 
 .env
