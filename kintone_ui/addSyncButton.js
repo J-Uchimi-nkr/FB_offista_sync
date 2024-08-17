@@ -1,6 +1,6 @@
 let server_info = {
-  // host: "https://offistasync-qzfx6k62aq-an.a.run.app",
-  host: "http://localhost:8080",
+  host: "https://offistasync-qzfx6k62aq-an.a.run.app",
+  // host: "http://localhost:8080",
   endpoint: "/sync",
   token: undefined,
 };
@@ -76,29 +76,24 @@ async function syncOfficeStation() {
 
     // 401だったらserver_info.host/loginにリダイレクト. 呼び出し元のURLを/loginに渡す
     if (response.status === 401) {
-      // const redirect_url = encodeURIComponent(location.href);
-      const targetOrigin = encodeURIComponent(location.href);
-      // window.location.href = `${server_info.host}/login?targetOrigin=${targetOrigin}`;
-      // return;
+      const targetOrigin = encodeURIComponent(location.href); // 呼び出し元のURL
       const fetch_url = `${server_info.host}/login?targetOrigin=${targetOrigin}`;
       const fetch_response = await fetch(fetch_url);
       const data = await fetch_response.json();
-      const authorization_url = data.authorization_url;
-
-      window.open(authorization_url, "_blank");
+      const authorization_url = data.authorization_url; // 認証URL
+      window.open(authorization_url, "_blank"); // 新しいタブで認証URLを開く
 
       // postMessageをlistenして、ログインが完了したら、トークンを取得して、syncOfficeStationを再度呼び出す
-      console.log("listen postMessage");
       window.addEventListener("message", (event) => {
         if (event.origin === server_info.host) {
+          // オリジンが一致したら
           const token = event.data;
-          console.log("token:", token);
-          server_info.token = token;
-          syncOfficeStation();
-          return;
+          server_info.token = token; // トークンを保存
+          syncOfficeStation(); // 再度syncOfficeStationを呼び出す
         } else {
           console.log("Unkown origin:", event.origin);
         }
+        return;
       });
       return;
     } else if (response.status === 403) {
