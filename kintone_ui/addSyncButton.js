@@ -101,22 +101,21 @@ async function syncOfficeStation() {
       // google アカウントでログインしているときはログアウトする.redirect_urlは現在のURL
       const redirect_url = encodeURIComponent(location.href);
       window.location.href = `${server_info.host}/logout?redirect_url=${redirect_url}`;
-      return;
-    }
-    const data = await response.json();
-    console.log(data);
-    if (response.status === 200) {
+    } else if (response.status === 200) {
+      const data = await response.json();
       alert("synced successfully.");
       console.log("Response:", data);
     } else {
+      const data = await response.json();
       const error_message = data.message;
       alert(`failed to sync.\n\ndetail: \n${error_message}`);
     }
+    newButton.style.backgroundColor = "green"; // ボタンを元に戻す
+    newButton.style.pointerEvents = "auto";
   } catch (error) {
     console.error("syncOfficeStation Error:", error);
     alert(`failed to sync\n\ndetail: \n${error}\n\n${message}`);
     // エラー処理を行う
-  } finally {
     newButton.style.backgroundColor = "green"; // ボタンを元に戻す
     newButton.style.pointerEvents = "auto";
   }
