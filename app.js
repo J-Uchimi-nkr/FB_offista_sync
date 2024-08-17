@@ -172,7 +172,9 @@ APP.get("/oauth2callback", async (req, res) => {
     // allowed_domains に含まれているか確認
     const allowed_domains = config["oauth"]["allowed_domains"];
     if (!allowed_domains.includes(payload.hd)) {
-      return res.status(403).json({ message: "Forbidden" });
+      // 403 Forbidden
+      const errorMessage_html = `<script>alert("Forbidden");window.opener.postMessage("Forbidden", "${state}");window.close();</script>`;
+      return res.status(403).send(errorMessage_html);
     }
     console.log("domain:", payload.hd);
     console.log("allowed");
