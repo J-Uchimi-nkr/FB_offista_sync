@@ -180,7 +180,7 @@ APP.get("/oauth2callback", async (req, res) => {
     // JWTトークンを生成
     const userPayload = { ...payload }; // ペイロードをコピー
     delete userPayload.exp; // expプロパティを削除
-    const token = jwt.sign(userPayload, JWT_SECRET, { expiresIn: "1h" });
+    let token = jwt.sign(userPayload, JWT_SECRET, { expiresIn: "1h" });
 
     // tokenに""が含まれている場合はescapeする
     token = token.replace(/"/g, '\\"');
