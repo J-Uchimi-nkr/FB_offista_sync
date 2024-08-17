@@ -38,11 +38,11 @@ kintoneの詳細画面URLをpostすると，該当従業員のoffistaとデー�
 
 5. .envの内容をGoogle Cloud Runの環境変数に設定
 
-- [参考](https://cloud.google.com/run/docs/configuring/services/environment-variables?hl=ja#console)
+   - [参考](https://cloud.google.com/run/docs/configuring/services/environment-variables?hl=ja#console)
 
 6. 認証済みのURLに，deployしたサービスのURLを設定
 
-- [こちら](https://github.com/NKR-24/kintone_app_resister)を参照
+   - [こちら](https://github.com/NKR-24/kintone_app_resister)を参照
 
 ## client
 
