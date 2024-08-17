@@ -180,12 +180,12 @@ APP.get("/oauth2callback", async (req, res) => {
     // JWTトークンを生成
     const userPayload = { ...payload }; // ペイロードをコピー
     delete userPayload.exp; // expプロパティを削除
-    let token = jwt.sign(userPayload, JWT_SECRET, { expiresIn: "1h" });
+    const token = jwt.sign(userPayload, JWT_SECRET, { expiresIn: "1h" });
 
-    // tokenに""が含まれている場合はescapeする
-    token = token.replace(/"/g, '\\"');
+    let targetOrigin_decoded = decodeURIComponent(state);
+    // targetOrigin_decodedに含まれる""をescape
+    targetOrigin_decoded = targetOrigin_decoded.replace(/"/g, '\\"');
 
-    const targetOrigin_decoded = decodeURIComponent(state);
     //targetOriginに対してpostMessageを送信
     const postMessage_html = `<script>window.opener.postMessage("${token}", "${targetOrigin_decoded}");window.close();</script>`;
     console.log("sent postMessage_html: ", postMessage_html);
