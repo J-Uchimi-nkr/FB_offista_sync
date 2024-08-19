@@ -2,6 +2,10 @@
 
 kintoneの詳細画面URLをpostすると，該当従業員のoffistaとデータ連携するサーバ
 
+## 稼働中のURL
+
+[https://offistasyncserver-qzfx6k62aq-an.a.run.app](https://offistasyncserver-qzfx6k62aq-an.a.run.app)
+
 ## setup
 
 1. clone this repository
