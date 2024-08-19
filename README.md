@@ -26,7 +26,7 @@ kintoneの詳細画面URLをpostすると，該当従業員のoffistaとデー�
 
    - `CLIENT_ID`と`CLIENT_SECRET`は[こちら](https://github.com/NKR-24/kintone_app_resister)を参考に取得
    - `JWT_SECRET`は任意の文字列
-   - deployする前に`REDIRECT_URI`を実際のサービスURLに変更する
+   - deployする前にGCPコンソール上で，`REDIRECT_URI`を実際のサービスURLに変更する
 
 3. add config files
 
@@ -48,7 +48,7 @@ kintoneの詳細画面URLをpostすると，該当従業員のoffistaとデー�
 
 6. deploy
 
-   - deployする前に，`.env`内の`REDIRECT_URI`を実際のサービスURLに変更する
+   - deployする前にGCPコンソール上で，`REDIRECT_URI`を実際のサービスURLに変更する
 
    ```sh
    gcloud config set project offista-sync
