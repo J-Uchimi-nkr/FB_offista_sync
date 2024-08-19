@@ -4,7 +4,14 @@ kintoneの詳細画面URLをpostすると，該当従業員のoffistaとデー�
 
 ## setup
 
-1. add .env file
+1. clone this repository
+
+   ```sh
+   git clone git@github.com:NKR-24/offista_sync_server.git
+   cd offista_sync_server
+   ```
+
+2. add .env file
 
    ```env
    CLIENT_ID=your_client_id
@@ -16,7 +23,7 @@ kintoneの詳細画面URLをpostすると，該当従業員のoffistaとデー�
    - `CLIENT_ID`と`CLIENT_SECRET`は[こちら](https://github.com/NKR-24/kintone_app_resister)を参考に取得
    - `JWT_SECRET`は任意の文字列
 
-2. add config files
+3. add config files
 
    > [!IMPORTANT]
    > must download above files into `src/json`
@@ -24,23 +31,27 @@ kintoneの詳細画面URLをpostすると，該当従業員のoffistaとデー�
    > - [kintone_config.json](https://drive.google.com/file/d/1hk_uxsLNvq8AgHY83Qs1Tos9CDlduUh-/view?usp=drive_link)
    > - [offista_config.json](https://drive.google.com/file/d/1E7ijrMsOt8Yc0MRKqbFdM6rqmwAWntgT/view?usp=drive_link)
 
-3. install lib
+4. install lib
 
     ```sh
     npm install
     ```
 
-4. deploy
-
-   ```sh
-   gcloud run deploy
-   ```
-
-5. .envの内容をGoogle Cloud Runの環境変数に設定
+5. .envの内容をGoogle Cloud Runの環境変数に設定(初回・更新時・deployでエラーが出た場合のみ)
 
    - [参考](https://cloud.google.com/run/docs/configuring/services/environment-variables?hl=ja#console)
 
-6. 認証済みのURLに，deployしたサービスのURLを設定
+6. deploy
+
+   ```sh
+   gcloud config set project offista-sync
+   gcloud run deploy
+   ```
+
+   - service name: `offistasyncserver`
+   - region: `[4] asia-northeast1`
+
+7. 認証済みのURLに，deployしたサービスのURLを設定(初回・更新時のみ)
 
    - [こちら](https://github.com/NKR-24/kintone_app_resister)を参照
 

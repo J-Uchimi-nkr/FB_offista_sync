@@ -1,5 +1,5 @@
 let server_info = {
-  host: "https://offistasync-qzfx6k62aq-an.a.run.app",
+  host: "https://offistasyncserver-qzfx6k62aq-an.a.run.app",
   // host: "http://localhost:8080",
   endpoint: "/sync",
   token: undefined,
